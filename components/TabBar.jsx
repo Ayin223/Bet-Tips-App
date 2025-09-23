@@ -53,7 +53,7 @@ const TabBar = ({ state, descriptors, navigation }) => {
         return (
           <TouchableOpacity
             key={route.name}
-            styles = {styles.tabbarItem}
+            //styles = {styles.tabbarItem}
             accessibilityState={isFocused ? { selected: true } : {}}
             accessibilityLabel={options.tabBarAccessibilityLabel}
             testID={options.tabBarButtonTestID}

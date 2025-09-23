@@ -1,23 +1,19 @@
 import { StyleSheet, Text, View, ScrollView } from 'react-native'
-import React from 'react'
-import TipsCard from '../components/TipsCard'
+import TipsFeed from '../components/TipsFeed';
 
-const Free_Tips = () => {
+const FreeTips = () => {
+
+
+
   return (
-    <ScrollView contentContainerStyle = {{paddingBottom: 90}}>
-      <TipsCard/ >
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-    </ScrollView>
+
+        <View>
+          <Text>Free Tips</Text>
+        </View>
+
   )
 }
 
-export default Free_Tips
+export default FreeTips
 
 const styles = StyleSheet.create({})

@@ -1,23 +1,15 @@
-import { StyleSheet, Text, View, ScrollView } from 'react-native'
-import React from 'react'
-import TipsCard from '../components/TipsCard'
+import { View, StyleSheet, Text } from 'react-native';
+import React from 'react';
+import TipsFeed from '../components/TipsFeed';
 
-const Premium_Tips = () => {
+const PremiumTips = () => {
   return (
-     <ScrollView contentContainerStyle = {{paddingBottom: 90}}>
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-    </ScrollView>
-  )
-}
+        <View>
+          <Text>Premium Page</Text>
+        </View>
+  );
+};
 
-export default Premium_Tips
+export default PremiumTips;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

@@ -3,22 +3,14 @@ import React from 'react'
 import TipsCard from '../components/TipsCard'
 
 
-const Results_Page = () => {
+const ResultsPage = () => {
   return (
-    <ScrollView contentContainerStyle = {{paddingBottom: 90}}>
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-      <TipsCard/>
-    </ScrollView>
+   <View>
+      <Text>Results Page</Text>
+    </View>
   )
 }
 
-export default Results_Page
+export default ResultsPage
 
 const styles = StyleSheet.create({})

@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const Info_Page = () => {
+const InfoPage = () => {
   return (
     <View>
       <Text>Info_Page</Text>
@@ -9,6 +9,6 @@ const Info_Page = () => {
   )
 }
 
-export default Info_Page
+export default InfoPage
 
 const styles = StyleSheet.create({})

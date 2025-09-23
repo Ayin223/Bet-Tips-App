@@ -1,30 +1,31 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import DataFeed from './DataFeed'
+import TipsFeed from './TipsFeed';
 
-const TipsCard = () => {
+const TipsCard = ({tip}) => {
 
+  if (!tip) return null;
    
   return (
     <View style={styles.container}>
         <View style = {styles.leagueContainer}>
-        <Text style= {{fontWeight: "bold", fontSize: 18,}}>{DataFeed.league}</Text>
+        <Text style= {{fontWeight: "bold", fontSize: 18,}}>{tip.league}</Text>
         </View>
         
         <View style = {styles.teamsContainer}>
-            <Text style= {[styles.teams, {textAlign: "right"}]}>{DataFeed.homeTeam}</Text>
+            <Text style= {[styles.teams, {textAlign: "right"}]}>{tip.homeTeam}</Text>
              <Text style= {{ }}>vs</Text>
-            <Text style= {[styles.teams, {textAlign:"left"}]}>{DataFeed.awayTeam}</Text>
+            <Text style= {[styles.teams, {textAlign:"left"}]}>{tip.awayTeam}</Text>
         </View>
 
         <View style = {styles.tipsContainer}>
-            <Text style = {[styles.tips,{textAlign: "right",}]}>{DataFeed.tips}</Text>
+            <Text style = {[styles.tips,{textAlign: "right",}]}>{tip.prediction}</Text>
             <Text style= {{}}> @ </Text>
-            <Text style= {[styles.tips,{textAlign: "left",}]}>{DataFeed.odds}</Text>        
+            <Text style= {[styles.tips,{textAlign: "left",}]}>{tip.odds}</Text>        
         </View>
 
         <View style = {styles.dateContainer}>
-            <Text style= {styles.date}>{DataFeed.date}</Text>
+            <Text style= {styles.date}>{tip.date}</Text>
         </View>
     </View>
   )
@@ -35,7 +36,7 @@ export default TipsCard
  const baseContainer = {
         backgroundColor: "white",
         width: "90%",
-        height: "30",
+        height: 30,
         justifyContent: "center",
         alignItems: "center",
         marginBottom: 0.5,
@@ -43,7 +44,7 @@ export default TipsCard
 
 const styles = StyleSheet.create({
     container:{
-        flex: 1,
+        //flex: 1,
         flexDirection: "column",
         width: "80%",
         height: 150,
@@ -69,7 +70,7 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         backgroundColor: "lightblue",
         width: "100%",
-        height: "30",
+        height: 30,
         justifyContent: "center",
         alignItems: "center",
         borderColor: "#ddd",
