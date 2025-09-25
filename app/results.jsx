@@ -1,10 +1,8 @@
-import { StyleSheet, Text, View, ScrollView } from 'react-native'
-import React from 'react'
-import { useEffect, useState } from "react";
-import { ActivityIndicator, FlatList } from "react-native";
-import { db } from "../firebase";
 import { collection, onSnapshot } from "firebase/firestore";
+import { useEffect, useState } from "react";
+import { ActivityIndicator, FlatList, StyleSheet } from 'react-native';
 import TipsCard from "../components/TipsCard";
+import { db } from "../firebase";
 
 
 const ResultsPage = () => {
@@ -24,7 +22,6 @@ const ResultsPage = () => {
     return () => unsubscribe();
   }, []);
 
-  console.log(tips);
 
   if (loading) return <ActivityIndicator />;
 

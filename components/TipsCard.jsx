@@ -1,6 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import TipsFeed from './TipsFeed';
+import { StyleSheet, Text, View } from 'react-native';
 
 const TipsCard = ({tip}) => {
 

@@ -1,9 +1,8 @@
-import { StyleSheet, Text, View, ScrollView } from 'react-native'
-import React, { useEffect, useState } from 'react'
-import { ActivityIndicator, FlatList } from "react-native";
-import { db } from "../firebase";
 import { collection, onSnapshot } from "firebase/firestore";
+import { useEffect, useState } from 'react';
+import { ActivityIndicator, FlatList, StyleSheet } from 'react-native';
 import TipsCard from "../components/TipsCard";
+import { db } from "../firebase";
 
 const FreeTips = () => {
 
@@ -23,7 +22,6 @@ const [loading, setLoading] = useState(true);
     return () => unsubscribe();
   }, []);
 
-  console.log(tips);
 
   if (loading) return <ActivityIndicator />;
 
