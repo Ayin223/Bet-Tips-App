@@ -1,4 +1,4 @@
-import { collection, onSnapshot } from "firebase/firestore";
+import { collection, onSnapshot, query, where } from "firebase/firestore";
 import { useEffect, useState } from 'react';
 import { ActivityIndicator, FlatList, StyleSheet } from 'react-native';
 import TipsCard from "../components/TipsCard";
@@ -10,7 +10,11 @@ const [loading, setLoading] = useState(true);
   const [tips, setTips] = useState([]);
 
   useEffect(() => {
-    const unsubscribe = onSnapshot(collection(db, "tips"), (querySnapshot) => {
+      // 🔹 Create a query to fetch only non-premium tips
+    const tipsRef = collection(db, "tips");
+    const freeTipsQuery = query(tipsRef, where("isPremium", "==", false));
+
+    const unsubscribe = onSnapshot(freeTipsQuery, (querySnapshot) => {
       const tipsData = querySnapshot.docs.map(doc => ({
         ...doc.data(),
         key: doc.id,
