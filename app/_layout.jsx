@@ -1,7 +1,7 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
 import { Tabs } from 'expo-router'
+import { StyleSheet } from 'react-native'
 import TabBar from '../components/TabBar'
+import { colors } from '../constants/colors'
 
 const _layout = () => {
   return (
@@ -10,7 +10,8 @@ const _layout = () => {
     >
           <Tabs.Screen name="index"
           options={{
-            title: 'FREE TIPS',
+            //headerShown: false,
+            title: 'FREE',
             headerTitleAlign: "center",
             tabBarLabelStyle: styles.tabLabel,   
             headerStyle: styles.headerContainer, 
@@ -19,7 +20,7 @@ const _layout = () => {
           />
           <Tabs.Screen name = "premium"
             options ={{
-              title: 'PREMIUM TIPS',
+              title: 'PREMIUM',
               headerTitleAlign: "center",
               tabBarLabelStyle: styles.tabLabel,   
               headerStyle: styles.headerContainer, 
@@ -56,7 +57,8 @@ export default _layout
 
 const styles = StyleSheet.create({
   headerContainer: {
-    backgroundColor: "#708090",
+    backgroundColor: colors.background,
+    //borderBottomWidth: 1,
     
   },
   headerText: {

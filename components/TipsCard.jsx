@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native';
+import { colors } from '../constants/colors.jsx';
 
 const TipsCard = ({tip}) => {
 
@@ -6,111 +7,124 @@ const TipsCard = ({tip}) => {
    
   return (
     <View style={styles.container}>
+
+        <View style = {styles.statusContainer}>
+            <Text style= {{fontSize: 12, color: colors.text, fontWeight: "bold" }}>{tip.outcome}</Text>
+        </View>
+
         <View style = {styles.leagueContainer}>
-        <Text style= {{fontWeight: "bold", fontSize: 18,}}>{tip.league}</Text>
+         <Text style= {{fontWeight: "bold", fontSize: 16, color: colors.accent,}}>{tip.league}</Text>
         </View>
         
         <View style = {styles.teamsContainer}>
-            <Text style= {[styles.teams, {textAlign: "right"}]}>{tip.homeTeam}</Text>
-             <Text style= {{ }}>vs</Text>
-            <Text style= {[styles.teams, {textAlign:"left"}]}>{tip.awayTeam}</Text>
+            <Text style= {[styles.teams, {textAlign: "right", fontSize: 20,fontWeight: "bold", color: colors.text,}]}>{tip.homeTeam}</Text>
+             <Text style= {{fontSize: 18,fontWeight: "bold", color: colors.text, }}>vs</Text>
+            <Text style= {[styles.teams, {textAlign:"left",fontSize: 20,fontWeight: "bold", color: colors.text,}]}>{tip.awayTeam}</Text>
         </View>
 
         <View style = {styles.tipsContainer}>
-            <Text style = {[styles.tips,{textAlign: "right",}]}>{tip.prediction}</Text>
-            <Text style= {{}}> @ </Text>
-            <Text style= {[styles.tips,{textAlign: "left",}]}>{tip.odds}</Text>        
+            <Text style = {[styles.tips,{textAlign: "right",}]}>Prediction:</Text>
+            <Text style= {[styles.tips,{textAlign: "left", fontWeight: "bold", fontSize: 18, color: colors.text}]}>{tip.prediction}</Text>        
         </View>
 
-        <View style = {styles.dateContainer}>
-            <Text style= {styles.date}>{tip.date}</Text>
+        <View style = {styles.tipsContainer}>
+            <Text style = {[styles.tips,{textAlign: "right",}]}>Odds:</Text>
+
+            <View style= {[styles.tipsButton,{}]}>
+                <Text style= {[styles.tips,{textAlign: "left", color: colors.accent, fontWeight: "bold"}]}>{tip.odds}</Text>        
+            </View>
+
         </View>
+
+        <View style = {styles.tipsContainer}>
+            <Text style = {[styles.tips,{textAlign: "right",}]}>Confidence</Text>
+            
+            <View style= {[styles.tipsButton,{}]}>
+                <Text style= {[styles.tips,{textAlign: "left", color: colors.accent, fontWeight: "bold"}]}>{tip.confidence}</Text>        
+            </View>
+
+        </View>
+
     </View>
   )
 }
 
 export default TipsCard
 
- const baseContainer = {
-        backgroundColor: "white",
-        width: "90%",
-        height: 30,
-        justifyContent: "center",
-        alignItems: "center",
-        marginBottom: 0.5,
-    };
 
 const styles = StyleSheet.create({
+    textColors:{
+        color: colors.text,
+    },
+
     container:{
         //flex: 1,
         flexDirection: "column",
-        width: "80%",
-        height: 150,
-        marginVertical: 10,
-        backgroundColor: "lightgray",
-        justifyContent: "space-between",
-        alignItems: "center",
+        width: "90%",
+        height: 240,
+        marginBottom: 20,
+        backgroundColor: colors.card,
+        //justifyContent: "space-between",
+        alignItems: "left",
         alignSelf: "center",
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
-        shadowColor: "black",
-        shadowOffset: {
-            width: 0, height: 1
-        },
-        shadowOpacity: 0.1,
-        shadowRadius: 10,
-        elevation: 5,
+        borderRadius: 10,
+        borderWidth: 1,
+        borderColor: colors.borderColor,
+        
     },
 
-    
+    statusContainer:{
+        backgroundColor: colors.accent,
+        //flex: 1,
+        marginLeft: 300,
+        marginTop: 10,
+        width: 50,
+        height: 20,
+        borderRadius: 20,
+        justifyContent: "center",
+        alignItems: "center",
+        //flexDirection: "row",
+        
+    },
 
     leagueContainer:{
-        borderBottomWidth: 1,
-        backgroundColor: "lightblue",
-        width: "100%",
-        height: 30,
-        justifyContent: "center",
-        alignItems: "center",
-        borderColor: "#ddd",
-        borderBottomWidth: 1,
-        //borderStyle: "dashed",
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
-        
-    
-    },
-    
-    
-    teamsContainer:{
-        ...baseContainer,
-        //width: "100%",
-        flexDirection: "row",
-        justifyContent: "center",
-        alignItems: "center",
-        //gap: 10,
-        alignSelf: "center",
+        //backgroundColor: colors.accent,
+        marginLeft: 15,
+        marginTop: 10,
+
     },
 
-    teams: {
-        width: "45%", 
-        marginHorizontal: 5,
+    teamsContainer:{
+        //backgroundColor: colors.accent,
+        justifyContent: "space-between",
+        marginHorizontal: 15,
+        marginTop: 10,
+        marginBottom: 40,
+        flexDirection: "row"
     },
 
     tipsContainer:{
-        ...baseContainer,
-    flexDirection: "row",},
+        flexDirection: "row",
+        justifyContent: "space-between",
+        marginHorizontal: 15,
+        marginBottom: 15,
 
-    tips:{
-        width: "45%",   
-        marginHorizontal: 5,
     },
 
+    tipsButton: {
+        backgroundColor: colors.cardmini,
+        width: 40,
+        height: 20,
+        borderRadius: 20,
+        alignItems: "center",
+    },
+    tips:{
+        fontSize: 16,
+        color: colors.textMuted,
+    },
 
-    oddsContainer:baseContainer,
+    
 
-    dateContainer:{
-        ...baseContainer,
-        marginBottom: 0,
-        },
+   
         
 })

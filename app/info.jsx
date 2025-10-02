@@ -1,9 +1,8 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
 
 const InfoPage = () => {
   return (
-    <View>
+    <View style={{ flex: 1, backgroundColor: "black"}}>
       <Text>Info_Page</Text>
     </View>
   )

@@ -1,11 +1,7 @@
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import React from 'react'
 import AntDesign from '@expo/vector-icons/AntDesign';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { colors } from '../constants/colors';
 
-const colors = {
-    primary: '#6200ee',
-    colorgray: "black",
-}
 
 const TabBar = ({ state, descriptors, navigation }) => {
 
@@ -65,7 +61,7 @@ const TabBar = ({ state, descriptors, navigation }) => {
           
           {
             icons[route.name]({ 
-              color: isFocused ? colors.primary : colors.colorgray,
+              color: isFocused ? colors.accent : colors.background,
               size : 24
             })
             
@@ -75,8 +71,9 @@ const TabBar = ({ state, descriptors, navigation }) => {
 
          <Text style={
               {
-                color: isFocused ? colors.primary : colors.colorgray,
-                fontSize: 11
+                color: isFocused ? colors.text : colors.background,
+                fontSize: 11,
+                fontWeight: "bold"
               } 
             }>
               {label}
@@ -119,7 +116,7 @@ const styles = StyleSheet.create({
 
     TextColors:{
         flex: 1,
-        color: colors.primary,
+        color: colors.text,
         //backgroundColor: "red",
         justifyContent: "center",
         alignItems: "center",

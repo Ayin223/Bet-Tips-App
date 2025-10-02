@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { View, ActivityIndicator, FlatList } from "react-native";
-import { db } from "../firebase";
 import { collection, onSnapshot } from "firebase/firestore";
+import { useEffect, useState } from "react";
+import { ActivityIndicator, FlatList } from "react-native";
+import { db } from "../firebase";
 import TipsCard from "./TipsCard";
 
 const TipsFeed = () => {
@@ -30,7 +30,8 @@ const TipsFeed = () => {
       data={tips}
       keyExtractor={(item) => item.key}
       renderItem={({ item }) => <TipsCard tip={item} />}
-      contentContainerStyle={{ paddingVertical: 20 }}
+      //contentContainerStyle={{ paddingVertical: 150}}
+      //style={{backgroundColor: "red"}}
     />
   );
 };

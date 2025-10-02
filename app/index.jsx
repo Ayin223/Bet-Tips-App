@@ -2,6 +2,7 @@ import { collection, onSnapshot, query, where } from "firebase/firestore";
 import { useEffect, useState } from 'react';
 import { ActivityIndicator, FlatList, StyleSheet } from 'react-native';
 import TipsCard from "../components/TipsCard";
+import { colors } from "../constants/colors.jsx";
 import { db } from "../firebase";
 
 const FreeTips = () => {
@@ -30,12 +31,16 @@ const [loading, setLoading] = useState(true);
   if (loading) return <ActivityIndicator />;
 
   return (
-    <FlatList
-      data={tips}
-      keyExtractor={(item) => item.key}
-      renderItem={({ item }) => <TipsCard tip={item} />}
-      contentContainerStyle={{ paddingVertical: 20 }}
-    />
+    
+       
+        <FlatList
+          data={tips}
+          keyExtractor={(item) => item.key}
+          renderItem={({ item }) => <TipsCard tip={item} />}
+          contentContainerStyle={{ paddingBottom: 70 , paddingTop: 20}}
+          style={{backgroundColor: colors.background}}
+        />
+ 
   );
 
 }
