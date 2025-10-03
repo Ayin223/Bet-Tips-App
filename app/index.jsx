@@ -13,7 +13,10 @@ const [loading, setLoading] = useState(true);
   useEffect(() => {
       // 🔹 Create a query to fetch only non-premium tips
     const tipsRef = collection(db, "tips");
-    const freeTipsQuery = query(tipsRef, where("isPremium", "==", false));
+    const freeTipsQuery = query(
+      tipsRef, where("isPremium", "==", false), 
+               where("outcome", "==", "PENDING"));
+
 
     const unsubscribe = onSnapshot(freeTipsQuery, (querySnapshot) => {
       const tipsData = querySnapshot.docs.map(doc => ({

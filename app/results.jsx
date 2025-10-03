@@ -14,7 +14,9 @@ const ResultsPage = () => {
   useEffect(() => {
         
       const tipsRef = collection(db, "tips");
-      const freeTipsQuery = query(tipsRef, where("status", "==", true));
+      const freeTipsQuery = query(
+        tipsRef, where("status", "==", true),
+                 where("outcome", "in", ["WON", "LOST"]));
   
       const unsubscribe = onSnapshot(freeTipsQuery, (querySnapshot) => {
         const tipsData = querySnapshot.docs.map(doc => ({

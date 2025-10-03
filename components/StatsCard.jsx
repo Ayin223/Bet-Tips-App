@@ -4,16 +4,16 @@ import { colors } from "../constants/colors"
 const StatsCard = () => {
   return (
     <View style = {styles.container}>
-      <Text style = {{textAlign: "center"}}>STATS</Text>
+      <Text style = {{textAlign: "center" , color: colors.text, fontWeight: "bold", fontSize: 20}}>STATISTICS</Text>
       <View style = {styles.statCardContainer}>
         <View style = {styles.statCard}>
-          <Text> 74%</Text>
-          <Text> WIN RATE</Text>
+          <Text style = {styles.statText}> 74%</Text>
+          <Text style = {styles.statDesc}> WIN RATE</Text>
         </ View>
 
         <View style = {styles.statCard}>
-          <Text> 128</Text>
-          <Text> TOTAL GAMES</Text>
+          <Text style = {styles.statText}> 128</Text>
+          <Text style = {styles.statDesc}> TOTAL TIPS</Text>
         </View>
       </View>
     </View>
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
       //flex: 1,
               flexDirection: "column",
               width: "90%",
-              height: 140,
+              height: 150,
               marginBottom: 20,
               backgroundColor: colors.card,
               justifyContent: "space-between",
@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
               borderRadius: 10,
               borderWidth: 1,
               borderColor: colors.borderColor,
+              paddingTop: 10,
     },
 
     statCardContainer :{
@@ -51,11 +52,25 @@ const styles = StyleSheet.create({
       //flex: 1,
 
       height: 90,
-      width: 100,
+      width: 90,
       backgroundColor: colors.cardmini,
       marginBottom: 10,
       borderRadius:10,
       alignItems: "center",
       justifyContent: "space-between",
+      paddingTop: 30,
+      paddingBottom: 10,
+    },
+
+    statText: {
+      color: colors.accent,
+      fontSize: 26,
+      fontWeight: "bold"
+    },
+
+    statDesc: {
+      color: colors.text,
+      fontSize: 14,
+      fontWeight: "bold"
     }
 })

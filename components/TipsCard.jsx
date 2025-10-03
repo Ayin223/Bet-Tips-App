@@ -7,10 +7,18 @@ const TipsCard = ({tip}) => {
    
   return (
     <View style={styles.container}>
+        <View style = {[styles.decorContainer, {justifyContent: tip.outcome === "PENDING" && tip.isPremium === false? "flex-end": "space-between" }]}>
+            <View style = {[styles.premiumContainer, {backgroundColor: tip.outcome === "WON" ? "green" : tip.outcome ==="LOST" ? "red": colors.accent,  display: tip.isPremium === false && tip.outcome === "PENDING"? "none" : "flex"  }]}>
+                <Text style= {{fontSize: 12, color: colors.text, fontWeight: "bold",}}>PREMIUM</Text>
+            </View>
 
-        <View style = {styles.statusContainer}>
-            <Text style= {{fontSize: 12, color: colors.text, fontWeight: "bold" }}>{tip.outcome}</Text>
+            <View style = {[styles.statusContainer, {backgroundColor: tip.outcome === "WON" ? "green" : tip.outcome ==="LOST" ? "red": colors.accent }]}>
+                <Text style= {{fontSize: 12, color: colors.text, fontWeight: "bold" }}>{tip.outcome}</Text>
+            </View>            
         </View>
+
+
+
 
         <View style = {styles.leagueContainer}>
          <Text style= {{fontWeight: "bold", fontSize: 16, color: colors.accent,}}>{tip.league}</Text>
@@ -76,7 +84,30 @@ const styles = StyleSheet.create({
     statusContainer:{
         backgroundColor: colors.accent,
         //flex: 1,
-        marginLeft: 300,
+        //marginLeft: 240,
+        marginTop: 10,
+        width: 50,
+        height: 20,
+        borderRadius: 20,
+        justifyContent: "center",
+        alignItems: "center",
+        //marginLeft: 50,
+        
+    },
+
+    decorContainer: {
+        //flex: 2,
+        flexDirection: "row",
+        //backgroundColor: "red",
+        alignItems: "center",
+        justifyContent: "space-between",
+        marginHorizontal:10,
+    },
+
+    premiumContainer: {
+                backgroundColor: colors.accent,
+        //flex: 1,
+        //marginLeft: 300,
         marginTop: 10,
         width: 50,
         height: 20,
@@ -84,7 +115,6 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         //flexDirection: "row",
-        
     },
 
     leagueContainer:{
