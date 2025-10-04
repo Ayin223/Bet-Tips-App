@@ -6,19 +6,22 @@ import TipsCard from "../components/TipsCard";
 import { colors } from "../constants/colors";
 import { db } from "../firebase";
 
-
 const ResultsPage = () => {
   const [loading, setLoading] = useState(true);
   const [tips, setTips] = useState([]);
+  const [stat, setStat] = useState([]);
 
   useEffect(() => {
         
       const tipsRef = collection(db, "tips");
+      const statRef = collection(db, "stat");
+
+// tips query
       const freeTipsQuery = query(
         tipsRef, where("status", "==", true),
                  where("outcome", "in", ["WON", "LOST"]));
   
-      const unsubscribe = onSnapshot(freeTipsQuery, (querySnapshot) => {
+      const unsubscribeTips = onSnapshot(freeTipsQuery, (querySnapshot) => {
         const tipsData = querySnapshot.docs.map(doc => ({
           ...doc.data(),
           key: doc.id,
@@ -27,7 +30,20 @@ const ResultsPage = () => {
         setLoading(false);
       });
 
-    return () => unsubscribe();
+      const unsubscribeStat = onSnapshot(statRef, (querySnapshot) => {
+        const statData = querySnapshot.docs.map(doc => ({
+          ...doc.data(),
+          key: doc.id,
+        }));
+        setStat(statData);
+        setLoading(false);
+      });
+
+
+// stat query
+
+
+    return () => {unsubscribeTips(); unsubscribeStat};
   }, []);
 
 
@@ -43,7 +59,11 @@ const ResultsPage = () => {
 
 
       ListHeaderComponent = {
-        <StatsCard/>
+        <FlatList
+          data = {stat}
+          keyExtractor={(item) => item.key}
+          renderItem={({ item }) => <StatsCard stat={item} />}
+        />
 
       }
     />

@@ -17,9 +17,6 @@ const TipsCard = ({tip}) => {
             </View>            
         </View>
 
-
-
-
         <View style = {styles.leagueContainer}>
          <Text style= {{fontWeight: "bold", fontSize: 16, color: colors.accent,}}>{tip.league}</Text>
         </View>
@@ -151,10 +148,6 @@ const styles = StyleSheet.create({
     tips:{
         fontSize: 16,
         color: colors.textMuted,
-    },
-
-    
-
-   
+    },  
         
 })

@@ -1,18 +1,18 @@
 import { StyleSheet, Text, View } from 'react-native'
 import { colors } from "../constants/colors"
 
-const StatsCard = () => {
+const StatsCard = ({stat}) => {
   return (
     <View style = {styles.container}>
       <Text style = {{textAlign: "center" , color: colors.text, fontWeight: "bold", fontSize: 20}}>STATISTICS</Text>
       <View style = {styles.statCardContainer}>
         <View style = {styles.statCard}>
-          <Text style = {styles.statText}> 74%</Text>
+          <Text style = {styles.statText}> {stat.winRate}%</Text>
           <Text style = {styles.statDesc}> WIN RATE</Text>
         </ View>
 
         <View style = {styles.statCard}>
-          <Text style = {styles.statText}> 128</Text>
+          <Text style = {styles.statText}> {stat.totalTips}</Text>
           <Text style = {styles.statDesc}> TOTAL TIPS</Text>
         </View>
       </View>
