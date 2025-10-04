@@ -7,10 +7,13 @@ const TipsCard = ({tip}) => {
    
   return (
     <View style={styles.container}>
-        <View style = {[styles.decorContainer, {justifyContent: tip.outcome === "PENDING" && tip.isPremium === false? "flex-end": "space-between" }]}>
-            <View style = {[styles.premiumContainer, {backgroundColor: tip.outcome === "WON" ? "green" : tip.outcome ==="LOST" ? "red": colors.accent,  display: tip.isPremium === false && tip.outcome === "PENDING"? "none" : "flex"  }]}>
-                <Text style= {{fontSize: 12, color: colors.text, fontWeight: "bold",}}>PREMIUM</Text>
-            </View>
+        <View style = {[styles.decorContainer, {justifyContent: tip.isPremium === false? "flex-end": "space-between" }]}>
+            
+            {tip.isPremium? (
+                <View style={styles.premiumContainer}>
+                    <Text style={{ fontSize: 24, }}>💎</Text>
+                </View>
+                ) : null}
 
             <View style = {[styles.statusContainer, {backgroundColor: tip.outcome === "WON" ? "green" : tip.outcome ==="LOST" ? "red": colors.accent }]}>
                 <Text style= {{fontSize: 12, color: colors.text, fontWeight: "bold" }}>{tip.outcome}</Text>
@@ -45,7 +48,7 @@ const TipsCard = ({tip}) => {
             <Text style = {[styles.tips,{textAlign: "right",}]}>Confidence</Text>
             
             <View style= {[styles.tipsButton,{}]}>
-                <Text style= {[styles.tips,{textAlign: "left", color: colors.accent, fontWeight: "bold"}]}>{tip.confidence}</Text>        
+                <Text style= {[styles.tips,{textAlign: "left", color: colors.accent, fontWeight: "bold"}]}>{Math.round(tip.confidence*100)}%</Text>        
             </View>
 
         </View>
@@ -70,7 +73,7 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         backgroundColor: colors.card,
         //justifyContent: "space-between",
-        alignItems: "left",
+        //alignItems: "flex-end",
         alignSelf: "center",
         borderRadius: 10,
         borderWidth: 1,
@@ -102,15 +105,16 @@ const styles = StyleSheet.create({
     },
 
     premiumContainer: {
-                backgroundColor: colors.accent,
+        //backgroundColor: colors.accent,
         //flex: 1,
         //marginLeft: 300,
-        marginTop: 10,
-        width: 50,
-        height: 20,
-        borderRadius: 20,
-        justifyContent: "center",
-        alignItems: "center",
+        marginTop: 5,
+        // width: 50,
+        // height: 20,
+        paddingHorizontal: 5,
+        //borderRadius: 20,
+        //justifyContent: "center",
+        //alignItems: "center",
         //flexDirection: "row",
     },
 
@@ -140,7 +144,7 @@ const styles = StyleSheet.create({
 
     tipsButton: {
         backgroundColor: colors.cardmini,
-        width: 40,
+        paddingHorizontal: 10,
         height: 20,
         borderRadius: 20,
         alignItems: "center",
