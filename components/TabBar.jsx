@@ -93,10 +93,10 @@ export default TabBar
 const styles = StyleSheet.create({
     container:{
         position: "absolute",
-        bottom: 25,
+        bottom: 50,
         right: 0,
         left: 0,
-        backgroundColor: "rgba(149, 164, 177, 0.8)",
+        backgroundColor: "rgba(59, 73, 65, 1)",
         flexDirection: "row",
         justifyContent: "space-between",
         itemsAlign: "center",

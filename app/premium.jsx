@@ -37,7 +37,7 @@ const PremiumTips = () => {
       data={tips}
       keyExtractor={(item) => item.key}
       renderItem={({ item }) => <TipsCard tip={item} />}
-      contentContainerStyle={{ paddingBottom: 70, paddingTop: 20 }}
+      contentContainerStyle={{ paddingBottom: 120, paddingTop: 20 }}
       style={{backgroundColor: colors.background}}
     />
   );
