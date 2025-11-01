@@ -2,15 +2,13 @@ import { combinedFixtures } from "./app.js";
 
 
 const W_RATE = 0.45;    
-const W_STANDING = 0.30;
+const W_POINT = 0.30;
 const W_GF = 0.15;
 const W_GA = 0.10;
 const DRAW_THRESHOLD = 0.10;
-const MAX_STANDING = 20;
-
+const MAX_POINT = 20;
 
 const safeNum = (value) => Number(value) || 0;
-
 
 let totalTips = 0;
 
@@ -46,8 +44,8 @@ const analysis = () => {
         drawOdds,
       } = match;
 
-      const numHomeStanding = safeNum(homeStanding);
-      const numAwayStanding = safeNum(awayStanding);
+      const numHomePoints = safeNum(homePoints);
+      const numAwayPoints = safeNum(awayPoints);
       const numHomeWinRate = safeNum(homeWinRate) / 100; // Normalize 0-1
       const numAwayWinRate = safeNum(awayWinRate) / 100; // Normalize 0-1
       const numHomeGoalsScored = safeNum(avgHomeGoalsScored);
@@ -60,7 +58,7 @@ const analysis = () => {
         safeNum(awayOdds) < 1.80 ||
         safeNum(homeGamesPlayed) < 1 ||
         safeNum(awayGamesPlayed) < 1 ||
-        Math.abs(safeNum(homePoints) - safeNum(awayPoints)) < 12;
+        Math.abs(safeNum(homePoints) - safeNum(awayPoints)) < 9;
 
       if (!matchStatus) {
         if (exclusionFactors) {
@@ -70,20 +68,20 @@ const analysis = () => {
 
         totalTips++;
 
-        const normalizedHomeStanding = Math.max(0, MAX_STANDING - numHomeStanding) / MAX_STANDING;
-        const normalizedAwayStanding = Math.max(0, MAX_STANDING - numAwayStanding) / MAX_STANDING;
+        const normalizedHomePoints = Math.max(0, MAX_POINT - numHomePoints) / MAX_POINT;
+        const normalizedAwayPoints = Math.max(0, MAX_POINT - numAwayPoints) / MAX_POINT;
 
-        // Calculate Score: S = (W_RATE*WinRate) + (W_STANDING*NormStanding) + (W_GF*GF) - (W_GA*GA)
+        // Calculate Score: S = (W_RATE*WinRate) + (W_POINT*NormPoints) + (W_GF*GF) - (W_GA*GA)
         // Note: GF/GA metrics are used directly as modifiers.
         const scoreHome =
             (W_RATE * numHomeWinRate) +
-            (W_STANDING * normalizedHomeStanding) +
+            (W_POINT * normalizedHomePoints) +
             (W_GF * numHomeGoalsScored) -
             (W_GA * numHomeGoalsConceded);
 
         const scoreAway =
             (W_RATE * numAwayWinRate) +
-            (W_STANDING * normalizedAwayStanding) +
+            (W_POINT * normalizedAwayPoints) +
             (W_GF * numAwayGoalsScored) -
             (W_GA * numAwayGoalsConceded);
 
@@ -132,9 +130,11 @@ const analysis = () => {
           
           predictionScore: parseFloat(scoreDiff.toFixed(3)),
           homePoints,
-          HomeStanding: numHomeStanding, HomeGamesPlayed: safeNum(homeGamesPlayed),
+          HomeStanding: homeStanding, 
+          HomeGamesPlayed: safeNum(homeGamesPlayed),
           awayPoints,
-          AwayStanding: numAwayStanding, AwayGamesPlayed: safeNum(awayGamesPlayed),
+          AwayStanding: awayStanding, 
+          AwayGamesPlayed: safeNum(awayGamesPlayed),
           avgHomeGoalsScored, avgHomeGoalsConceded, homeWinRate,
           avgAwayGoalsScored, avgAwayGoalsConceded, awayWinRate,
         };
