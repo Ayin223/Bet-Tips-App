@@ -2,7 +2,7 @@ import { fetchStandings } from "./standing.js";
 import { fetchFixtures } from "./fixtures.js";
 
 
-let mergerData = (fixturesData, standingData) => {
+export const mergerData = (fixturesData, standingData) => {
 
 
   const mergedResults = fixturesData.map(match => {
@@ -44,6 +44,7 @@ let mergerData = (fixturesData, standingData) => {
         wins: homeStanding?.wins || null, 
         losses: homeStanding?.losses || null, 
         draws: homeStanding?.draws || null, 
+        homeForm: match.home.form,
         avgGoalsFor: homeStanding?.avgGoalsFor || null,
         avgGoalsAgainst: homeStanding?.avgGoalsAgainst || null,
         avgTotalGoals: homeStanding?.avgTotalGoals || null,
@@ -65,6 +66,7 @@ let mergerData = (fixturesData, standingData) => {
         wins: awayStanding?.wins || null, 
         losses: awayStanding?.losses || null, 
         draws: awayStanding?.draws || null,
+        awayForm: match.away.form,
         avgGoalsFor: awayStanding?.avgGoalsFor || null,
         avgGoalsAgainst: awayStanding?.avgGoalsAgainst || null,
         avgTotalGoals: awayStanding?.avgTotalGoals || null,
@@ -83,15 +85,10 @@ let mergerData = (fixturesData, standingData) => {
   return mergedResults;
 };
 
-const tomorrow = new Date();
-tomorrow.setDate(tomorrow.getDate() + 1);
-const tomorrowDate = tomorrow.toISOString().slice(0, 10).replace(/-/g, "");
-//console.log(tomorrowDate)
+// const tomorrow = new Date();
+// tomorrow.setDate(tomorrow.getDate() + 1);
+// const tomorrowDate = tomorrow.toISOString().slice(0, 10).replace(/-/g, "");
+// //console.log(tomorrowDate)
 
-
-const fixtures = await fetchFixtures(tomorrowDate);
-const standings = await fetchStandings()
-
-export const combinedFixtures = await mergerData(fixtures, standings);
 
 //console.log(combinedFixtures)

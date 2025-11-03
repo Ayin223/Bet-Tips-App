@@ -1,4 +1,4 @@
-import tips from "./stats/tips.json" assert {type: "json"}
-//const tips = require("./tips.json")
+let today = new Date().toISOString().slice(0,10)
 
-console.log(tips)
+
+console.log(today)

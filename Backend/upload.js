@@ -1,6 +1,6 @@
 import { db } from "./firebaseconfig.js";
 import { doc, setDoc } from "firebase/firestore";
-import { betTips } from "./predictor.js";
+import { analysis } from "./predictor.js";
 import { getAuth, signInAnonymously } from "firebase/auth";
 
 
@@ -10,7 +10,7 @@ await signInAnonymously(auth);
 // --- Upload each tip to Firestore ---
 async function upDateTips(tipsArray) {
   try {
-    for (const tip of tipsArray) {
+    for (const tip of tipsArray.uploadTips) {
       const docRef = doc(db, "tips", tip.matchID); 
       
       await setDoc(docRef, tip, { merge: true }); 
@@ -23,6 +23,5 @@ async function upDateTips(tipsArray) {
   }
 }
 
-// --- Run function ---
-const tips = await betTips
-await upDateTips(tips)
+
+await upDateTips(analysis())

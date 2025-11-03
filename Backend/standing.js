@@ -44,6 +44,7 @@ export async function fetchStandings() {
      const teamName = entry.team.displayName;
      const id = entry.team.id;
      
+    //  console.log(entry.stats)
      // CORRECTED: Convert to Number immediately for safe arithmetic
      const rank = Number(entry.stats.find(s => s.name === "rank")?.value);
      const points = Number(entry.stats.find(s => s.name === "points")?.value);
@@ -93,4 +94,4 @@ export async function fetchStandings() {
  }
 }
 
-// await standings();
+//await fetchStandings();

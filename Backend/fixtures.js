@@ -83,12 +83,14 @@ export async function fetchFixtures(date) {
             name: home?.team?.displayName,
             score: home?.score,
             homeID: home?.id,
+            form: home?.form,
             homeOdds: convertToDecimal(odds.homeTeamOdds?.moneyLine)
           },
           away: {
             name: away?.team?.displayName,
             score: away?.score,
             awayID: away?.id,
+            form: away?.form,
             awayOdds: convertToDecimal(odds.awayTeamOdds?.moneyLine)
           }
         });
