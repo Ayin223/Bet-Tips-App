@@ -27,7 +27,10 @@ const TipsCard = ({tip}) => {
         
         <View style = {styles.teamsContainer}>
             <Text style= {[styles.teams, {textAlign: "right", fontSize: 16,fontWeight: "bold", color: colors.text,}]}>{tip.homeTeam}</Text>
-             <Text style= {{fontSize: 18,fontWeight: "bold", color: colors.text, }}>vs</Text>
+             {tip.status? 
+                (<Text style= {{fontSize: 18,fontWeight: "bold", color: colors.text, }}>{tip.homeScore} - {tip.awayScore}</Text>): 
+                (<Text style= {{fontSize: 18,fontWeight: "bold", color: colors.text, }}>vs</Text>)
+            }
             <Text style= {[styles.teams, {textAlign:"left",fontSize: 16,fontWeight: "bold", color: colors.text,}]}>{tip.awayTeam}</Text>
         </View>
 

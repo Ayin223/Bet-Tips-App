@@ -1,6 +1,6 @@
 import { collection, onSnapshot, orderBy, query, where } from "firebase/firestore";
 import { useEffect, useState } from "react";
-import { ActivityIndicator, FlatList, StyleSheet } from 'react-native';
+import { ActivityIndicator, FlatList, StyleSheet, View } from 'react-native';
 import StatsCard from "../components/StatsCard";
 import TipsCard from "../components/TipsCard";
 import { colors } from "../constants/colors";
@@ -61,12 +61,14 @@ const ResultsPage = () => {
 
 
       ListHeaderComponent = {
-        <FlatList
-          data = {stat}
-          keyExtractor={(item) => item.key}
-          renderItem={({ item }) => <StatsCard stat={item} />}
-        />
-
+        <View>
+          {stat.map(item =>(
+            <StatsCard
+            stat = {item}
+            key = {item.key}
+            />
+          ))}
+        </View>
       }
     />
   );

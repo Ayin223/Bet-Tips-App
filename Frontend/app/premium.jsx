@@ -6,6 +6,9 @@ import { colors } from "../constants/colors";
 import { db } from "../firebase";
 
 const PremiumTips = () => {
+
+  let today = new Date().toISOString().slice(0,10)
+
   const [loading, setLoading] = useState(true);
   const [tips, setTips] = useState([]);
 
@@ -15,6 +18,7 @@ const PremiumTips = () => {
       const freeTipsQuery = query(
         tipsRef, where("isPremium", "==", true),
                  where("outcome", "==", "PENDING"),
+                 where("matchDate", "==", today),
                  orderBy("matchDate", "asc"),
                  orderBy("matchTime", "asc"));
   

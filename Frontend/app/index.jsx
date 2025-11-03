@@ -7,7 +7,9 @@ import { db } from "../firebase";
 
 const FreeTips = () => {
 
-const [loading, setLoading] = useState(true);
+  const today = new Date().toISOString().slice(0,10)
+
+  const [loading, setLoading] = useState(true);
   const [tips, setTips] = useState([]);
 
   useEffect(() => {
@@ -16,6 +18,7 @@ const [loading, setLoading] = useState(true);
     const freeTipsQuery = query(
       tipsRef, where("isPremium", "==", false), 
                where("outcome", "==", "PENDING"),
+               where("matchDate", "==", today),
               orderBy("matchDate", "asc"),
               orderBy("matchTime", "asc"));
 
