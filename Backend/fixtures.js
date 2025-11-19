@@ -84,6 +84,7 @@ export async function fetchFixtures(date) {
             score: home?.score,
             homeID: home?.id,
             form: home?.form,
+            favorite: odds.homeTeamOdds?.favorite,
             homeOdds: convertToDecimal(odds.homeTeamOdds?.moneyLine)
           },
           away: {
@@ -91,6 +92,7 @@ export async function fetchFixtures(date) {
             score: away?.score,
             awayID: away?.id,
             form: away?.form,
+            favorite: odds.awayTeamOdds?.favorite,
             awayOdds: convertToDecimal(odds.awayTeamOdds?.moneyLine)
           }
         });
@@ -107,7 +109,7 @@ export async function fetchFixtures(date) {
   
 }
 
-// fetchFixtures(20251030)
+// fetchFixtures(20251106)
 // .then(s => 
 //   console.log(s)
 // );

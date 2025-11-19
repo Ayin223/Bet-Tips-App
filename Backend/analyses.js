@@ -1,7 +1,8 @@
-import { getDocs, collection, query, where } from "firebase/firestore";
+import { getDocs, collection, query, where, doc, setDoc } from "firebase/firestore";
 import { db } from "./firebaseconfig.js";
 import { getAuth, signInAnonymously } from "firebase/auth";
 import fs from "fs";
+import { getResponse } from "./geminiAI.js"; // This import is not used in the core logic
 
 const auth = getAuth();
 await signInAnonymously(auth);
@@ -18,7 +19,6 @@ class AnalyseData{
     this.wonOdds = 0;
     this.lostOdds = 0;
     this.ROI = 0;
-
   }
 
   async getData() {
@@ -36,46 +36,48 @@ class AnalyseData{
             awayTeam: data.awayTeam,
             prediction: data.prediction,
             odds: data.odds,
-            homeOdds: data.homeOdds,
-            awayOdds: data.awayOdds,
+            homeTeamOdds: data.homeOdds,
+            awayTeamOdds: data.awayOdds,
             drawOdds: data.drawOdds,
             confidence: data.confidence,
             isPremium: data.isPremium,
             outcome: data.outcome,
-            homeScore: data.homeScore,
-            awayScore: data.awayScore,
+            homeTeamScore: data.homeScore,
+            awayTeamScore: data.awayScore,
             predictionScore: data.predictionScore,
-            homePoints: data.homePoints,
-            HomeStanding: data.HomeStanding,
-            HomeGamesPlayed: data.HomeGamesPlayed,
-            awayPoints: data.awayPoints,
+            homeTeamPoints: data.homePoints,
+            numHomeTeamForm: data.numHomeForm,
+            homeTeamStanding: data.HomeStanding,
+            HomeTeamGamesPlayed: data.HomeGamesPlayed,
+            awayTeamPoints: data.awayPoints,
+            numAwayTeamForm: data.numAwayForm,
             AwayStanding: data.AwayStanding,
-            AwayGamesPlayed: data.AwayGamesPlayed,
-            avgHomeGoalsScored: data.avgHomeGoalsScored,
-            avgHomeGoalsConceded: data.avgHomeGoalsConceded,
-            homeWinRate: data.homeWinRate,
-            avgAwayGoalsScored: data.avgAwayGoalsScored,
-            avgAwayGoalsConceded: data.avgAwayGoalsConceded,
-            awayWinRate: data.awayWinRate,
+            AwayTeamGamesPlayed: data.AwayGamesPlayed,
+            avgHomeTeamGoalsScored: data.avgHomeGoalsScored,
+            avgHomeTeamGoalsConceded: data.avgHomeGoalsConceded,
+            homeTeamWinRate: data.homeWinRate,
+            avgAwayTeamGoalsScored: data.avgAwayGoalsScored,
+            avgAwayTeamGoalsConceded: data.avgAwayGoalsConceded,
+            awayTeamWinRate: data.awayWinRate,
           };
         });
 
         // Save to JSON file
-      // fs.writeFileSync("./stats/tips.json", JSON.stringify(tips, null, 2));
-        //console.log(`✅ tips.json file created successfully.`);
+      fs.writeFileSync("./stats/tips.json", JSON.stringify(this.tips, null, 2));
+        console.log(`✅ tips.json file created successfully.`);
 
         return this.tips;
     } catch (err) {
         console.error(`❌ Error message: ${err}`);
         return [];
     } finally {
-        console.log(`Data collection completed`);
+        console.log(`Firestore data collection completed`);
     }
-      
   }
 
 
-  getConfidence (minConf, maxConf){
+  getConfidence (minConf = 0, maxConf = 100){
+    // ... (Your existing getConfidence method)
     const confTips = this.tips.filter(t => Number(t.confidence)*100>= minConf && Number(t.confidence)*100<= maxConf )
     this.totalTips = confTips.length
 
@@ -104,20 +106,71 @@ class AnalyseData{
       losses: this.losses,
       wonOdds: this.wonOdds,
       ROI: `${this.ROI}%`,
-      profit,
+      profit: profit.toFixed(2),
     }
-
   }
 
+  saveAsCsv(filename = "./stats/tips.csv") {
+    if (this.tips.length === 0) {
+      console.log("No data to save as CSV.");
+      return;
+    }
+    
+    const headers = Object.keys(this.tips[0]);
+    const headerRow = headers.join(',');
 
+    const dataRows = this.tips.map(obj => {
+      return headers.map(header => {
+        return obj[header]; 
+      }).join(',');
+    });
+
+    const csvContent = [headerRow, ...dataRows].join('\n');
+
+    try {
+      fs.writeFileSync(filename, csvContent);
+      console.log(`✅ ${filename} file created successfully.`);
+    } catch (err) {
+      console.error(`❌ Error writing CSV file: ${err}`);
+    }
+  }
+
+  async AIStats(prompt){ 
+    const aiInput = `${prompt}: ${JSON.stringify(this.tips, null, 2)}`;
+    
+    try {
+        console.log("➡️ Sending data for AI analysis...");
+        const aiResponse = await getResponse.chatAI(aiInput); 
+        
+        console.log("✅ AI Analysis Complete.");
+        console.log(aiResponse)        
+    } catch (err) {
+        console.error(`❌ Error during AI analysis: ${err.message}`);
+    }
+   }
   
-
+   async statsData(analyses){
+    try{
+      const docRef =  doc(db, "stat", "summary") 
+      await setDoc(docRef, analyses, {merge: true} )
+      console.log(`Statistics updated successfully`)
+    }catch(err){
+      console.log(`Error message StatsData: ${err}`)
+    }finally{
+      console.log(`StatsData proccess completed`)
+    }
+   }
 }
 
 
 const Ana = new AnalyseData();
 
-;(async () => {
-await  Ana.getData()
-console.table(Ana.getConfidence(0, 100))
-})();
+await Ana.getData()
+let tipsAnalytics = Ana.getConfidence()
+console.log(tipsAnalytics)
+await Ana.statsData(tipsAnalytics)
+
+let question = `I want analysis this dat. And I want a summary of trends in a table format`
+
+// Ana.saveAsCsv()
+// await Ana.AIStats(question)

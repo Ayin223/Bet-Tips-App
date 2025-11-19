@@ -19,10 +19,8 @@ async function getFirestoreFixtures(day) {
     const tipsSnapshot = await getDocs(tipsRef);
     const allFixtures = Object.values(fixtures).flat();
 
-    // 1. Prepare the updates and collect the results
     const updatePromises = [];
     
-    // Use .map() to transform the snapshot into results and promises
     const matchedTips = tipsSnapshot.docs.map((tipdoc) => {
       const storedMatch = tipdoc.data();
       const matchID = storedMatch.matchID;
@@ -34,7 +32,7 @@ async function getFirestoreFixtures(day) {
 
 
       if (!match) { 
-          return null; // Skip if no corresponding fixture is found
+          return null; 
       }
       
       const status = match.completed;
@@ -51,14 +49,23 @@ async function getFirestoreFixtures(day) {
               ? `${storedMatch.awayTeam} wins`
               : "Draw";
 
-      // IMPORTANT: Your outcome logic is flawed if a draw happens. 
-      // If a draw occurs, 'matchWinner' is "Draw", and the outcome is always "LOST".
-      // This logic assumes a user can't predict a draw. If they can, you need to adjust this.
-      const outcome =
+       const outcome =
           matchWinner === "Draw"  && prediction === "Draw"
               ? "WON"
               : prediction === matchWinner
               ? "WON"
+              : (prediction === `${storedMatch.homeTeam} wins or draw` ||
+                prediction === `${storedMatch.awayTeam} wins or draw`) &&
+                matchWinner === "Draw"
+              ? "WON" 
+              : (prediction === `${storedMatch.homeTeam} wins or draw`) &&
+                matchWinner === `${storedMatch.homeTeam} wins`
+              ? "WON"
+              : (prediction === `${storedMatch.awayTeam} wins or draw`) &&
+                matchWinner === `${storedMatch.awayTeam} wins`
+              ? "WON"
+              :prediction === `Home or Away` &&  matchWinner != "Draw"
+              ?"WON"
               : "LOST";
 
       const resultsData = {
@@ -70,17 +77,14 @@ async function getFirestoreFixtures(day) {
           outcome,
       };
 
-      // 2. Prepare the update promise
       const docRef = doc(db, "tips", matchID);
       const updatePromise = setDoc(docRef, resultsData, {merge: true});
       
       console.log(`MatchID ${matchID} set to update`)
 
       
-      // Add the promise to the array
       updatePromises.push(updatePromise);
       
-      // 3. Return the result data for the final array
       return {
         matchID,
         ...resultsData

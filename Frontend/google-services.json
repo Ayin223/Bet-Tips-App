@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "998835172624",
+    "project_id": "bet-tips-a48b8",
+    "storage_bucket": "bet-tips-a48b8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998835172624:android:e0745a98774a687ad36195",
+        "android_client_info": {
+          "package_name": "com.bgray.Betwise"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSbCzI0l57-KZTy2_roni_hgMM9e_RqiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

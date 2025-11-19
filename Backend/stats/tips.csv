@@ -1,0 +1,447 @@
+league,matchDate,homeTeam,awayTeam,prediction,odds,homeTeamOdds,awayTeamOdds,drawOdds,confidence,isPremium,outcome,homeTeamScore,awayTeamScore,predictionScore,homeTeamPoints,numHomeTeamForm,homeTeamStanding,HomeTeamGamesPlayed,awayTeamPoints,numAwayTeamForm,AwayStanding,AwayTeamGamesPlayed,avgHomeTeamGoalsScored,avgHomeTeamGoalsConceded,homeTeamWinRate,avgAwayTeamGoalsScored,avgAwayTeamGoalsConceded,awayTeamWinRate
+Irish Premier Division,2025-10-24,Galway Utd,Drogheda Utd,Draw,3.25,2.05,3.4,3.25,0.54,false,WON,1,1,-0.078,37,,7,33,50,,6,34,1.06,1.24,27.27,1.06,0.97,35.29
+Irish Premier Division,2025-11-01,Shamrock Rovers,Sligo,Shamrock Rovers wins,1.83,1.83,3.9,3.5,0.72,true,LOST,1,2,0.347,66,,1,35,38,,8,35,1.57,0.89,54.29,1.14,1.51,28.57
+Japanese J.League,2025-10-25,Cerezo Osaka,Kawasaki Frontale,Kawasaki Frontale wins,2.45,2.55,2.45,3.7,0.58,false,LOST,2,0,-0.163,46,,10,34,56,,6,34,1.53,1.47,35.29,1.91,1.41,44.12
+Japanese J.League,2025-10-25,Yokohama F. Marinos,Sanfrecce Hiroshima,Sanfrecce Hiroshima wins,1.83,4.1,1.83,3.7,0.73,true,LOST,3,0,-0.36,34,,17,34,59,,5,34,1.06,1.29,26.47,1.15,0.68,50.00
+Japanese J.League,2025-10-25,Shimizu S-Pulse,Tokyo Verdy 1969,Draw,3.05,2.45,3.05,3.05,0.5,false,LOST,1,0,0.001,41,,14,34,42,,12,34,1.12,1.29,29.41,0.65,1.03,32.35
+Japanese J.League,2025-10-25,Nagoya Grampus,Gamba Osaka,Gamba Osaka wins,2.55,2.7,2.55,3.3,0.59,false,WON,0,2,-0.182,40,,16,34,50,,9,34,1.24,1.47,29.41,1.35,1.53,44.12
+Japanese J.League,2025-10-25,Urawa Red Diamonds,Machida Zelvia,Draw,3.35,3.2,2.25,3.35,0.54,false,WON,0,0,-0.083,52,,8,34,56,,7,34,1.18,1.06,41.18,1.44,1.03,47.06
+Japanese J.League,2025-10-25,FC Tokyo,Fagiano Okayama,Draw,3.25,2.15,3.5,3.25,0.53,false,LOST,3,1,0.061,42,,11,34,41,,15,34,1.06,1.35,32.35,0.88,1.09,32.35
+Japanese J.League,2025-10-25,Kyoto Sanga,Kashima Antlers,Draw,3.5,2.8,2.4,3.5,0.53,false,WON,1,1,-0.067,61,,3,34,66,,1,34,1.71,1.06,50.00,1.53,0.82,58.82
+Japanese J.League,2025-11-08,Kashima Antlers,Yokohama FC,Kashima Antlers wins,1.69,1.69,5.25,3.7,0.68,false,WON,2,1,,67,9,1,35,32,5,18,35,1.51,0.83,57.14,0.66,1.17,22.86
+Swedish Allsvenskan,2025-11-03,Degerfors IF,Hammarby IF,Hammarby IF wins,2.15,3.2,2.15,3.5,0.8,true,LOST,1,1,-0.4,26,10,15,28,58,12,2,28,1.04,1.79,25.00,2.00,1.00,64.29
+Swedish Allsvenskan,2025-11-01,BK Häcken,Malmö FF,Malmö FF wins,2.4,2.75,2.4,3.6,0.58,false,LOST,1,1,-0.165,34,,9,28,45,,6,28,1.46,1.71,32.14,1.54,1.11,42.86
+Swedish Allsvenskan,2025-11-03,IFK Värnamo,Mjällby AIF,Mjällby AIF wins,1.57,5.25,1.57,4.33,0.87,true,WON,0,5,,16,4,16,28,69,13,1,28,1.25,2.18,10.71,1.82,0.64,75.00
+Swedish Allsvenskan,2025-11-09,Mjällby AIF,BK Häcken,Mjällby AIF wins,1.63,1.63,5,4.1,0.89,true,WON,1,0,,72,15,1,29,35,4,10,29,1.93,0.62,75.86,1.45,1.69,31.03
+USL League One,2025-10-21,Portland Hearts of Pine,Spokane Velocity FC,Spokane Velocity FC wins,2.45,2.65,2.45,3,0.57,false,LOST,6,1,-0.143,41,,7,28,50,,3,28,1.43,1.25,35.71,1.36,0.96,50.00
+Norwegian Eliteserien,2025-10-29,Rosenborg,Sandefjord,Sandefjord wins,3.35,2,3.35,4.25,0.58,false,LOST,1,1,-0.168,35,,9,25,38,,5,25,1.40,1.44,36.00,1.76,1.44,48.00
+Norwegian Eliteserien,2025-10-29,SK Brann,Bodo/Glimt,Bodo/Glimt wins,2.05,3.2,2.05,3.8,0.66,true,WON,1,2,-0.229,52,,3,25,58,,2,25,1.96,1.44,64.00,2.80,0.92,72.00
+Norwegian Eliteserien,2025-10-25,Sarpsborg FK,KFUM Oslo,Draw,3.4,2.9,2.4,3.4,0.53,false,LOST,2,1,-0.058,32,,10,25,34,,8,25,1.68,1.72,32.00,1.52,1.20,32.00
+Norwegian Eliteserien,2025-11-02,Bryne,SK Brann,SK Brann wins,1.8,4.1,1.8,3.8,0.71,true,LOST,2,1,-0.314,25,,14,26,52,,3,26,1.19,1.77,23.08,1.92,1.46,61.54
+Norwegian Eliteserien,2025-11-08,Viking FK,Hamarkameratene,Viking FK wins,1.28,1.28,8,5.75,0.66,false,WON,3,0,,62,13,1,27,34,13,11,27,2.52,1.30,70.37,1.33,1.52,33.33
+Argentine Liga Profesional de Fútbol,2025-10-24,Independiente,Platense,Platense wins,4.4,1.95,4.4,2.95,0.57,false,LOST,3,0,-0.134,6,,15,12,11,,13,12,0.50,1.08,0.00,0.92,1.42,16.67
+Argentine Liga Profesional de Fútbol,2025-10-27,Barracas Central,Boca Juniors,Draw,3.25,5,1.95,3.25,0.51,false,LOST,1,3,-0.03,18,,7,12,17,,10,12,1.25,1.08,33.33,1.58,0.83,33.33
+Argentine Liga Profesional de Fútbol,2025-10-21,Atlético Tucumán,San Lorenzo,Draw,2.9,2.65,2.95,2.9,0.5,false,LOST,1,2,0.002,15,,7,12,16,,6,12,1.08,1.08,33.33,0.75,0.75,33.33
+Argentine Liga Profesional de Fútbol,2025-10-20,Deportivo Riestra,Instituto (Córdoba),Deportivo Riestra wins,2.65,2.65,3.05,2.8,0.75,true,WON,1,0,0.398,24,,2,12,15,,9,12,1.42,0.75,58.33,0.58,0.92,25.00
+Argentine Liga Profesional de Fútbol,2025-10-22,Huracán,Central Córdoba (Santiago del Estero),Central Córdoba (Santiago del Estero) wins,4.8,1.91,4.8,3,0.67,true,WON,0,1,-0.232,16,,12,12,18,,4,12,0.50,0.83,33.33,1.25,0.83,33.33
+Argentine Liga Profesional de Fútbol,2025-10-19,San Martín (San Juan),Independiente,San Martín (San Juan) wins,3.4,3.4,2.35,2.9,0.67,true,WON,1,0,0.234,14,,10,12,6,,15,11,0.75,0.92,25.00,0.55,1.09,0.00
+Argentine Liga Profesional de Fútbol,2025-10-19,Sarmiento (Junín),Vélez Sarsfield,Vélez Sarsfield wins,2.4,3.4,2.4,2.85,0.68,true,WON,0,2,-0.251,15,,8,11,22,,3,12,0.82,1.00,36.36,1.42,0.75,50.00
+Argentine Liga Profesional de Fútbol,2025-10-20,Tigre,Barracas Central,Draw,3.05,1.95,4.4,3.05,0.52,false,WON,2,2,-0.043,17,,10,12,17,,9,11,0.92,0.75,33.33,1.18,1.00,36.36
+Argentine Liga Profesional de Fútbol,2025-10-21,Unión (Santa Fe),Defensa y Justicia,Defensa y Justicia wins,4,2,4,3.2,0.56,false,LOST,3,0,-0.115,17,,8,12,19,,2,12,1.33,1.08,33.33,1.08,0.83,41.67
+Argentine Liga Profesional de Fútbol,2025-11-03,Defensa y Justicia,Huracán,Draw,2.95,2.75,2.75,2.95,0.55,false,LOST,1,3,,19,7,6,13,16,4,12,13,1.00,1.00,38.46,0.46,0.85,30.77
+Argentine Liga Profesional de Fútbol,2025-11-01,Vélez Sarsfield,Talleres (Córdoba),Vélez Sarsfield wins,2.1,2.1,3.8,3.1,0.75,true,LOST,0,1,0.404,25,,4,13,14,,11,13,1.46,0.69,53.85,0.54,0.92,23.08
+Argentine Liga Profesional de Fútbol,2025-11-01,Instituto (Córdoba),Rosario Central,Rosario Central wins,2.45,3.4,2.45,2.75,0.75,true,WON,1,3,-0.396,15,,10,13,27,,2,13,0.54,0.92,23.08,1.15,0.46,53.85
+Argentine Liga Profesional de Fútbol,2025-11-01,Newell's Old Boys,Unión (Santa Fe),Unión (Santa Fe) wins,2.4,3.05,2.4,3.1,0.75,true,WON,0,1,-0.407,11,,14,13,20,,4,13,0.85,1.62,15.38,1.46,1.00,38.46
+Argentine Liga Profesional de Fútbol,2025-10-31,San Lorenzo,Deportivo Riestra,Deportivo Riestra wins,4.8,1.91,4.8,3,0.68,true,LOST,1,0,-0.266,19,,6,13,27,,1,13,0.85,0.77,38.46,1.38,0.69,61.54
+Argentine Liga Profesional de Fútbol,2025-11-04,Banfield,Lanús,Lanús wins,3.35,2.4,3.35,2.85,0.73,true,LOST,2,1,-0.162,17,4,11,13,26,13,3,13,0.92,1.38,38.46,1.15,0.69,61.54
+Argentine Liga Profesional de Fútbol,2025-11-11,Argentinos Juniors,Belgrano (Córdoba),Argentinos Juniors wins,1.69,1.69,5.25,3.6,0.52,false,WON,1,0,,18,6,12,14,19,6,8,14,1.07,0.86,35.71,0.93,0.71,28.57
+Argentine Liga Profesional de Fútbol,2025-11-10,Deportivo Riestra,Independiente,Independiente wins,2.65,3.4,2.65,2.6,0.6,false,WON,0,1,,27,8,2,14,12,7,13,14,1.29,0.71,57.14,0.86,0.93,14.29
+Argentine Liga Profesional de Fútbol,2025-11-10,Gimnasia La Plata,Vélez Sarsfield,Vélez Sarsfield wins,2.4,3.4,2.4,2.85,0.6,false,LOST,2,0,,16,6,10,14,25,7,4,14,0.64,1.14,35.71,1.36,0.71,50.00
+Argentine Liga Profesional de Fútbol,2025-11-11,Independiente Rivadavia,Central Córdoba (Santiago del Estero),Independiente Rivadavia wins,2.4,2.4,3.1,3.05,0.57,false,LOST,0,0,,12,7,14,14,22,8,3,14,0.86,1.21,14.29,1.14,0.71,35.71
+Argentine Liga Profesional de Fútbol,2025-11-08,Rosario Central,San Lorenzo,Rosario Central wins,2.05,2.05,4.33,2.95,0.73,true,LOST,0,0,,30,15,1,14,22,9,5,14,1.29,0.50,57.14,0.86,0.71,42.86
+Chilean Primera División,2025-11-03,Palestino,Deportes Limache,Palestino wins,1.74,1.74,4.25,3.6,0.57,false,WON,2,1,,42,6,7,25,22,10,13,25,1.32,0.96,48.00,1.16,1.48,20.00
+Chilean Primera División,2025-10-26,Cobresal,Unión Española,Cobresal wins,1.91,1.91,3.7,3.5,0.7,true,WON,1,0,0.301,38,,7,24,20,,15,24,1.25,1.17,45.83,1.17,1.92,25.00
+Chilean Primera División,2025-10-25,Huachipato,Deportes Iquique,Huachipato wins,1.91,1.91,3.6,3.5,0.72,true,LOST,1,1,0.345,31,,9,24,14,,16,24,1.50,1.58,37.50,1.04,2.17,12.50
+Chilean Primera División,2025-10-25,La Serena,Audax Italiano,Audax Italiano wins,2.45,2.7,2.45,3.2,0.76,true,LOST,2,1,-0.428,21,,14,24,43,,4,24,1.13,1.79,20.83,1.79,1.50,54.17
+Chilean Primera División,2025-10-26,O'Higgins,Coquimbo Unido,Coquimbo Unido wins,2.3,3.1,2.3,2.95,0.67,true,WON,0,1,-0.241,44,,3,24,59,,1,24,1.33,1.17,50.00,1.54,0.50,75.00
+Chilean Primera División,2025-10-24,Palestino,Everton CD,Palestino wins,2.05,2.05,3.5,3.2,0.7,true,WON,2,1,0.292,39,,6,24,22,,12,23,1.29,0.96,45.83,1.04,1.52,21.74
+Chilean Primera División,2025-10-26,Universidad Católica,Universidad de Chile,Draw,3.3,2,3.5,3.3,0.51,false,LOST,1,0,-0.023,45,,2,24,42,,5,23,1.58,0.92,54.17,2.04,1.04,56.52
+Chilean Primera División,2025-10-26,Unión La Calera,Ñublense,Draw,3,2.6,2.6,3,0.51,false,LOST,3,0,-0.019,26,,11,24,30,,10,24,0.92,1.17,29.17,1.00,1.25,29.17
+Chilean Primera División,2025-10-31,Audax Italiano,Cobresal,Audax Italiano wins,1.87,1.87,3.45,3.3,0.55,false,LOST,1,2,0.101,43,,4,25,41,,7,25,1.76,1.52,52.00,1.24,1.12,48.00
+Chilean Primera División,2025-10-31,Deportes Iquique,La Serena,La Serena wins,3.1,2.15,3.1,3.3,0.58,false,WON,1,2,-0.168,15,,16,25,24,,12,25,1.04,2.12,12.00,1.16,1.76,24.00
+NWSL,2025-11-02,Chicago Stars FC,Angel City FC,Angel City FC wins,2.15,2.9,2.15,3.2,0.55,false,LOST,2,1,-0.101,17,,14,25,27,,11,25,1.20,2.12,8.00,1.20,1.56,28.00
+Chinese Super League,2025-10-24,Meizhou Hakka,Yunnan Yukun,Yunnan Yukun wins,4,1.71,4,4.1,0.66,true,WON,1,4,-0.228,20,,14,27,35,,9,27,1.19,2.22,18.52,1.52,1.85,33.33
+Chinese Super League,2025-10-25,Tianjin Jinmen Tiger,Changchun Yatai,Tianjin Jinmen Tiger wins,1.77,1.77,4.1,3.65,0.75,true,LOST,2,2,0.39,43,,6,27,18,,16,27,1.33,1.26,44.44,0.89,1.67,14.81
+Chinese Super League,2025-10-25,Henan Songshan Longmen,Zhejiang Professional FC,Zhejiang Professional FC wins,3.4,1.87,3.4,4,0.56,false,LOST,2,2,-0.126,32,,11,27,40,,7,27,1.74,1.63,33.33,2.07,1.63,37.04
+Chinese Super League,2025-10-24,Wuhan Three Towns,Shenzhen Xinpengcheng,Draw,3.4,2.15,3.15,3.4,0.5,false,LOST,1,2,0.005,25,,12,27,23,,13,27,1.19,2.00,22.22,1.19,2.07,25.93
+Chinese Super League,2025-10-26,Shandong Taishan,Shanghai Port,Shanghai Port wins,2.3,2.5,2.3,4,0.66,true,LOST,3,1,-0.211,44,,5,27,60,,1,27,2.19,1.59,44.44,2.48,1.52,66.67
+Chinese Super League,2025-11-01,Changchun Yatai,Beijing Guoan,Beijing Guoan wins,2.4,2.45,2.4,3.8,0.82,true,WON,0,4,-0.545,19,,16,28,51,,4,28,0.93,1.68,14.29,2.14,1.61,53.57
+Chinese Super League,2025-11-01,Meizhou Hakka,Dalian Yingbo,Dalian Yingbo wins,2.9,2.2,2.9,3.65,0.59,false,LOST,2,2,-0.176,20,,15,28,35,,11,28,1.18,2.29,17.86,1.00,1.50,32.14
+Brazilian Serie A,2025-10-22,Bahia,Internacional,Bahia wins,2.45,2.45,2.95,3.5,0.67,true,WON,1,0,0.237,46,,6,28,35,,14,28,1.39,1.14,46.43,1.25,1.46,32.14
+Brazilian Serie A,2025-10-19,Mirassol,São Paulo,Mirassol wins,2.35,2.35,3.2,3.1,0.6,false,WON,3,0,0.194,49,,4,28,38,,8,28,1.68,1.07,46.43,1.11,1.07,35.71
+Brazilian Serie A,2025-10-20,Juventude,Red Bull Bragantino,Red Bull Bragantino wins,2.55,2.75,2.55,3.25,0.7,true,LOST,1,0,-0.297,23,,19,28,36,,10,28,0.79,1.89,21.43,1.21,1.54,35.71
+Brazilian Serie A,2025-10-20,Vasco da Gama,Fluminense,Draw,3.1,2.95,2.5,3.1,0.53,false,LOST,2,0,-0.053,36,,9,28,41,,7,27,1.57,1.46,35.71,1.30,1.22,44.44
+Brazilian Serie A,2025-10-19,Ceará,Botafogo,Botafogo wins,2.8,2.7,2.8,3,0.6,false,WON,0,2,-0.196,35,,12,27,43,,5,28,1.00,0.93,33.33,1.32,0.93,42.86
+Brazilian Serie A,2025-10-19,Flamengo,Palmeiras,Draw,3.3,1.95,4,3.3,0.5,false,LOST,3,2,-0.001,58,,2,27,61,,1,27,1.96,0.48,62.96,1.89,0.85,70.37
+Brazilian Serie A,2025-10-26,São Paulo,Bahia,Bahia wins,4.1,1.91,4.1,3.35,0.59,false,LOST,2,0,-0.173,38,,9,29,49,,5,29,1.07,1.14,34.48,1.38,1.10,48.28
+Brazilian Serie A,2025-10-25,Sport,Mirassol,Mirassol wins,2.6,2.7,2.6,3.25,0.86,true,WON,1,2,-0.625,17,,20,28,52,,4,29,0.75,1.57,7.14,1.72,1.03,48.28
+Brazilian Serie A,2025-10-26,Red Bull Bragantino,Vasco da Gama,Vasco da Gama wins,3.35,2.1,3.35,3.4,0.56,false,WON,0,3,-0.12,36,,10,29,39,,8,29,1.17,1.52,34.48,1.59,1.41,37.93
+Brazilian Serie A,2025-10-26,Palmeiras,Cruzeiro,Palmeiras wins,1.8,1.8,4.5,3.6,0.57,false,LOST,0,0,0.132,61,,1,28,56,,3,29,1.89,0.93,67.86,1.45,0.72,55.17
+Brazilian Serie A,2025-10-26,Grêmio,Juventude,Grêmio wins,1.8,1.8,4.5,3.5,0.66,true,WON,3,1,0.212,36,,12,29,26,,18,29,1.03,1.28,31.03,0.79,1.83,24.14
+Brazilian Serie A,2025-10-25,Fortaleza,Flamengo,Flamengo wins,1.71,5,1.71,3.7,0.9,true,LOST,1,0,-0.711,24,,19,28,61,,2,28,0.93,1.57,21.43,2.00,0.54,64.29
+Brazilian Serie A,2025-10-25,Fluminense,Internacional,Fluminense wins,1.83,1.83,4.5,3.4,0.59,false,WON,1,0,0.184,41,,7,28,35,,14,29,1.25,1.25,42.86,1.21,1.45,31.03
+Brazilian Serie A,2025-10-26,Botafogo,Santos,Botafogo wins,1.87,1.87,4.33,3.4,0.71,true,LOST,2,2,0.327,46,,6,29,31,,16,28,1.34,0.90,44.83,1.00,1.43,28.57
+Brazilian Serie A,2025-10-25,Atlético-MG,Ceará,Draw,3.25,1.95,4,3.25,0.53,false,LOST,1,0,-0.069,33,,15,28,35,,13,28,0.93,1.14,28.57,0.96,0.96,32.14
+Brazilian Serie A,2025-10-25,Vitória,Corinthians,Corinthians wins,2.9,2.6,2.9,3,0.58,false,WON,0,1,-0.169,31,,17,29,36,,11,29,0.93,1.48,24.14,1.07,1.21,31.03
+Brazilian Serie A,2025-11-02,Ceará,Fluminense,Fluminense wins,2.55,2.95,2.55,3,0.55,false,LOST,2,0,-0.105,35,,14,30,47,,6,30,0.90,0.97,30.00,1.23,1.17,46.67
+Brazilian Serie A,2025-11-05,Atlético-MG,Bahia,Bahia wins,3.5,2.15,3.5,3.2,0.57,false,LOST,3,0,,37,8,13,30,52,9,5,31,0.90,1.07,30.00,1.35,1.13,48.39
+Brazilian Serie A,2025-11-06,São Paulo,Flamengo,Flamengo wins,1.95,4,1.95,3.25,0.77,true,LOST,2,2,,44,6,8,31,64,10,2,30,1.13,1.06,38.71,1.97,0.53,63.33
+Brazilian Serie A,2025-11-05,Sport,Juventude,Draw,3.7,1.71,4.8,3.7,0.52,false,LOST,0,2,,17,1,20,30,26,3,19,31,0.73,1.63,6.67,0.77,1.87,22.58
+Brazilian Serie A,2025-11-05,Red Bull Bragantino,Corinthians,Corinthians wins,2.75,2.6,2.75,3.2,0.73,true,LOST,2,1,,36,3,14,31,42,12,10,31,1.13,1.58,32.26,1.10,1.13,35.48
+Brazilian Serie A,2025-11-05,Vitória,Internacional,Draw,3.1,2.45,3,3.1,0.53,false,LOST,1,0,,31,6,17,31,36,4,15,31,0.90,1.52,22.58,1.13,1.39,29.03
+Brazilian Serie A,2025-11-05,Grêmio,Cruzeiro,Cruzeiro wins,2.3,3.2,2.3,3.2,0.73,true,WON,0,1,,39,6,11,31,60,9,3,31,1.06,1.29,32.26,1.45,0.71,54.84
+Brazilian Serie A,2025-11-06,Fluminense,Mirassol,Mirassol wins,4.1,1.91,4.1,3.35,0.6,false,LOST,1,0,,47,9,7,31,56,13,4,31,1.19,1.19,45.16,1.68,1.00,48.39
+Brazilian Serie A,2025-11-06,Ceará,Fortaleza,Draw,3.1,2.4,3.1,3.1,0.51,false,WON,1,1,,38,4,12,31,28,7,18,30,0.94,0.94,32.26,0.93,1.50,23.33
+Brazilian Serie A,2025-11-05,Botafogo,Vasco da Gama,Vasco da Gama wins,4.1,1.91,4.1,3.4,0.57,false,LOST,3,0,,48,5,6,31,42,12,9,31,1.32,0.90,41.94,1.58,1.39,38.71
+Brazilian Serie B,2025-10-19,Avaí,Criciúma,Criciúma wins,3.3,2,3.3,3,0.65,true,LOST,1,1,-0.2,44,,11,32,53,,3,32,1.25,1.06,34.38,1.31,0.91,46.88
+Brazilian Serie B,2025-10-19,Botafogo-SP,Cuiabá,Cuiabá wins,2.3,3.15,2.3,2.9,0.71,true,LOST,2,2,-0.311,33,,18,32,49,,8,32,0.84,1.47,25.00,1.19,1.09,40.63
+Brazilian Serie B,2025-10-19,Coritiba,Athletico-PR,Coritiba wins,2.3,2.3,3.2,2.9,0.57,false,LOST,0,0,0.131,56,,1,32,49,,7,32,1.06,0.66,50.00,1.41,1.31,43.75
+Brazilian Serie B,2025-10-20,Ferroviária,Paysandu,Ferroviária wins,2.05,2.05,3.5,3.1,0.57,false,LOST,2,2,0.134,37,,16,32,26,,20,32,1.13,1.31,25.00,0.88,1.25,15.63
+Brazilian Serie B,2025-10-25,Athletic,América Mineiro,Draw,3,2.45,2.85,3,0.52,false,LOST,0,2,-0.037,37,,16,33,38,,14,33,1.15,1.42,30.30,1.06,1.21,30.30
+Brazilian Serie B,2025-10-26,CRB,Atlético Goianiense,Draw,3.1,2,3.7,3.1,0.53,false,LOST,2,1,0.053,48,,9,33,48,,10,33,1.18,1.03,42.42,1.09,1.00,36.36
+Brazilian Serie B,2025-10-27,Chapecoense,Operario PR,Chapecoense wins,1.95,1.95,3.6,2.95,0.68,true,WON,2,0,0.262,54,,5,33,42,,13,33,1.42,0.97,48.48,1.03,1.12,33.33
+Brazilian Serie B,2025-10-26,Vila Nova,Ferroviária,Draw,3.25,1.8,4.4,3.25,0.54,false,WON,2,2,0.089,43,,12,33,38,,15,33,0.97,1.03,33.33,1.15,1.33,24.24
+Brazilian Serie B,2025-10-25,Cuiabá,Remo,Draw,3.3,1.74,4.75,3.3,0.55,false,LOST,1,3,-0.098,50,,8,33,54,,4,33,1.21,1.12,39.39,1.27,0.97,42.42
+Brazilian Serie B,2025-10-25,Paysandu,Avaí,Avaí wins,2.85,2.45,2.85,3,0.69,true,WON,1,2,-0.287,27,,20,33,45,,11,33,0.91,1.27,15.15,1.24,1.06,33.33
+Brazilian Serie B,2025-10-25,Volta Redonda,Coritiba,Coritiba wins,2.45,3,2.45,2.85,0.77,true,WON,0,1,-0.444,34,,17,33,57,,1,33,0.70,1.09,24.24,1.03,0.64,48.48
+Brazilian Serie B,2025-10-25,Criciúma,Goiás,Draw,3,1.95,4,3,0.55,false,LOST,1,2,0.092,54,,3,33,52,,6,33,1.30,0.91,45.45,1.12,0.97,42.42
+Brazilian Serie B,2025-11-02,Amazonas,Cuiabá,Cuiabá wins,2.65,2.65,2.65,2.9,0.57,false,LOST,2,0,-0.144,32,,19,34,50,,10,34,0.97,1.47,20.59,1.21,1.18,38.24
+Brazilian Serie B,2025-11-03,América Mineiro,Novorizontino,Draw,2.95,2.25,3.2,2.95,0.54,false,WON,2,2,-0.076,41,,14,34,55,,7,34,1.09,1.18,32.35,1.09,0.82,41.18
+Brazilian Serie B,2025-10-31,Coritiba,CRB,Coritiba wins,1.87,1.87,4.25,3.2,0.57,false,LOST,0,0,0.145,60,,1,34,51,,8,34,1.03,0.62,50.00,1.21,1.03,44.12
+Brazilian Serie B,2025-11-01,Ferroviária,Criciúma,Criciúma wins,2.45,2.85,2.45,3,0.69,true,LOST,0,0,-0.285,39,,15,34,54,,6,34,1.18,1.35,23.53,1.29,0.94,44.12
+Brazilian Serie B,2025-11-10,Chapecoense,América Mineiro,Chapecoense wins,2,2,3.6,3.15,0.62,false,LOST,0,1,,58,11,4,35,42,6,14,35,1.43,0.94,48.57,1.11,1.20,31.43
+Mexican Liga BBVA MX,2025-10-22,Necaxa,Cruz Azul,Cruz Azul wins,2.05,3.25,2.05,3.7,0.86,true,LOST,1,1,-0.625,9,,17,13,28,,2,13,1.08,2.00,15.38,1.85,1.23,61.54
+Mexican Liga BBVA MX,2025-10-22,Mazatlán FC,Santos,Santos wins,3.6,1.95,3.6,3.7,0.56,false,LOST,2,2,-0.129,11,,15,13,13,,12,13,1.15,1.77,15.38,1.15,1.62,30.77
+Mexican Liga BBVA MX,2025-10-22,Monterrey,FC Juarez,Monterrey wins,1.59,1.59,5.25,4.33,0.67,true,WON,4,2,0.249,27,,4,13,19,,9,13,2.00,1.54,61.54,1.38,1.31,38.46
+Mexican Liga BBVA MX,2025-10-25,FC Juarez,Puebla,FC Juarez wins,1.74,1.74,4.5,3.8,0.74,true,LOST,4,4,0.378,19,,9,14,8,,18,14,1.43,1.50,35.71,1.07,2.43,14.29
+Mexican Liga BBVA MX,2025-10-25,Mazatlán FC,América,América wins,1.5,5.75,1.5,4.5,0.86,true,LOST,2,2,-0.628,12,,15,14,30,,2,14,1.21,1.79,14.29,2.07,1.00,64.29
+Mexican Liga BBVA MX,2025-10-26,León,Pumas UNAM,Pumas UNAM wins,2.65,2.6,2.65,3.35,0.57,false,LOST,1,1,-0.138,12,,16,14,14,,12,14,0.86,1.86,21.43,1.14,1.50,21.43
+Mexican Liga BBVA MX,2025-10-26,Cruz Azul,Monterrey,Draw,3.6,2,3.4,3.6,0.54,false,LOST,2,0,-0.079,29,,5,14,30,,3,14,1.79,1.21,57.14,2.14,1.57,64.29
+Mexican Liga BBVA MX,2025-11-01,Atlético de San Luis,FC Juarez,Draw,3.5,2.25,3.1,3.5,0.52,false,LOST,1,2,-0.033,16,,11,15,20,,9,15,1.53,1.60,33.33,1.60,1.67,33.33
+Mexican Liga BBVA MX,2025-11-08,Tigres UANL,Atlético de San Luis,Tigres UANL wins,1.44,1.44,6.5,4.8,0.66,false,WON,3,1,,33,11,4,16,16,6,14,16,2.00,0.94,56.25,1.50,1.63,31.25
+UEFA Women's Nations League,2025-10-24,Germany,France,Germany wins,2.5,2.5,2.5,3.15,0.6,false,WON,1,0,0.191,16,,1,6,18,,1,6,4.33,0.67,83.33,2.33,0.33,100.00
+UEFA Women's Nations League,2025-10-24,Republic of Ireland,Belgium,Republic of Ireland wins,2.15,2.15,2.85,3.25,0.77,true,WON,4,2,0.432,15,,2,6,6,,3,6,1.67,1.00,83.33,1.50,2.67,33.33
+Italian Serie A,2025-10-25,Udinese,Lecce,Udinese wins,1.83,1.83,4.5,3.4,0.59,false,WON,3,2,0.183,9,,11,7,6,,16,7,1.00,1.43,28.57,0.71,1.43,14.29
+Italian Serie A,2025-10-25,Parma,Como,Como wins,1.95,4,1.95,3.4,0.76,true,LOST,0,0,-0.422,6,,15,7,12,,6,7,0.43,1.00,14.29,1.29,0.71,42.86
+Italian Serie A,2025-10-25,Napoli,Internazionale,Internazionale wins,2.4,3.05,2.4,3.2,0.56,false,LOST,3,1,-0.13,15,,3,7,15,,2,7,1.71,1.00,71.43,2.57,1.14,71.43
+Italian Serie A,2025-10-30,Pisa,Lazio,Lazio wins,2.1,3.6,2.1,3.2,0.79,true,LOST,0,0,-0.478,4,,19,8,11,,10,8,0.63,1.50,0.00,1.38,0.88,37.50
+Italian Serie A,2025-10-29,Genoa,Cremonese,Cremonese wins,4.8,1.83,4.8,3.25,0.73,true,WON,0,2,-0.355,3,,20,8,11,,11,8,0.50,1.38,0.00,1.13,1.25,25.00
+Italian Serie A,2025-10-30,Cagliari,Sassuolo,Draw,3.1,2.5,2.95,3.1,0.54,false,LOST,1,2,-0.083,9,,14,8,10,,13,8,1.00,1.25,25.00,1.00,1.13,37.50
+Italian Serie A,2025-11-03,Lazio,Cagliari,Lazio wins,1.56,1.56,6,3.9,0.59,false,WON,2,0,,12,9,13,9,9,2,14,9,1.22,0.78,33.33,1.00,1.33,22.22
+Italian Serie A,2025-11-03,Sassuolo,Genoa,Sassuolo wins,2.4,2.4,3.1,3.05,0.75,true,LOST,1,2,0.183,13,10,10,9,3,1,20,9,1.11,1.11,44.44,0.44,1.44,0.00
+Danish Superliga,2025-10-26,Vejle Boldklub,Silkeborg IF,Silkeborg IF wins,2.45,2.75,2.45,3.4,0.66,true,WON,1,2,-0.219,7,,12,12,14,,9,12,1.00,1.83,8.33,1.58,2.08,33.33
+Danish Superliga,2025-10-26,Randers FC,Sønderjyske Fodbold,Draw,3.6,2,3.5,3.6,0.5,false,WON,0,0,0.007,16,,6,12,15,,7,12,1.17,1.42,41.67,1.58,1.58,33.33
+Danish Superliga,2025-10-24,AGF,FC Nordsjælland,AGF wins,1.77,1.77,4.1,3.8,0.7,true,WON,1,0,0.298,27,,1,12,18,,5,12,2.17,1.08,66.67,1.42,1.58,50.00
+Danish Superliga,2025-11-02,Sønderjyske Fodbold,Vejle Boldklub,Draw,3.6,1.91,3.7,3.6,0.54,false,LOST,2,1,0.077,16,,8,13,7,,12,13,1.46,1.46,30.77,1.00,1.85,7.69
+Danish Superliga,2025-11-09,Randers FC,FC Midtjylland,FC Midtjylland wins,1.69,4.5,1.69,4,0.85,true,WON,0,2,,17,4,9,14,29,13,2,14,1.14,1.43,35.71,2.57,1.14,57.14
+Guatemalan Liga Nacional,2025-10-26,Marquense,Comunicaciones,Draw,3.05,2,3.3,3.05,0.52,false,LOST,1,0,0.036,15,,10,14,13,,11,15,0.86,1.64,28.57,0.73,1.27,20.00
+English Premier League,2025-10-26,Aston Villa,Manchester City,Manchester City wins,1.83,4,1.83,3.7,0.77,true,LOST,1,0,-0.442,12,,11,8,16,,2,8,1.00,1.00,37.50,2.13,0.75,62.50
+English Premier League,2025-10-26,Everton,Tottenham Hotspur,Tottenham Hotspur wins,3,2.35,3,3.25,0.68,true,WON,0,3,-0.264,11,,12,8,14,,6,8,1.13,1.13,37.50,1.75,0.88,50.00
+English Premier League,2025-10-24,Leeds United,West Ham United,Leeds United wins,1.87,1.87,4.1,3.5,0.59,false,WON,2,1,0.183,8,,16,8,4,,19,8,0.88,1.63,25.00,0.75,2.25,12.50
+English Premier League,2025-10-25,Manchester United,Brighton & Hove Albion,Draw,3.8,1.95,3.4,3.8,0.52,false,LOST,4,2,0.041,13,,9,8,12,,10,8,1.38,1.50,50.00,1.50,1.38,37.50
+English Premier League,2025-10-26,Wolverhampton Wanderers,Burnley,Burnley wins,4.15,1.91,4.15,3.3,0.67,true,WON,2,3,-0.244,2,,20,8,7,,17,8,0.63,2.00,0.00,1.13,1.88,25.00
+English Premier League,2025-11-01,Nottingham Forest,Manchester United,Manchester United wins,2.05,3.4,2.05,3.5,0.84,true,LOST,2,2,-0.58,5,,18,9,16,,6,9,0.56,1.89,11.11,1.67,1.56,55.56
+English Premier League,2025-11-03,Sunderland,Everton,Sunderland wins,2.6,2.6,2.8,3.05,0.59,false,LOST,1,1,,17,10,7,9,11,4,15,9,1.22,0.78,55.56,1.00,1.33,33.33
+English Premier League,2025-11-08,Chelsea,Wolverhampton Wanderers,Chelsea wins,1.36,1.36,8,5,0.88,true,WON,3,0,,17,10,7,10,2,1,20,10,1.80,1.10,50.00,0.70,2.20,0.00
+English Premier League,2025-11-08,Sunderland,Arsenal,Arsenal wins,1.33,9,1.33,4.6,0.67,false,LOST,2,2,,18,10,4,10,25,15,1,10,1.20,0.80,50.00,1.80,0.30,80.00
+Dutch Eredivisie,2025-10-24,Heerenveen,NAC Breda,Heerenveen wins,1.77,1.77,4.1,3.9,0.59,false,LOST,3,3,0.19,12,,11,9,8,,14,9,1.67,1.67,33.33,1.11,1.78,22.22
+Dutch Eredivisie,2025-10-25,Fortuna Sittard,FC Groningen,FC Groningen wins,2.55,2.75,2.55,3.2,0.56,false,WON,1,2,-0.128,13,,9,9,15,,5,9,1.44,1.44,44.44,1.56,1.44,55.56
+Dutch Eredivisie,2025-10-25,FC Volendam,Heracles Almelo,FC Volendam wins,2.15,2.15,3.1,3.6,0.59,false,WON,3,0,0.187,7,,17,9,3,,18,9,1.11,1.78,11.11,0.78,3.00,11.11
+Dutch Eredivisie,2025-10-25,Sparta Rotterdam,Telstar,Sparta Rotterdam wins,1.83,1.83,3.9,3.9,0.58,false,WON,1,0,0.162,13,,10,9,7,,16,9,1.44,2.44,44.44,1.33,2.00,22.22
+Dutch Eredivisie,2025-10-25,PEC Zwolle,NEC Nijmegen,NEC Nijmegen wins,2.1,3.2,2.1,3.7,0.8,true,LOST,2,2,-0.502,8,,15,9,14,,6,9,1.00,1.89,22.22,2.78,1.89,44.44
+Dutch Eredivisie,2025-11-09,Go Ahead Eagles,Feyenoord Rotterdam,Feyenoord Rotterdam wins,1.53,5.5,1.53,4.5,0.72,false,LOST,2,1,,13,6,12,11,28,9,1,11,1.55,1.55,27.27,2.73,0.91,81.82
+Dutch Keuken Kampioen Divisie,2025-10-21,FC Den Bosch,Helmond Sport,Draw,3.5,2.3,2.8,3.5,0.51,false,LOST,1,0,0.029,17,,7,11,16,,8,11,2.00,2.27,45.45,1.36,1.45,45.45
+Dutch Keuken Kampioen Divisie,2025-10-21,VVV-Venlo,Jong FC Utrecht,VVV-Venlo wins,1.65,1.65,4.4,4,0.66,true,LOST,0,1,0.22,15,,10,11,11,,14,11,1.64,1.55,45.45,1.36,1.91,27.27
+Dutch Keuken Kampioen Divisie,2025-10-21,TOP Oss,Jong Ajax,TOP Oss wins,1.95,1.95,3.3,3.7,0.58,false,LOST,1,1,0.167,12,,13,11,7,,19,11,1.55,2.09,27.27,1.64,2.18,9.09
+Dutch Keuken Kampioen Divisie,2025-10-24,Helmond Sport,FC Dordrecht,Draw,3.6,2.1,3,3.6,0.5,false,LOST,1,2,0.002,16,,9,12,16,,8,12,1.25,1.42,41.67,1.33,1.33,33.33
+Dutch Keuken Kampioen Divisie,2025-10-24,Jong Ajax,FC Emmen,FC Emmen wins,2.25,2.7,2.25,3.7,0.66,true,WON,0,1,-0.213,8,,19,12,13,,14,12,1.58,2.08,8.33,1.75,2.08,33.33
+Dutch Keuken Kampioen Divisie,2025-10-24,Jong FC Utrecht,TOP Oss,Draw,3.4,2.35,2.65,3.4,0.55,false,WON,0,0,0.097,14,,11,12,13,,15,12,1.33,1.75,33.33,1.50,2.00,25.00
+Dutch Keuken Kampioen Divisie,2025-10-24,RKC Waalwijk,SC Cambuur,SC Cambuur wins,2.2,2.9,2.2,3.6,0.69,true,LOST,4,2,-0.279,18,,7,12,27,,2,12,1.67,1.50,41.67,2.00,1.08,66.67
+Dutch Keuken Kampioen Divisie,2025-10-24,FC Eindhoven,VVV-Venlo,VVV-Venlo wins,2.15,2.95,2.15,3.5,0.74,true,WON,0,1,-0.375,11,,18,12,15,,10,12,0.75,2.17,25.00,1.50,1.50,41.67
+Dutch Keuken Kampioen Divisie,2025-10-24,Almere City,Jong AZ,Draw,4,1.71,4,4,0.54,false,LOST,1,3,0.09,11,,16,12,11,,17,12,1.83,1.67,25.00,1.50,1.92,25.00
+Dutch Keuken Kampioen Divisie,2025-10-24,De Graafschap,Jong PSV,Jong PSV wins,5,1.51,5,4.5,0.71,true,LOST,3,2,-0.313,13,,13,11,21,,4,12,1.45,1.55,27.27,1.92,1.50,50.00
+Dutch Keuken Kampioen Divisie,2025-10-31,FC Den Bosch,De Graafschap,Draw,3.7,2.85,2.15,3.7,0.55,false,LOST,1,2,0.093,20,,7,13,16,,10,12,1.85,2.08,46.15,1.58,1.58,33.33
+Dutch Keuken Kampioen Divisie,2025-10-31,TOP Oss,Helmond Sport,Helmond Sport wins,2.35,2.7,2.35,3.4,0.57,false,WON,0,3,-0.146,14,,16,13,16,,12,13,1.38,1.85,23.08,1.23,1.46,38.46
+Dutch Keuken Kampioen Divisie,2025-11-03,Jong AZ,FC Eindhoven,Jong AZ wins,1.63,1.63,4.5,4,0.72,true,LOST,0,2,,14,7,15,13,11,0,18,13,1.62,1.85,30.77,0.69,2.08,23.08
+Dutch Keuken Kampioen Divisie,2025-11-07,FC Eindhoven,FC Den Bosch,FC Den Bosch wins,2.35,2.65,2.35,3.5,0.61,false,WON,1,3,,14,3,18,14,20,6,7,14,0.79,1.93,28.57,1.79,2.07,42.86
+Scottish Premiership,2025-10-25,Dundee United,St Mirren,Dundee United wins,2.3,2.3,3.05,3.4,0.57,false,WON,3,1,0.138,10,,4,8,9,,7,8,1.75,1.63,25.00,0.63,0.88,25.00
+Scottish Premiership,2025-10-25,Livingston,Motherwell,Motherwell wins,2.15,3.25,2.15,3.4,0.57,false,WON,1,2,-0.145,6,,12,9,8,,10,8,1.11,2.00,11.11,1.50,1.50,12.50
+Scottish Premiership,2025-10-29,Hibernian,Rangers,Hibernian wins,2.9,2.9,2.35,3.5,0.58,false,LOST,0,1,0.153,14,,3,9,12,,5,9,1.78,1.22,33.33,1.22,1.11,22.22
+Scottish Premiership,2025-10-29,Kilmarnock,Aberdeen,Kilmarnock wins,2.65,2.65,2.5,3.15,0.55,false,LOST,0,1,0.11,10,,8,9,7,,11,9,1.33,1.56,22.22,0.67,1.22,22.22
+Scottish Premiership,2025-10-29,Motherwell,Dundee United,Dundee United wins,3.2,2.2,3.2,3.4,0.57,false,LOST,2,0,-0.132,11,,7,9,13,,4,9,1.56,1.44,22.22,1.89,1.56,33.33
+Scottish Premiership,2025-10-29,St Mirren,Heart of Midlothian,Heart of Midlothian wins,1.8,4.4,1.8,3.6,0.9,true,LOST,2,2,-0.719,9,,9,9,25,,1,9,0.67,1.11,22.22,2.44,0.78,88.89
+Scottish Premiership,2025-11-09,Heart of Midlothian,Dundee United,Heart of Midlothian wins,1.42,1.42,7,4.6,0.86,true,LOST,1,1,,29,13,1,11,13,5,7,10,2.55,0.82,81.82,1.70,1.60,30.00
+Belgian Pro League,2025-10-19,Dender,KV Mechelen,KV Mechelen wins,2.45,2.85,2.45,3.25,0.81,true,WON,1,3,-0.52,3,,16,10,16,,6,10,0.30,1.50,0.00,1.30,1.10,40.00
+Belgian Pro League,2025-10-19,Cercle Brugge KSV,Racing Genk,Racing Genk wins,2.25,3,2.25,3.5,0.66,true,LOST,2,2,-0.21,10,,14,10,14,,7,10,1.30,1.40,20.00,1.40,1.40,40.00
+Belgian Pro League,2025-10-19,Zulte-Waregem,KAA Gent,KAA Gent wins,2.5,2.7,2.5,3.5,0.58,false,LOST,4,1,-0.165,14,,8,10,17,,4,10,1.30,1.30,40.00,1.70,1.30,50.00
+Belgian Pro League,2025-10-19,Sint-Truidense,Anderlecht,Draw,3.4,3,2.3,3.4,0.53,false,WON,2,2,-0.06,17,,5,10,18,,3,10,1.50,1.20,50.00,1.50,0.90,50.00
+Belgian Pro League,2025-10-26,Cercle Brugge KSV,Zulte-Waregem,Zulte-Waregem wins,4,1.83,4,3.8,0.69,true,LOST,1,1,-0.274,11,,13,11,17,,6,11,1.36,1.45,18.18,1.55,1.27,45.45
+Belgian Pro League,2025-10-24,Royal Charleroi SC,Anderlecht,Anderlecht wins,2.35,3,2.35,3.35,0.71,true,LOST,1,0,-0.314,12,,12,11,19,,3,11,1.27,1.55,27.27,1.55,1.00,45.45
+Belgian Pro League,2025-10-25,KV Mechelen,Oud-Heverlee Leuven,KV Mechelen wins,2.15,2.15,3.25,3.4,0.78,true,LOST,1,1,0.469,19,,4,11,8,,15,11,1.45,1.09,45.45,0.73,1.82,18.18
+Belgian Pro League,2025-10-25,KAA Gent,Standard Liege,KAA Gent wins,1.87,1.87,4,3.6,0.58,false,WON,4,0,0.158,17,,7,11,14,,10,11,1.64,1.55,45.45,0.91,1.18,36.36
+Belgian Pro League,2025-10-25,KVC Westerlo,Dender,KVC Westerlo wins,1.74,1.74,4.4,3.9,0.77,true,LOST,1,1,0.443,14,,9,11,3,,16,11,1.64,1.82,36.36,0.36,1.64,0.00
+Belgian Pro League,2025-11-02,Oud-Heverlee Leuven,KAA Gent,KAA Gent wins,2.8,2.45,2.8,3.35,0.59,false,LOST,4,0,-0.18,9,,15,12,20,,3,12,0.75,1.75,16.67,1.83,1.42,50.00
+Belgian Pro League,2025-10-31,Standard Liege,Royal Charleroi SC,Draw,3.2,2.75,2.6,3.2,0.54,false,LOST,3,1,-0.078,14,,11,12,15,,10,12,0.83,1.42,33.33,1.25,1.42,33.33
+Belgian Pro League,2025-11-07,Dender,Zulte-Waregem,Dender wins,2.5,2.5,2.7,3.4,0.78,true,LOST,2,2,,4,2,16,13,18,8,8,13,0.46,1.62,0.00,1.46,1.46,38.46
+Scottish Championship,2025-10-21,Partick Thistle,Ayr United,Partick Thistle wins,2.05,2.05,3.2,3.1,0.56,false,WON,2,1,0.12,21,,2,10,17,,4,10,1.60,1.20,60.00,1.40,0.90,40.00
+Scottish Championship,2025-10-21,Airdrieonians,Dunfermline Athletic,Dunfermline Athletic wins,2.15,3.15,2.15,2.95,0.71,true,WON,0,4,-0.325,4,,10,10,12,,6,10,0.80,1.60,0.00,1.20,0.90,30.00
+Scottish Championship,2025-10-25,Airdrieonians,Arbroath,Arbroath wins,2.25,2.8,2.25,3.05,0.77,true,LOST,1,0,-0.436,4,,10,11,18,,3,11,0.73,1.82,0.00,1.45,1.64,45.45
+Scottish Championship,2025-10-25,Queen's Park,Ayr United,Ayr United wins,1.91,3.7,1.91,3.05,0.7,true,LOST,0,0,-0.304,9,,8,11,17,,4,11,0.73,1.27,9.09,1.36,1.00,36.36
+Scottish Championship,2025-10-25,Raith Rovers,Partick Thistle,Partick Thistle wins,2.6,2.55,2.6,2.9,0.69,true,LOST,2,0,-0.283,14,,6,11,24,,2,11,0.91,1.09,36.36,1.64,1.18,63.64
+Scottish Championship,2025-10-25,Ross County,Dunfermline Athletic,Dunfermline Athletic wins,3.25,2.05,3.25,3.05,0.7,true,LOST,3,2,-0.304,8,,9,11,15,,5,11,1.00,1.36,9.09,1.45,0.82,36.36
+Scottish Championship,2025-10-31,Ayr United,Dunfermline Athletic,Draw,3.1,1.87,3.7,3.1,0.51,false,LOST,0,1,0.016,18,,3,12,15,,6,12,1.25,0.92,33.33,1.50,1.00,33.33
+Scottish Championship,2025-11-07,Airdrieonians,Partick Thistle,Partick Thistle wins,1.56,5,1.56,3.6,0.83,true,LOST,1,1,,7,4,10,13,27,10,2,13,0.69,1.77,7.69,1.77,1.15,61.54
+English League Championship,2025-10-25,Millwall,Leicester City,Millwall wins,2.6,2.6,2.75,3.2,0.57,false,WON,1,0,0.142,20,,3,11,17,,10,11,1.18,1.18,54.55,1.36,1.00,36.36
+English League Championship,2025-10-25,Portsmouth,Stoke City,Stoke City wins,2.65,2.7,2.65,3.2,0.7,true,WON,0,1,-0.295,13,,17,11,18,,7,11,0.91,1.09,27.27,1.09,0.73,45.45
+English League Championship,2025-10-24,Preston North End,Sheffield United,Preston North End wins,2.7,2.7,2.7,3.05,0.7,true,WON,3,2,0.307,16,,11,11,9,,21,11,1.09,0.91,36.36,0.64,1.55,27.27
+English League Championship,2025-10-25,Blackburn Rovers,Southampton,Draw,3.25,3,2.4,3.25,0.54,false,LOST,2,1,-0.089,7,,23,10,12,,18,11,0.80,1.60,20.00,1.09,1.36,18.18
+English League Championship,2025-10-25,Bristol City,Birmingham City,Bristol City wins,2.15,2.15,3.3,3.3,0.71,true,WON,1,0,0.312,19,,4,11,15,,13,11,1.73,1.00,45.45,1.00,1.27,36.36
+English League Championship,2025-10-25,Derby County,Queens Park Rangers,Queens Park Rangers wins,2.7,2.65,2.7,3.2,0.71,true,LOST,1,0,-0.313,11,,19,11,18,,9,11,1.09,1.45,18.18,1.36,1.45,45.45
+English League Championship,2025-10-25,Hull City,Charlton Athletic,Draw,3.2,2.45,2.9,3.2,0.52,false,WON,1,1,-0.039,18,,8,11,18,,6,11,1.73,1.73,45.45,1.18,0.82,45.45
+English League Championship,2025-10-25,Sheffield Wednesday,Oxford United,Oxford United wins,2.55,2.75,2.55,3.2,0.57,false,WON,1,2,-0.15,-6,,24,11,9,,20,11,0.82,2.09,9.09,1.00,1.27,18.18
+English League Championship,2025-10-25,Swansea City,Norwich City,Swansea City wins,2.2,2.2,3.3,3.35,0.57,false,WON,2,1,0.132,13,,16,11,8,,22,11,0.91,1.00,27.27,1.00,1.45,18.18
+English League Championship,2025-11-01,Oxford United,Millwall,Millwall wins,2.55,2.75,2.55,3.2,0.76,true,LOST,2,2,-0.42,12,,19,12,23,,3,12,1.08,1.25,25.00,1.17,1.08,58.33
+English League Championship,2025-11-01,Norwich City,Hull City,Hull City wins,3.1,2.15,3.1,3.6,0.74,true,WON,0,2,-0.376,8,,23,12,19,,8,12,1.00,1.50,16.67,1.67,1.67,41.67
+English League Championship,2025-10-31,Wrexham,Coventry City,Coventry City wins,1.91,3.8,1.91,3.6,0.9,true,LOST,3,2,-0.705,14,,16,12,28,,1,12,1.33,1.42,25.00,2.83,0.75,66.67
+English League Championship,2025-11-01,Watford,Middlesbrough,Middlesbrough wins,2.75,2.55,2.75,3.25,0.74,true,LOST,3,0,-0.382,15,,14,12,25,,2,12,1.17,1.33,33.33,1.33,0.67,58.33
+English League Championship,2025-11-04,Birmingham City,Millwall,Millwall wins,4.33,1.91,4.33,3.25,0.56,false,LOST,4,0,,18,7,11,13,24,13,4,13,1.15,1.15,38.46,1.23,1.15,53.85
+English League Championship,2025-11-04,Leicester City,Middlesbrough,Middlesbrough wins,3.35,2.2,3.35,3.25,0.56,false,LOST,1,1,,17,4,14,13,25,7,2,13,1.15,1.08,30.77,1.23,0.85,53.85
+English League Championship,2025-11-04,Bristol City,Blackburn Rovers,Bristol City wins,2,2,3.8,3.35,0.56,false,LOST,0,1,,22,9,5,13,13,7,19,12,1.62,1.23,46.15,1.00,1.42,33.33
+English League Championship,2025-11-04,Charlton Athletic,West Bromwich Albion,Draw,3.1,2.5,2.95,3.1,0.54,false,LOST,1,0,,20,8,8,13,18,4,12,13,1.15,0.85,38.46,0.92,1.08,38.46
+English League Championship,2025-11-04,Coventry City,Sheffield United,Coventry City wins,1.61,1.61,5.25,4,0.84,true,WON,3,1,,28,12,1,13,9,6,22,13,2.77,0.92,61.54,0.77,1.77,23.08
+English League Championship,2025-11-04,Oxford United,Stoke City,Stoke City wins,2.4,3.05,2.4,3.2,0.59,false,WON,0,3,,13,7,18,13,24,10,3,13,1.15,1.31,23.08,1.38,0.69,53.85
+English League Championship,2025-11-04,Ipswich Town,Watford,Draw,3.8,1.69,4.8,3.8,0.54,false,WON,1,1,,19,9,9,12,18,9,10,13,1.75,1.17,41.67,1.31,1.23,38.46
+English League Championship,2025-11-04,Derby County,Hull City,Hull City wins,3.1,2.35,3.1,3.2,0.55,false,LOST,2,1,,17,10,17,13,22,13,7,13,1.23,1.31,30.77,1.69,1.54,46.15
+English League Championship,2025-11-05,Portsmouth,Wrexham,Wrexham wins,2.95,2.5,2.95,3.2,0.58,false,LOST,0,0,,13,4,20,13,17,7,16,13,0.77,1.31,23.08,1.46,1.46,30.77
+English League Championship,2025-11-05,Preston North End,Swansea City,Preston North End wins,2.25,2.25,3.4,3.1,0.59,false,WON,2,1,,22,9,6,13,17,5,17,13,1.31,0.92,46.15,1.00,1.00,30.77
+English League Championship,2025-11-05,Queens Park Rangers,Southampton,Queens Park Rangers wins,2.75,2.75,2.55,3.25,0.58,false,LOST,1,2,,18,6,15,13,12,2,21,13,1.23,1.62,38.46,1.00,1.46,15.38
+English League One,2025-10-21,Reading,Northampton Town,Northampton Town wins,3.4,1.95,3.4,3.2,0.68,true,LOST,1,0,-0.268,11,,22,12,17,,11,12,1.08,1.50,16.67,0.83,0.92,41.67
+English League One,2025-10-25,AFC Wimbledon,Burton Albion,AFC Wimbledon wins,2,2,3.8,3.1,0.81,true,LOST,0,1,0.524,25,,4,13,12,,22,12,1.46,1.08,61.54,0.83,1.33,25.00
+English League One,2025-10-25,Barnsley,Rotherham United,Barnsley wins,1.8,1.8,3.9,3.6,0.68,true,LOST,0,1,0.259,18,,10,11,14,,18,12,1.64,1.45,45.45,1.00,1.33,33.33
+English League One,2025-10-25,Bolton Wanderers,Cardiff City,Cardiff City wins,3.5,1.95,3.5,3.4,0.7,true,LOST,1,0,-0.304,20,,7,13,26,,1,12,1.38,1.15,38.46,1.75,0.83,66.67
+English League One,2025-10-23,Exeter City,Plymouth Argyle,Draw,3.25,2.75,2.4,3.25,0.51,false,LOST,2,0,-0.02,13,,20,13,13,,21,12,0.92,1.08,30.77,1.42,1.75,33.33
+English League One,2025-10-25,Leyton Orient,Lincoln City,Lincoln City wins,2.65,2.55,2.65,3.15,0.73,true,LOST,1,0,-0.362,14,,16,13,24,,6,12,1.54,1.77,30.77,1.50,0.83,58.33
+English League One,2025-10-25,Northampton Town,Luton Town,Draw,3.2,4,1.91,3.2,0.51,false,LOST,0,1,0.019,17,,11,13,16,,15,12,0.77,0.92,38.46,1.17,1.25,41.67
+English League One,2025-10-25,Wycombe Wanderers,Huddersfield Town,Huddersfield Town wins,3.3,2.1,3.3,3.25,0.72,true,LOST,3,0,-0.337,13,,19,13,19,,8,12,1.15,1.23,23.08,1.50,1.25,50.00
+English League One,2025-10-25,Peterborough United,Blackpool,Draw,3.3,2.2,3,3.3,0.51,false,LOST,1,2,0.023,10,,23,12,9,,24,13,0.75,1.67,25.00,0.85,1.62,15.38
+English League One,2025-10-25,Reading,Doncaster Rovers,Doncaster Rovers wins,3,2.2,3,3.25,0.56,false,LOST,1,1,-0.12,14,,17,13,17,,12,13,1.08,1.38,23.08,0.92,1.38,38.46
+English League One,2025-10-25,Stevenage,Bradford City,Draw,3.1,2.4,2.9,3.1,0.54,false,WON,1,1,0.081,25,,2,11,25,,3,12,1.55,0.82,72.73,1.83,1.25,58.33
+English League One,2025-10-25,Mansfield Town,Wigan Athletic,Mansfield Town wins,2.25,2.25,2.85,3,0.59,false,LOST,1,1,0.179,18,,9,12,16,,14,13,1.50,1.17,41.67,1.23,1.31,30.77
+English League Two,2025-10-21,Swindon Town,Notts County,Swindon Town wins,2,2,3.3,3.4,0.56,false,LOST,2,2,0.128,24,,4,12,20,,9,12,1.83,1.42,66.67,1.75,1.08,50.00
+English League Two,2025-10-25,Barrow,Barnet,Barnet wins,1.91,3.8,1.91,3.3,0.58,false,LOST,2,2,-0.167,17,,15,13,20,,10,13,0.85,1.00,38.46,1.23,1.00,46.15
+English League Two,2025-10-25,Cheltenham Town,Walsall,Walsall wins,1.8,4.25,1.8,3.4,0.89,true,LOST,1,0,-0.674,11,,22,13,26,,1,13,0.69,1.92,23.08,1.46,0.92,61.54
+English League Two,2025-10-25,Bromley,Milton Keynes Dons,Milton Keynes Dons wins,2.6,2.6,2.6,3.15,0.73,true,LOST,2,1,-0.366,18,,13,13,24,,3,13,1.46,1.31,30.77,2.00,1.00,53.85
+English League Two,2025-10-25,Crewe Alexandra,Grimsby Town,Grimsby Town wins,2.45,2.65,2.45,3.25,0.67,true,LOST,3,2,-0.239,19,,11,13,24,,4,13,1.31,1.23,46.15,1.92,1.15,53.85
+English League Two,2025-10-25,Fleetwood Town,Accrington Stanley,Fleetwood Town wins,1.95,1.95,3.6,3.3,0.67,true,WON,2,1,0.233,19,,12,13,12,,20,12,1.46,1.46,38.46,0.92,1.17,25.00
+English League Two,2025-10-25,Crawley Town,Bristol Rovers,Bristol Rovers wins,2.85,2.3,2.85,3.25,0.66,true,LOST,4,0,-0.217,9,,23,13,17,,16,13,0.77,1.69,15.38,1.08,1.62,38.46
+English League Two,2025-10-25,Harrogate Town,Newport County,Harrogate Town wins,1.95,1.95,3.6,3.3,0.58,false,LOST,0,3,0.152,14,,19,13,8,,24,13,1.15,1.54,30.77,0.85,1.77,15.38
+English League Two,2025-10-25,Notts County,Cambridge United,Draw,3,2.4,2.9,3,0.54,false,LOST,2,0,0.081,21,,8,13,21,,9,13,1.77,1.15,46.15,1.23,1.00,46.15
+English League Two,2025-10-25,Oldham Athletic,Shrewsbury Town,Oldham Athletic wins,1.91,1.91,3.9,3.25,0.56,false,LOST,2,2,0.122,15,,17,13,12,,21,13,0.77,0.77,23.08,0.77,1.54,23.08
+English League Two,2025-10-25,Swindon Town,Colchester United,Swindon Town wins,2.1,2.1,3.1,3.4,0.72,true,LOST,0,0,0.345,25,,2,13,17,,14,13,1.85,1.46,61.54,1.62,1.38,30.77
+English League Two,2025-10-25,Gillingham,Salford City,Draw,3.15,2.5,2.65,3.15,0.52,false,LOST,1,2,0.034,22,,5,13,22,,7,13,1.38,0.92,46.15,1.38,1.31,53.85
+English League Two,2025-11-10,Cheltenham Town,Notts County,Notts County wins,1.87,3.5,1.87,3.25,0.66,true,WON,1,2,,14,13,22,14,24,7,8,14,0.71,1.79,28.57,1.79,1.07,50.00
+French Ligue 1,2025-10-25,Lens,Marseille,Marseille wins,2.45,2.75,2.45,3.4,0.69,true,LOST,2,1,-0.271,16,,4,8,18,,1,8,1.50,0.88,62.50,2.63,0.88,75.00
+French Ligue 1,2025-10-25,AS Monaco,Toulouse,Draw,3.8,1.87,3.8,3.8,0.52,false,LOST,1,0,0.039,14,,7,8,13,,8,8,2.13,1.63,50.00,1.88,1.50,50.00
+French Ligue 1,2025-10-24,Paris FC,Nantes,Paris FC wins,1.65,1.65,5,3.9,0.67,true,LOST,1,2,0.247,10,,11,8,6,,15,8,1.63,1.88,37.50,0.63,1.13,12.50
+French Ligue 1,2025-10-29,Le Havre AC,Brest,Draw,3.25,2.55,2.75,3.25,0.54,false,LOST,1,0,-0.07,9,,14,9,9,,12,9,1.22,1.78,22.22,1.56,1.89,22.22
+French Ligue 1,2025-10-29,Nice,Lille,Lille wins,2.25,3.05,2.25,3.5,0.69,true,LOST,2,0,-0.272,14,,8,9,17,,5,9,1.56,1.67,44.44,2.44,1.22,55.56
+French Ligue 1,2025-10-29,Paris FC,Lyon,Lyon wins,2.5,2.7,2.5,3.5,0.71,true,LOST,3,3,-0.326,10,,11,9,18,,4,9,1.56,1.89,33.33,1.44,1.00,66.67
+French Ligue 1,2025-10-29,Toulouse,Stade Rennais,Toulouse wins,2.15,2.15,3.35,3.4,0.59,false,LOST,2,2,0.178,13,,9,9,11,,10,9,1.67,1.44,44.44,1.33,1.56,22.22
+French Ligue 1,2025-11-02,Brest,Lyon,Lyon wins,2.2,3,2.2,3.45,0.56,false,LOST,0,0,-0.12,9,,14,10,19,,5,10,1.40,1.80,20.00,1.60,1.20,60.00
+French Ligue 1,2025-11-08,Marseille,Brest,Marseille wins,1.44,1.44,7,4.5,0.66,false,WON,3,0,,22,4,2,11,10,3,13,11,2.27,1.00,63.64,1.27,1.64,18.18
+German Bundesliga,2025-10-24,Werder Bremen,1. FC Union Berlin,1. FC Union Berlin wins,3.1,2.2,3.1,3.5,0.57,false,LOST,1,0,-0.138,8,,12,7,10,,9,7,1.57,2.29,28.57,1.57,2.00,42.86
+German Bundesliga,2025-10-25,Hamburg SV,VfL Wolfsburg,Hamburg SV wins,2.35,2.35,2.8,3.6,0.57,false,LOST,0,1,0.131,8,,12,7,5,,15,7,1.00,1.43,28.57,1.14,1.86,14.29
+German Bundesliga,2025-10-25,FC Augsburg,RB Leipzig,RB Leipzig wins,2,3.25,2,3.9,0.74,true,WON,0,6,-0.387,7,,13,7,16,,2,7,1.71,2.00,28.57,1.43,1.29,71.43
+German Bundesliga,2025-11-01,1. FC Heidenheim 1846,Eintracht Frankfurt,Eintracht Frankfurt wins,1.91,3.5,1.91,4,0.84,true,LOST,1,1,-0.571,4,,17,8,13,,6,8,0.88,2.00,12.50,2.63,2.25,50.00
+German Bundesliga,2025-11-08,1. FC Union Berlin,Bayern Munich,Bayern Munich wins,1.18,10.5,1.18,7,0.9,true,LOST,2,2,,11,7,10,9,27,15,1,9,1.22,1.67,33.33,3.67,0.44,100.00
+German 2. Bundesliga,2025-10-25,Arminia Bielefeld,SV 07 Elversberg,SV 07 Elversberg wins,2.25,2.8,2.25,3.6,0.81,true,LOST,2,0,-0.529,10,,11,9,22,,2,9,1.89,1.78,33.33,2.44,0.67,77.78
+German 2. Bundesliga,2025-10-24,Schalke 04,SV Darmstadt 98,Schalke 04 wins,2.15,2.15,3.1,3.55,0.56,false,WON,1,0,0.123,21,,2,9,18,,4,9,1.44,0.56,77.78,1.56,0.67,55.56
+German 2. Bundesliga,2025-10-25,Holstein Kiel,VfL Bochum,Holstein Kiel wins,1.95,1.95,3.4,3.75,0.67,true,LOST,1,1,0.242,11,,9,9,6,,17,9,1.11,1.00,33.33,1.22,1.89,22.22
+German 2. Bundesliga,2025-10-25,Hertha Berlin,Fortuna Düsseldorf,Hertha Berlin wins,1.91,1.91,3.55,3.75,0.59,false,WON,1,0,0.186,11,,8,9,10,,13,9,1.22,1.11,33.33,1.00,1.89,33.33
+German 2. Bundesliga,2025-10-24,SpVgg Greuther Fürth,Karlsruher SC,Karlsruher SC wins,2.4,2.6,2.4,3.65,0.68,true,WON,1,4,-0.254,10,,14,9,15,,7,9,1.67,2.67,33.33,1.44,1.33,44.44
+German 2. Bundesliga,2025-10-25,Dynamo Dresden,SC Paderborn 07,SC Paderborn 07 wins,2.1,3.1,2.1,3.65,0.84,true,WON,1,2,-0.573,7,,16,9,20,,3,9,1.56,2.00,11.11,1.67,0.89,66.67
+German 2. Bundesliga,2025-10-31,SV 07 Elversberg,Hannover 96,SV 07 Elversberg wins,2.35,2.35,2.7,3.6,0.58,false,LOST,2,2,0.17,22,,3,10,20,,4,10,2.20,0.80,70.00,1.80,1.30,60.00
+German 2. Bundesliga,2025-11-02,Fortuna Düsseldorf,Kaiserslautern,Kaiserslautern wins,2.6,2.4,2.6,3.55,0.66,true,LOST,1,1,-0.21,10,,13,10,19,,5,10,0.90,1.80,30.00,1.90,1.20,60.00
+German 2. Bundesliga,2025-10-31,Preußen Münster,Holstein Kiel,Draw,3.45,2.95,2.25,3.45,0.52,false,LOST,2,1,-0.045,11,,11,10,12,,10,10,1.50,1.90,30.00,1.10,1.00,30.00
+German 2. Bundesliga,2025-11-09,1. FC Magdeburg,SC Paderborn 07,SC Paderborn 07 wins,2.05,3.25,2.05,3.65,0.73,false,WON,0,1,,7,7,18,11,26,12,2,11,0.82,1.91,18.18,1.73,0.91,72.73
+German 2. Bundesliga,2025-11-07,SpVgg Greuther Fürth,Preußen Münster,SpVgg Greuther Fürth wins,2.4,2.4,2.6,3.6,0.72,true,WON,1,0,,10,1,16,11,14,7,10,11,1.55,2.73,27.27,1.55,1.82,36.36
+Austrian Bundesliga,2025-10-19,FC Blau-Weiß Linz,SK Sturm Graz,SK Sturm Graz wins,1.83,4.1,1.83,3.5,0.81,true,WON,3,4,-0.525,10,,9,9,18,,1,8,0.78,1.22,33.33,1.75,0.50,75.00
+Austrian Bundesliga,2025-10-25,SC Rheindorf Altach,TSV Hartberg,Draw,3.25,2,3.75,3.25,0.51,false,WON,2,2,-0.015,13,,7,10,12,,8,10,0.80,0.80,30.00,1.40,1.40,30.00
+Austrian Bundesliga,2025-10-26,Austria Vienna,RB Salzburg,RB Salzburg wins,2.15,3.15,2.15,3.55,0.57,false,WON,0,3,-0.145,16,,5,10,18,,2,10,1.50,1.50,50.00,2.10,1.40,50.00
+Austrian Bundesliga,2025-10-25,LASK Linz,Grazer AK,LASK Linz wins,1.57,1.57,5.25,4,0.69,true,WON,1,0,0.275,10,,9,10,6,,12,10,1.10,1.70,30.00,0.60,1.90,0.00
+Austrian Bundesliga,2025-10-26,SK Sturm Graz,Wolfsberger,SK Sturm Graz wins,1.95,1.95,3.6,3.5,0.67,true,LOST,1,3,0.247,21,,1,9,17,,4,10,2.00,0.78,77.78,1.70,1.10,50.00
+Austrian Bundesliga,2025-10-26,SV Josko Ried,Rapid Vienna,Draw,3.3,2.9,2.3,3.3,0.55,false,LOST,0,2,-0.095,14,,6,10,17,,3,10,1.40,1.30,40.00,1.30,1.10,50.00
+Austrian Bundesliga,2025-10-25,WSG Swarovski Tirol,FC Blau-Weiß Linz,Draw,3.25,2.55,2.65,3.25,0.5,false,LOST,2,0,-0.005,9,,11,9,10,,10,10,1.56,1.89,22.22,1.00,1.50,30.00
+French Ligue 2,2025-10-24,Red Star FC 93,Grenoble,Red Star FC 93 wins,1.8,1.8,4.25,3.4,0.77,true,WON,1,0,0.445,20,,4,10,10,,14,10,1.60,0.90,60.00,1.10,1.30,20.00
+French Ligue 2,2025-10-24,Pau,Dunkerque,Pau wins,2.05,2.05,3.4,3.3,0.76,true,LOST,0,3,0.42,21,,2,10,10,,13,10,1.70,0.90,60.00,1.60,1.50,20.00
+French Ligue 2,2025-10-24,Stade de Reims,Troyes,Troyes wins,3.4,2.05,3.4,3.3,0.71,true,LOST,0,0,-0.315,15,,5,10,23,,1,10,1.60,1.50,40.00,2.00,0.90,70.00
+French Ligue 2,2025-10-25,SC Amiens,Rodez Aveyron,Draw,3.3,2.9,2.25,3.3,0.5,false,LOST,2,1,0,12,,12,10,13,,10,10,1.20,1.30,30.00,1.00,1.30,30.00
+French Ligue 2,2025-10-25,Annecy,Saint-Étienne,Saint-Étienne wins,2.05,3.3,2.05,3.25,0.76,true,LOST,4,0,-0.425,12,,13,10,20,,4,10,1.00,1.20,30.00,2.10,1.30,60.00
+French Ligue 2,2025-10-24,Guingamp,Clermont Foot,Guingamp wins,1.67,1.67,4.75,3.6,0.7,true,LOST,0,1,0.305,15,,6,10,10,,16,10,1.80,2.10,40.00,0.90,1.40,20.00
+French Ligue 2,2025-10-24,Le Mans,Boulogne,Le Mans wins,1.95,1.95,3.8,3.15,0.58,false,WON,1,0,0.17,13,,8,10,10,,15,10,1.40,1.40,30.00,0.90,1.30,30.00
+French Ligue 2,2025-10-25,Montpellier,AS Nancy Lorraine,Montpellier wins,2.05,2.05,3.5,3.2,0.57,false,WON,4,1,0.14,14,,8,10,12,,14,10,0.90,1.00,40.00,1.00,1.20,30.00
+French Ligue 2,2025-11-03,Pau,Troyes,Troyes wins,2.3,3,2.3,3.15,0.72,true,LOST,1,1,,21,7,5,12,27,11,1,12,1.42,1.50,50.00,1.92,0.83,66.67
+French Ligue 2,2025-10-31,Montpellier,Rodez Aveyron,Montpellier wins,1.87,1.87,3.7,3.5,0.56,false,WON,2,0,0.129,18,,6,12,16,,9,12,1.17,1.00,41.67,1.08,1.33,33.33
+French Ligue 2,2025-10-31,Guingamp,Stade Laval,Guingamp wins,2,2,3.7,3.15,0.68,true,WON,2,0,0.265,16,,10,12,9,,17,11,1.50,1.83,33.33,0.73,1.18,9.09
+French Ligue 2,2025-10-31,Annecy,Boulogne,Annecy wins,2,2,4,2.95,0.66,true,LOST,1,1,0.212,15,,11,12,10,,16,12,1.25,1.17,33.33,0.92,1.67,25.00
+French Ligue 2,2025-10-31,Le Mans,AS Nancy Lorraine,Le Mans wins,2.1,2.1,3.4,3.15,0.57,false,WON,1,0,0.135,17,,7,12,15,,13,12,1.33,1.25,33.33,1.08,1.33,33.33
+French Ligue 2,2025-11-07,Dunkerque,Boulogne,Dunkerque wins,1.67,1.67,5,3.6,0.65,false,LOST,1,1,,19,10,7,13,11,5,16,13,1.85,1.23,38.46,0.92,1.62,23.08
+Spanish LALIGA,2025-10-24,Real Sociedad,Sevilla,Sevilla wins,3.8,1.95,3.8,3.4,0.75,true,LOST,2,1,-0.406,6,,18,9,13,,9,9,0.89,1.44,11.11,1.78,1.56,44.44
+Spanish LALIGA,2025-10-25,Valencia,Villarreal,Villarreal wins,2.15,3.25,2.15,3.4,0.78,true,WON,0,2,-0.461,9,,14,9,17,,3,9,1.11,1.56,22.22,1.78,1.11,55.56
+Spanish LALIGA,2025-10-25,Espanyol,Elche,Draw,3.3,1.95,3.9,3.3,0.54,false,LOST,1,0,0.076,15,,6,9,14,,7,9,1.44,1.22,44.44,1.22,1.00,33.33
+Spanish LALIGA,2025-10-31,Getafe,Girona,Getafe wins,2.2,2.2,3.7,3,0.75,true,WON,2,1,0.4,14,,10,10,7,,20,10,1.00,1.20,40.00,0.90,2.20,10.00
+Spanish LALIGA,2025-11-03,Real Oviedo,Osasuna,Osasuna wins,2.5,3,2.5,3,0.57,false,LOST,0,0,,7,4,19,10,10,6,15,10,0.70,1.90,20.00,0.90,1.20,30.00
+Spanish LALIGA,2025-11-08,Atlético Madrid,Levante,Atlético Madrid wins,1.18,1.18,11,6.5,0.67,false,WON,3,1,,22,12,4,11,9,7,16,11,1.91,0.91,54.55,1.36,1.82,18.18
+Spanish LALIGA 2,2025-11-05,Real Sociedad II,Huesca,Draw,2.95,3,2.6,2.95,0.54,false,LOST,2,0,,9,4,20,11,14,7,17,11,1.27,1.64,18.18,0.91,1.27,36.36
+Spanish LALIGA 2,2025-10-25,Albacete,Córdoba,Draw,3.4,2.2,3.05,3.4,0.52,false,LOST,1,3,0.045,13,,12,10,13,,13,10,1.50,1.60,30.00,1.10,1.30,30.00
+Spanish LALIGA 2,2025-10-25,Mirandés,Racing Santander,Racing Santander wins,2.05,3.4,2.05,3.5,0.88,true,WON,1,3,-0.66,9,,21,10,19,,1,10,0.90,1.40,20.00,2.40,1.70,60.00
+Spanish LALIGA 2,2025-10-24,Huesca,Las Palmas,Las Palmas wins,2.55,3.05,2.55,2.8,0.7,true,LOST,1,1,-0.299,13,,14,9,18,,2,10,0.89,1.22,44.44,1.10,0.60,50.00
+Spanish LALIGA 2,2025-10-25,Granada,Cádiz,Cádiz wins,3.1,2.4,3.1,3,0.77,true,LOST,0,0,-0.435,10,,19,10,18,,3,10,1.10,1.50,20.00,1.10,0.90,50.00
+Spanish LALIGA 2,2025-10-25,Eibar,Leganés,Draw,2.95,2.3,3.3,2.95,0.54,false,WON,0,0,-0.075,12,,15,10,14,,11,10,1.10,1.00,30.00,1.00,0.70,30.00
+Spanish LALIGA 2,2025-10-25,Cultural Leonesa,Ceuta,Ceuta wins,3,2.45,3,3,0.56,false,WON,0,1,-0.13,11,,17,10,15,,10,10,1.20,1.30,30.00,1.00,1.20,40.00
+Spanish LALIGA 2,2025-11-02,Real Zaragoza,Deportivo La Coruña,Deportivo La Coruña wins,2.35,3,2.35,3.15,0.59,false,WON,0,2,-0.19,6,,22,11,17,,8,11,0.55,1.64,9.09,1.73,1.09,36.36
+Spanish LALIGA 2,2025-11-07,Mirandés,Sporting Gijón,Sporting Gijón wins,2.1,3.6,2.1,3.15,0.77,true,LOST,2,1,,9,4,21,12,19,13,9,12,1.00,1.67,16.67,1.42,1.42,50.00
+Spanish LALIGA 2,2025-11-10,Burgos,Castellón,Burgos wins,2.45,2.45,2.8,3.15,0.74,true,LOST,0,0,,21,12,4,12,15,4,15,12,1.58,1.00,50.00,1.25,1.25,33.33
+Spanish Liga F,2025-11-09,Dux Logroño,Atlético Madrid,Atlético Madrid wins,1.15,11,1.15,6,0.76,false,WON,0,5,,5,3,15,9,18,7,4,9,0.78,1.78,0.00,2.44,1.11,55.56
+Spanish Liga F,2025-11-09,Barcelona,Deportivo La Coruña,Barcelona wins,,,126,30,0.9,true,WON,8,0,,24,12,1,9,7,5,14,9,4.33,0.22,88.89,0.78,1.56,11.11
+Spanish Liga F,2025-11-08,Real Madrid,Alhama,Real Madrid wins,1.02,1.02,41,14,0.9,true,WON,5,0,,20,15,2,9,9,7,12,9,2.33,0.67,66.67,0.89,2.56,22.22
+Paraguayan Primera División,2025-10-25,Club Atlético Tembetary,Sportivo Luqueño,Sportivo Luqueño wins,2.05,3.3,2.05,3.3,0.67,true,LOST,1,1,-0.237,10,,12,17,21,,7,17,1.00,1.82,11.76,1.18,1.53,35.29
+Paraguayan Primera División,2025-10-25,Trinidense,2 de Mayo,Draw,3.15,2.2,3.1,3.15,0.53,false,LOST,2,1,-0.061,26,,5,17,29,,3,17,1.29,1.12,41.18,1.24,1.00,47.06
+Paraguayan Primera División,2025-10-31,General Caballero JLM,Deportivo Recoleta,Deportivo Recoleta wins,3.5,2.05,3.5,3.2,0.55,false,WON,1,3,-0.103,23,,7,18,25,,6,18,1.11,1.39,33.33,1.56,1.44,38.89
+Paraguayan Primera División,2025-11-10,Sportivo Ameliano,2 de Mayo,Sportivo Ameliano wins,2.45,2.45,2.8,3,0.57,false,LOST,2,3,,18,7,11,19,29,7,4,19,1.05,1.84,26.32,1.16,1.05,42.11
+Turkish Super Lig,2025-10-24,Fatih Karagümrük,Kayserispor,Draw,3.6,2.2,3.05,3.6,0.53,false,WON,2,2,0.068,3,,18,9,5,,17,9,0.89,2.22,11.11,0.67,2.22,0.00
+Turkish Super Lig,2025-10-25,Kocaelispor,Alanyaspor,Alanyaspor wins,2.75,2.55,2.75,3.25,0.68,true,LOST,2,0,-0.26,8,,15,9,13,,8,9,0.89,1.56,22.22,1.22,1.00,33.33
+Turkish Super Lig,2025-11-03,Caykur Rizespor,Fatih Karagümrük,Caykur Rizespor wins,1.74,1.74,4.4,3.8,0.56,false,WON,1,0,,10,5,12,10,4,1,18,10,1.10,1.40,20.00,1.00,2.20,10.00
+Turkish Super Lig,2025-10-31,Istanbul Basaksehir,Kocaelispor,Draw,3.6,1.83,4.33,3.6,0.5,false,LOST,1,0,0.005,10,,11,10,11,,10,10,1.10,0.90,20.00,1.00,1.40,30.00
+Turkish Super Lig,2025-11-09,Fenerbahce,Kayserispor,Fenerbahce wins,1.15,1.15,11,7.5,0.89,true,WON,4,2,,25,13,2,11,9,5,16,11,1.91,0.73,63.64,1.00,2.18,9.09
+Turkish Super Lig,2025-11-09,Kocaelispor,Galatasaray,Galatasaray wins,1.43,6.5,1.43,5,0.75,false,LOST,1,0,,11,9,14,11,29,13,1,11,0.91,1.36,27.27,2.27,0.45,81.82
+Portuguese Primeira Liga,2025-10-24,Alverca,Gil Vicente,Gil Vicente wins,2.4,3.2,2.4,3,0.69,true,WON,0,4,-0.283,10,,10,8,16,,4,8,1.38,1.50,37.50,1.25,0.50,62.50
+Portuguese Primeira Liga,2025-10-25,Estrela,Rio Ave,Draw,3.1,2.6,2.8,3.1,0.54,false,LOST,1,2,-0.076,7,,15,8,8,,12,8,0.75,1.00,12.50,1.38,1.63,12.50
+Portuguese Primeira Liga,2025-11-08,Santa Clara,Sporting CP,Sporting CP wins,1.43,8,1.43,4.4,0.89,true,WON,1,2,,11,6,11,10,25,13,2,10,0.80,1.10,30.00,2.50,0.50,80.00
+Portuguese Primeira Liga,2025-11-07,Estoril,Arouca,Estoril wins,2,2,3.7,3.4,0.64,false,WON,4,3,,10,8,13,10,9,4,15,10,1.50,1.40,20.00,1.00,2.60,20.00
+Portuguese Primeira Liga,2025-11-09,Benfica,Casa Pia,Benfica wins,1.14,1.14,15,7,0.77,false,LOST,2,2,,24,9,3,10,8,4,16,10,2.10,0.40,70.00,1.10,2.20,20.00
+Portuguese Primeira Liga,2025-11-09,AVS,Gil Vicente,Gil Vicente wins,1.69,5.5,1.69,3.6,0.78,false,LOST,1,1,,2,4,18,10,22,9,4,10,0.70,2.40,0.00,1.50,0.40,70.00
+Colombian Primera A,2025-10-25,Independiente Santa Fe,Millonarios,Independiente Santa Fe wins,2.4,2.4,2.85,2.9,0.57,false,LOST,0,1,0.142,22,,8,16,18,,15,16,1.06,0.94,31.25,1.19,1.50,31.25
+Colombian Primera A,2025-10-21,Millonarios,Bucaramanga,Bucaramanga wins,3.7,2.05,3.7,3,0.79,true,LOST,1,1,-0.483,17,,16,15,30,,2,15,1.20,1.53,33.33,1.73,0.80,60.00
+Colombian Primera A,2025-10-25,América de Cali,Atlético Junior,Atlético Junior wins,4.25,1.83,4.25,3.3,0.71,true,LOST,2,1,-0.324,20,,10,16,31,,3,16,1.00,0.94,31.25,1.88,1.19,56.25
+Colombian Primera A,2025-10-24,Fortaleza CEIF,Deportivo Pasto,Fortaleza CEIF wins,1.71,1.71,5,3.25,0.75,true,WON,2,0,0.41,28,,5,16,13,,18,16,1.31,1.00,43.75,1.19,1.56,12.50
+Colombian Primera A,2025-10-25,Deportivo Pereira,Águilas Doradas,Águilas Doradas wins,3.2,2.15,3.2,3.15,0.56,false,WON,1,5,-0.122,18,,14,16,21,,9,16,1.06,1.19,25.00,1.31,1.38,31.25
+Colombian Primera A,2025-10-24,Alianza FC,La Equidad,Alianza FC wins,1.5,1.5,5.75,4,0.72,true,WON,2,0,0.333,20,,11,16,11,,20,16,1.19,1.31,31.25,0.56,1.50,12.50
+Colombian Primera A,2025-10-25,Deportes Tolima,Deportivo Cali,Deportes Tolima wins,1.8,1.8,4.25,3.4,0.67,true,WON,2,1,0.23,26,,6,16,20,,12,16,1.25,0.88,50.00,1.25,1.44,31.25
+Colombian Primera A,2025-10-26,Atlético Nacional,Independiente Medellín,Independiente Medellín wins,3.5,2.1,3.5,3,0.57,false,LOST,5,2,-0.148,28,,5,16,31,,2,16,1.69,1.19,43.75,2.13,1.38,56.25
+Colombian Primera A,2025-10-29,La Equidad,Fortaleza CEIF,Fortaleza CEIF wins,1.95,3.9,1.95,3.2,0.83,true,WON,0,1,-0.566,11,,20,17,31,,5,17,0.53,1.53,11.76,1.35,0.94,47.06
+Colombian Primera A,2025-10-29,Independiente Medellín,Bucaramanga,Draw,3.4,1.83,4,3.4,0.55,false,LOST,3,0,-0.093,31,,4,17,34,,1,17,2.12,1.59,52.94,1.71,0.76,58.82
+Colombian Primera A,2025-10-30,Unión Magdalena,Deportes Tolima,Deportes Tolima wins,2,3.7,2,3.2,0.71,true,WON,0,2,-0.328,18,,15,17,29,,6,17,1.18,1.59,29.41,1.29,0.88,52.94
+Colombian Primera A,2025-10-29,Atlético Junior,Independiente Santa Fe,Atlético Junior wins,1.83,1.83,4.25,3.3,0.71,true,LOST,1,2,0.319,31,,3,17,22,,11,17,1.82,1.24,52.94,1.00,0.94,29.41
+Colombian Primera A,2025-11-09,Bucaramanga,La Equidad,Bucaramanga wins,1.32,1.32,9,4.75,0.87,true,WON,2,1,,34,10,2,18,11,0,20,18,1.61,0.89,55.56,0.50,1.50,11.11
+Colombian Primera A,2025-11-07,Envigado,Millonarios,Millonarios wins,1.83,4.1,1.83,3.3,0.59,false,LOST,1,1,,16,3,18,18,22,8,13,18,0.78,1.17,16.67,1.11,1.33,33.33
+Colombian Primera A,2025-11-08,Deportes Tolima,Llaneros,Deportes Tolima wins,1.54,1.54,5.5,3.9,0.63,false,WON,3,1,,32,12,5,18,25,7,10,18,1.33,0.83,55.56,0.89,1.06,38.89
+Costa Rican Primera Division,2025-10-26,Herediano,Cartagines,Cartagines wins,3.5,1.95,3.5,3.15,0.67,true,LOST,2,1,-0.241,13,,7,13,20,,4,12,0.92,1.38,23.08,1.08,0.50,41.67
+Costa Rican Primera Division,2025-10-26,Sporting San José,Municipal Liberia,Municipal Liberia wins,2.8,2.25,2.8,3.05,0.71,true,LOST,3,0,-0.325,11,,9,13,23,,3,13,0.92,1.23,15.38,1.31,0.85,46.15
+Costa Rican Primera Division,2025-11-01,Sporting San José,Herediano,Draw,3.05,2.15,3.05,3.05,0.51,false,LOST,0,1,-0.015,14,,8,14,16,,7,14,1.07,1.14,21.43,1.00,1.36,28.57
+Greek Super League,2025-10-25,Kifisia,Panetolikos,Kifisia wins,1.87,1.87,4.33,3.4,0.57,false,LOST,1,1,0.137,8,,8,7,7,,9,7,1.86,1.86,28.57,1.14,2.00,28.57
+Greek Super League,2025-10-25,OFI Crete,Atromitos,Draw,3.25,2.2,3.35,3.25,0.51,false,LOST,1,3,0.017,6,,11,6,6,,10,7,1.33,2.17,33.33,1.00,1.14,14.29
+Greek Super League,2025-10-25,Panserraikos FC,Larissa FC,Draw,3.1,2.4,3.1,3.1,0.52,false,LOST,0,2,0.036,5,,12,7,4,,13,7,0.71,1.86,14.29,1.00,1.86,0.00
+Greek Super League,2025-11-09,Levadiakos,Panserraikos FC,Levadiakos wins,1.37,1.37,8,4.6,0.76,false,WON,5,2,,15,8,4,9,5,4,13,9,2.33,1.11,44.44,0.56,2.22,11.11
+Salvadoran Primera Division,2025-10-26,CD FAS,Alianza FC,Draw,2.95,2.4,2.75,2.95,0.51,false,WON,2,2,0.012,34,,3,17,36,,2,17,2.24,1.06,58.82,1.76,0.88,64.71
+Salvadoran Primera Division,2025-11-05,Municipal Limeño,Alianza FC,Alianza FC wins,2.35,2.8,2.35,2.9,0.55,false,WON,0,1,,24,7,7,19,37,4,3,19,1.32,1.53,36.84,1.68,0.95,57.89
+Salvadoran Primera Division,2025-11-06,Metapan,C.D. Platense,Metapan wins,1.69,1.69,4.75,3.2,0.58,false,LOST,0,0,,32,8,4,19,22,5,8,19,1.47,1.26,47.37,1.32,1.21,21.05
+Mexican Liga de Expansión MX,2025-10-24,Venados FC,Club Jaiba Brava,Club Jaiba Brava wins,2.85,2.2,2.85,3.15,0.7,true,LOST,1,1,-0.299,14,,8,11,25,,2,11,2.09,2.45,36.36,1.82,1.18,63.64
+Mexican Liga de Expansión MX,2025-10-25,Alebrijes de Oaxaca,Tepatitlán FC,Tepatitlán FC wins,2,3.1,2,3.3,0.69,true,LOST,1,1,-0.286,11,,13,11,17,,5,12,1.18,1.82,27.27,1.67,1.17,33.33
+Mexican Liga de Expansión MX,2025-10-25,CA La Paz,Irapuato,Irapuato wins,2.35,2.55,2.35,3.3,0.58,false,LOST,2,2,-0.162,13,,9,11,18,,4,11,2.00,2.00,27.27,1.55,1.27,45.45
+Mexican Liga de Expansión MX,2025-10-26,Mineros de Zacatecas,Atlante,Atlante wins,2.45,2.65,2.45,3,0.7,true,WON,1,4,-0.299,17,,6,11,23,,3,11,1.91,1.64,36.36,2.18,0.73,63.64
+Mexican Liga de Expansión MX,2025-10-26,Dorados de Sinaloa,Tlaxcala FC,Tlaxcala FC wins,2.75,2.25,2.75,3.2,0.67,true,LOST,1,1,-0.242,4,,15,12,13,,10,11,0.50,1.75,8.33,1.09,1.82,27.27
+Mexican Liga de Expansión MX,2025-11-08,CA La Paz,Atlante,Atlante wins,1.71,3.8,1.71,3.5,0.79,true,WON,0,6,,17,5,9,13,27,11,3,13,1.92,1.85,30.77,2.23,0.77,61.54
+Mexican Liga de Expansión MX,2025-11-07,Venados FC,Tlaxcala FC,Venados FC wins,1.77,1.77,3.7,3.45,0.59,false,WON,5,1,,15,7,10,13,14,3,11,13,1.85,2.23,30.77,1.00,1.69,23.08
+Indonesian Super League,2025-10-31,PSIM Yogyakarta,Persik Kediri,PSIM Yogyakarta wins,2.2,2.2,2.95,3,0.58,false,WON,2,1,0.163,15,,6,9,11,,11,9,1.22,1.11,44.44,1.11,1.33,33.33
+Indonesian Super League,2025-11-03,Persijap,Malut United,Malut United wins,2.35,2.7,2.35,3.1,0.75,true,WON,1,2,-0.199,8,4,15,9,17,12,6,9,0.89,1.56,22.22,1.89,1.22,55.56
+Indonesian Super League,2025-11-03,Semen Padang,Arema Indonesia,Arema Indonesia wins,2.35,2.7,2.35,3.1,0.6,false,WON,1,2,,4,0,18,9,12,4,10,9,0.56,1.44,11.11,1.56,1.44,33.33
+Indonesian Super League,2025-11-05,Borneo FC,Dewa United,Borneo FC wins,1.95,1.95,3.3,3.25,0.9,true,WON,4,0,,24,15,1,8,10,7,13,9,2.13,0.50,100.00,1.22,1.78,33.33
+Indonesian Super League,2025-11-06,PSBS Biak,Persita Tangerang,Persita Tangerang wins,1.69,4.1,1.69,3.45,0.82,true,LOST,2,1,,6,2,16,10,18,11,5,10,0.80,1.90,10.00,1.40,1.00,50.00
+Indonesian Super League,2025-11-07,Persik Kediri,Persebaya Surabaya,Persik Kediri wins,2.25,2.25,2.9,2.95,0.59,false,LOST,1,1,,11,4,11,10,14,8,9,9,1.10,1.40,30.00,1.22,1.00,44.44
+Indonesian Super League,2025-11-09,Semen Padang,Borneo FC,Borneo FC wins,1.56,4.75,1.56,3.6,0.9,true,WON,0,2,,4,0,18,10,27,13,1,9,0.60,1.50,10.00,2.33,0.44,100.00
+English Women's Super League,2025-11-02,Tottenham Hotspur,Liverpool,Tottenham Hotspur wins,1.87,1.87,3.7,3.2,0.71,true,WON,2,1,0.319,12,,4,6,,,11,5,1.17,1.17,66.67,0.40,2.00,0.00
+English Women's Super League,2025-11-08,Manchester United,Aston Villa,Manchester United wins,1.29,1.29,7.5,4.75,0.88,true,LOST,0,1,,17,13,3,7,7,6,8,6,2.71,0.71,71.43,1.17,1.17,16.67
+English Women's Super League,2025-11-09,Everton,Manchester City,Manchester City wins,1.2,9,1.2,5.5,0.9,true,WON,1,2,,5,2,9,7,18,15,2,7,1.43,2.00,14.29,2.57,1.14,85.71
+Italian Serie B,2025-10-25,Suditrol,Cesena,Cesena wins,2.55,2.8,2.55,3.05,0.68,true,WON,0,1,-0.252,10,,12,8,14,,4,8,1.50,1.38,25.00,1.63,1.38,50.00
+Italian Serie B,2025-10-24,Modena,Empoli,Modena wins,1.77,1.77,4.5,3.4,0.81,true,WON,2,1,0.529,18,,1,8,10,,13,8,1.75,0.50,62.50,1.38,1.75,25.00
+Italian Serie B,2025-10-25,Carrarese,Venezia,Venezia wins,2.35,3,2.35,3.15,0.56,false,LOST,3,2,-0.117,11,,10,8,13,,6,8,1.63,1.13,25.00,1.38,0.75,37.50
+Italian Serie B,2025-10-25,Catanzaro,Palermo,Palermo wins,2.15,3.3,2.15,3.2,0.82,true,LOST,1,0,-0.538,6,,15,8,16,,2,8,0.88,1.13,0.00,1.25,0.50,50.00
+Italian Serie B,2025-10-25,Virtus Entella,Pescara,Draw,3.35,1.83,4.4,3.35,0.54,false,WON,1,1,0.073,9,,14,8,6,,16,8,1.13,1.38,25.00,1.63,2.00,12.50
+Italian Serie B,2025-10-25,US Avellino,Spezia,US Avellino wins,2.8,2.8,2.6,3,0.79,true,LOST,0,4,0.471,12,,9,8,3,,20,8,1.38,1.38,37.50,0.63,1.63,0.00
+Italian Serie B,2025-10-25,Sampdoria,Frosinone,Frosinone wins,3.2,2.25,3.2,3.05,0.83,true,LOST,1,1,-0.551,5,,18,8,14,,3,8,1.00,1.63,12.50,1.63,1.00,50.00
+Italian Serie B,2025-10-29,Mantova,Catanzaro,Catanzaro wins,2.7,2.5,2.7,3.1,0.59,false,WON,1,3,-0.175,5,,20,9,9,,15,9,0.67,1.67,11.11,0.89,1.00,11.11
+Italian Serie B,2025-10-29,Spezia,Padova,Padova wins,4.25,1.83,4.25,3.2,0.68,true,LOST,1,1,-0.258,6,,19,9,12,,11,9,1.00,1.44,11.11,1.11,1.22,33.33
+Italian Serie B,2025-11-02,Bari,Cesena,Cesena wins,2.4,3.05,2.4,3.05,0.57,false,LOST,1,0,-0.142,9,,16,9,20,,3,10,1.00,1.67,22.22,1.60,1.20,60.00
+Italian Serie B,2025-11-02,Monza,Spezia,Monza wins,2.1,2.1,3.7,3.05,0.58,false,WON,1,0,0.16,20,,2,10,7,,18,10,1.40,0.70,60.00,1.00,1.40,10.00
+Italian Serie B,2025-11-09,Pescara,Monza,Monza wins,1.63,5.5,1.63,3.6,0.86,true,WON,0,2,,8,3,18,11,23,15,2,11,1.36,2.09,9.09,1.36,0.64,63.64
+South African Premiership,2025-10-31,Durban City,Kaizer Chiefs,Draw,2.7,3.1,2.55,2.7,0.52,false,LOST,0,1,-0.042,15,,5,10,16,,4,9,1.00,0.80,40.00,0.89,0.56,44.44
+South African Premiership,2025-10-31,Siwelele,Sekhukhune United,Sekhukhune United wins,2.6,3.1,2.6,2.65,0.86,true,LOST,1,0,-0.617,8,,15,10,20,,2,9,0.40,1.00,20.00,1.44,0.44,66.67
+South African Premiership,2025-11-01,Chippa United,Amazulu,Amazulu wins,2.65,2.9,2.65,2.7,0.75,true,WON,0,3,-0.395,6,,16,10,15,,7,9,0.70,1.60,10.00,1.00,1.00,44.44
+South African Premiership,2025-11-04,Sekhukhune United,Richards Bay,Sekhukhune United wins,1.87,1.87,4.75,2.9,0.6,false,LOST,1,1,,20,7,2,10,12,7,12,11,1.30,0.50,60.00,0.73,1.09,27.27
+South African Premiership,2025-11-04,Amazulu,Polokwane City,Amazulu wins,2.35,2.35,3.4,2.7,0.55,false,LOST,0,1,,18,10,5,10,16,7,8,11,1.20,0.90,50.00,0.73,0.64,36.36
+South African Premiership,2025-11-05,Golden Arrows,Orlando Pirates,Orlando Pirates wins,1.59,7,1.59,3.2,0.58,false,WON,1,3,,16,9,8,11,19,13,4,9,1.55,1.18,45.45,1.22,0.44,66.67
+Saudi Pro League,2025-10-19,Al Khaleej,Al Riyadh,Al Khaleej wins,1.8,1.8,4.1,3.5,0.77,true,WON,4,1,0.445,6,,11,4,3,,14,4,2.00,1.00,50.00,1.25,2.75,25.00
+Saudi Pro League,2025-10-19,Al Taawoun,Damac,Al Taawoun wins,1.8,1.8,4.25,3.4,0.85,true,WON,6,1,0.593,9,,8,4,1,,15,4,2.00,2.00,75.00,1.00,2.00,0.00
+Saudi Pro League,2025-10-19,Neom SC,Al Qadsiah,Al Qadsiah wins,2.3,2.75,2.3,3.4,0.56,false,WON,1,3,-0.12,9,,7,4,10,,4,4,1.50,1.00,75.00,2.00,1.00,75.00
+Saudi Pro League,2025-10-23,Al Riyadh,Al Kholood,Al Kholood wins,2.6,2.6,2.6,3.15,0.83,true,LOST,1,0,-0.565,3,,14,5,9,,7,5,1.20,3.00,20.00,2.00,1.40,60.00
+Saudi Pro League,2025-10-23,Al Fayha,Al Taawoun,Al Taawoun wins,2.65,2.65,2.65,3,0.8,true,WON,1,2,-0.495,8,,10,5,12,,3,5,1.00,1.20,40.00,2.80,1.80,80.00
+Saudi Pro League,2025-10-24,Al Fateh,Al Ettifaq,Al Ettifaq wins,2.9,2.2,2.9,3.5,0.71,true,LOST,2,1,-0.32,1,,15,5,7,,11,5,0.80,2.40,0.00,1.20,2.20,40.00
+Saudi Pro League,2025-10-24,Neom SC,Al Khaleej,Al Khaleej wins,3.4,1.95,3.4,3.6,0.67,true,LOST,1,1,-0.235,9,,9,5,9,,6,5,1.40,1.40,60.00,2.40,1.00,60.00
+Saudi Pro League,2025-10-24,Al Ittihad,Al Hilal,Al Hilal wins,1.74,3.7,1.74,4,0.58,false,WON,0,2,-0.155,10,,5,5,11,,4,5,2.20,1.40,60.00,3.00,1.20,60.00
+Saudi Pro League,2025-10-31,Al Ettifaq,Al Hazem,Al Ettifaq wins,1.95,1.95,3.5,3.4,0.56,false,LOST,2,2,0.12,7,,11,6,5,,14,6,1.17,2.17,33.33,0.50,1.17,16.67
+Saudi Pro League,2025-10-30,Al Kholood,Neom SC,Draw,3.4,3.6,1.91,3.4,0.52,false,LOST,2,3,0.036,9,,9,6,10,,8,6,1.67,1.33,50.00,1.33,1.33,50.00
+Saudi Pro League,2025-10-31,Al Okhdood,Al Najma,Draw,3.3,2.2,3,3.3,0.53,false,LOST,2,1,0.065,1,,17,6,,,18,6,1.00,2.33,0.00,0.67,2.33,0.00
+Saudi Pro League,2025-10-30,Damac,Al Fateh,Al Fateh wins,2.1,3.1,2.1,3.4,0.56,false,LOST,1,1,-0.123,2,,16,6,4,,15,6,1.00,2.50,0.00,1.00,2.17,16.67
+Saudi Pro League,2025-11-07,Al Fateh,Al Taawoun,Al Taawoun wins,2.4,2.55,2.4,3.25,0.78,false,WON,2,5,,5,7,15,7,18,12,2,7,1.00,2.00,14.29,2.57,1.43,85.71
+Saudi Pro League,2025-11-06,Al Hazem,Al Khaleej,Al Khaleej wins,2.05,3.2,2.05,3.4,0.8,true,WON,1,4,,6,4,14,7,11,8,7,7,0.71,1.29,14.29,2.43,1.43,42.86
+Saudi Pro League,2025-11-08,Neom SC,Al Nassr,Al Nassr wins,1.33,6.25,1.33,5,0.78,false,WON,1,3,,13,7,7,7,21,12,1,7,1.57,1.43,57.14,3.29,0.43,100.00
+Nigerian Professional League,2025-11-06,Bendel Insurance FC,Rivers United FC,Rivers United FC wins,3.3,2,3.3,3.05,0.72,true,LOST,0,0,,8,3,19,10,16,8,8,9,0.80,1.20,10.00,0.67,0.33,44.44
+Nigerian Professional League,2025-11-06,Nasarawa United,Remo Stars,Nasarawa United wins,1.42,1.42,6.75,3.7,0.72,true,WON,2,1,,19,9,2,10,10,3,17,8,0.90,0.60,60.00,1.00,1.50,37.50
+Thai League 1,2025-11-02,Lamphun Warriors,Port,Port wins,2,3.2,2,3.25,0.71,true,WON,0,2,-0.327,6,,15,9,16,,4,9,1.56,2.78,11.11,2.00,0.67,55.56
+Thai League 1,2025-11-07,PT Prachuap,Lamphun Warriors,PT Prachuap wins,1.71,1.71,4,3.3,0.83,true,LOST,1,1,,16,11,6,10,6,1,16,10,1.40,0.90,40.00,1.40,2.70,10.00
+UEFA Champions League,2025-11-04,Juventus,Sporting CP,Sporting CP wins,3.8,1.91,3.8,3.6,0.82,true,LOST,1,1,,2,6,25,3,6,13,12,3,2.00,2.33,0.00,2.33,1.33,66.67
+UEFA Champions League,2025-11-04,Bodo/Glimt,AS Monaco,Draw,3.7,2.4,2.7,3.7,0.54,false,LOST,0,1,,2,9,26,3,2,8,27,3,1.67,2.33,0.00,1.00,2.00,0.00
+UEFA Champions League,2025-11-04,Olympiacos,PSV Eindhoven,PSV Eindhoven wins,2.65,2.5,2.65,3.5,0.89,true,LOST,1,1,,1,9,33,3,4,15,16,3,0.33,2.67,0.00,2.67,2.00,33.33
+UEFA Champions League,2025-11-04,Liverpool,Real Madrid,Real Madrid wins,2.5,2.45,2.5,3.8,0.75,true,LOST,1,0,,6,6,10,3,9,15,5,3,2.67,1.33,66.67,2.67,0.33,100.00
+Australian A-League Men,2025-10-24,Newcastle Jets,Melbourne Victory,Draw,3.9,2.95,2.15,3.9,0.52,false,LOST,5,2,-0.03,,,10,1,1,,8,1,2.00,3.00,0.00,0.00,0.00,0.00
+Australian A-League Men,2025-10-25,Auckland FC,Western Sydney Wanderers,Draw,3.8,1.83,3.9,3.8,0.53,false,LOST,1,0,-0.065,1,,9,1,1,,8,1,0.00,0.00,0.00,1.00,1.00,0.00
+Australian A-League Men,2025-10-25,Melbourne City FC,Perth Glory,Draw,4.6,1.5,5.5,4.6,0.53,false,LOST,4,0,-0.065,1,,6,1,1,,5,1,1.00,1.00,0.00,2.00,2.00,0.00
+Australian A-League Men,2025-10-25,Sydney FC,Central Coast Mariners,Central Coast Mariners wins,5.5,1.53,5.5,4.4,0.9,true,LOST,2,0,-0.9,,,11,1,3,,1,1,1.00,2.00,0.00,3.00,2.00,100.00
+Australian A-League Men,2025-10-26,Wellington Phoenix FC,Brisbane Roar,Brisbane Roar wins,2.4,2.8,2.4,3.5,0.81,true,LOST,2,1,-0.515,1,,5,1,3,,4,1,2.00,2.00,0.00,1.00,0.00,100.00
+Australian A-League Men,2025-10-27,Macarthur FC,Adelaide United,Adelaide United wins,2.75,2.35,2.75,3.7,0.9,true,LOST,2,1,-0.84,,,12,1,3,,6,1,0.00,1.00,0.00,2.00,1.00,100.00
+Australian A-League Men,2025-10-31,Brisbane Roar,Melbourne City FC,Melbourne City FC wins,1.91,3.8,1.91,3.7,0.73,true,LOST,0,0,-0.365,3,,7,2,4,,1,2,1.00,1.00,50.00,2.50,0.50,50.00
+Australian A-League Men,2025-10-31,Perth Glory,Melbourne Victory,Draw,3.7,3.2,2.1,3.7,0.53,false,LOST,0,2,-0.065,1,,12,2,1,,11,2,1.00,3.00,0.00,1.00,2.50,0.00
+Australian A-League Women,2025-11-08,Adelaide United ,Sydney FC ,Adelaide United  wins,2.05,2.05,3,3.3,0.74,false,LOST,0,0,,,6,11,1,1,10,6,1,0.00,3.00,0.00,2.00,2.00,0.00
+Dutch Keuken Kampioen Divisie,2025-10-21,MVV Maastricht,Vitesse,Vitesse wins,2.65,2.35,2.65,3.5,0.58,false,LOST,3,2,-0.165,11,,15,11,2,,20,9,0.91,1.55,27.27,2.00,1.56,44.44
+Dutch Keuken Kampioen Divisie,2025-10-24,Vitesse,Roda JC Kerkrade,Roda JC Kerkrade wins,2.15,3.1,2.15,3.3,0.74,true,LOST,2,2,-0.378,2,,20,10,24,,3,12,2.00,1.70,40.00,1.92,1.17,58.33
+Dutch Keuken Kampioen Divisie,2025-10-31,VVV-Venlo,Vitesse,VVV-Venlo wins,1.95,1.95,3.4,3.5,0.58,false,LOST,1,2,0.163,18,,9,13,3,,20,11,1.46,1.38,46.15,2.00,1.73,36.36
+CONMEBOL Libertadores,2025-10-24,Liga de Quito,Palmeiras,Palmeiras wins,2.5,3,2.5,3.05,0.78,true,LOST,3,0,-0.45,11,,1,6,18,,1,6,1.33,0.67,50.00,2.83,0.67,100.00
+CONMEBOL Libertadores,2025-10-30,Racing Club,Flamengo,Racing Club wins,3,3,2.4,3.2,0.69,true,LOST,0,0,0.29,13,,1,6,11,,2,6,2.33,0.50,66.67,1.00,0.50,50.00
+Peruvian Liga 1,2025-10-24,Sporting Cristal,Universitario,Universitario wins,2.15,3.15,2.15,2.95,0.59,false,WON,0,1,-0.19,22,,4,12,33,,1,13,1.75,0.67,50.00,1.92,0.69,76.92
+LigaPro Ecuador,2025-10-26,Deportivo Cuenca,Aucas,Deportivo Cuenca wins,2.2,2.2,3.25,3.1,0.56,false,LOST,1,2,0.116,49,,1,32,42,,4,32,1.19,1.00,43.75,1.25,1.38,34.38
+LigaPro Ecuador,2025-10-26,El Nacional,Macará,Macará wins,2.25,3.1,2.25,3.1,0.57,false,LOST,2,0,-0.138,35,,5,32,44,,3,32,1.06,1.56,28.13,1.22,1.00,34.38
+LigaPro Ecuador,2025-10-25,Orense,Universidad Católica (Quito),Universidad Católica (Quito) wins,2.6,2.6,2.6,3.1,0.57,false,LOST,2,1,-0.135,47,,6,32,51,,4,32,1.09,1.13,40.63,1.91,1.31,40.63
+LigaPro Ecuador,2025-10-26,Vinotinto,Técnico Universitario,Draw,3,2.4,2.9,3,0.52,false,LOST,1,2,0.038,27,,4,31,28,,3,31,1.13,1.45,22.58,0.84,1.55,22.58
+LigaPro Ecuador,2025-11-01,Delfín,Deportivo Cuenca,Deportivo Cuenca wins,2.5,2.9,2.5,2.9,0.69,true,LOST,2,0,-0.279,32,,6,33,49,,1,33,0.85,1.48,18.18,1.18,1.03,42.42
+LigaPro Ecuador,2025-11-04,Libertad (Ecuador),Independiente del Valle,Independiente del Valle wins,1.8,4.1,1.8,3.5,0.71,true,WON,1,3,-0.222,50,8,5,33,70,8,1,32,1.36,1.15,39.39,1.88,0.75,62.50
+LigaPro Ecuador,2025-11-08,Deportivo Cuenca,Macará,Deportivo Cuenca wins,2,2,3.8,3.1,0.71,true,LOST,0,2,,49,3,1,34,47,12,3,34,1.15,1.06,41.18,1.24,1.00,35.29
+LigaPro Ecuador,2025-11-11,Aucas,Delfín,Aucas wins,1.49,1.49,6,4.1,0.57,false,WON,8,0,,46,6,4,34,35,5,6,34,1.32,1.41,35.29,0.88,1.44,20.59
+Cypriot First Division,2025-10-26,Akritas Chlorakas,Omonia Aradippou,Akritas Chlorakas wins,2.5,2.5,2.65,2.9,0.6,false,LOST,0,1,0.196,8,,8,7,4,,12,7,0.71,1.57,28.57,0.14,1.43,14.29
+Cypriot First Division,2025-11-07,AEL,Enosis Neon Paralimni,AEL wins,1.53,1.53,5.25,3.6,0.66,false,WON,3,0,,10,6,8,9,1,1,14,9,1.00,1.89,33.33,0.22,2.22,0.00
+Cypriot First Division,2025-11-08,Aris Limassol,Krasava,Aris Limassol wins,1.14,1.14,11,6.25,0.89,true,WON,3,0,,20,11,4,9,7,0,12,9,2.11,0.67,66.67,0.89,1.33,22.22
+Cypriot First Division,2025-11-09,Anorthosis,Pafos,Pafos wins,1.38,6.75,1.38,4.1,0.78,false,LOST,1,1,,7,5,11,9,21,10,3,9,0.78,1.89,11.11,2.00,0.67,77.78
+Peruvian Liga 1,2025-10-24,Juan Pablo II,Comerciantes Unidos,Comerciantes Unidos wins,4,1.77,4,3.25,0.69,true,WON,0,1,-0.285,11,,16,13,19,,8,13,0.69,1.23,15.38,1.15,1.31,38.46
+Peruvian Liga 1,2025-10-25,Ayacucho FC,Deportivo Garcilaso,Deportivo Garcilaso wins,3.1,2.15,3.1,3.05,0.7,true,LOST,4,2,-0.302,11,,17,13,21,,7,14,0.85,1.62,23.08,1.21,1.21,35.71
+Peruvian Liga 1,2025-10-25,Alianza Atlético,Cienciano del Cusco,Draw,3.15,1.95,3.3,3.15,0.55,false,LOST,0,1,-0.094,16,,11,13,18,,9,13,0.85,0.69,30.77,1.46,1.31,38.46
+Peruvian Liga 1,2025-11-02,Alianza Universidad,Cusco FC,Cusco FC wins,2.2,2.8,2.2,3.2,0.67,true,LOST,2,2,-0.231,13,,16,14,29,,2,14,1.21,2.07,28.57,1.57,0.86,64.29
+Venezuelan Primera División,2025-10-31,Deportivo La Guaira,Monagas SC,Deportivo La Guaira wins,1.95,1.95,3.5,3.15,0.71,true,WON,2,1,0.314,4,,2,3,,,4,3,1.00,1.33,33.33,0.33,1.67,0.00
+Venezuelan Primera División,2025-11-04,Academia Puerto Cabello,Monagas SC,Academia Puerto Cabello wins,1.56,1.56,4.75,3.6,0.9,true,WON,3,2,,9,12,1,3,,1,4,4,2.67,0.67,100.00,0.50,1.75,0.00
+Venezuelan Primera División,2025-11-04,Zamora,Deportivo La Guaira,Deportivo La Guaira wins,1.71,4.75,1.71,3.05,0.56,false,LOST,2,0,,4,7,3,3,7,10,2,4,1.00,1.33,33.33,1.25,1.25,50.00
+Venezuelan Primera División,2025-11-08,Deportivo La Guaira,Academia Puerto Cabello,Deportivo La Guaira wins,1.71,1.71,4.1,3.3,0.9,true,LOST,0,0,,7,7,3,5,12,15,1,4,1.00,1.40,40.00,2.75,1.00,100.00
+Liga AUF Uruguaya,2025-10-24,Defensor Sporting,Montevideo City Torque,Draw,3.1,2.6,2.6,3.1,0.52,false,LOST,0,1,-0.044,22,,4,12,21,,6,12,0.92,1.00,58.33,1.83,1.25,50.00
+Liga AUF Uruguaya,2025-10-25,Juventud,Plaza Colonia,Juventud wins,2,2,3.8,3.1,0.65,true,LOST,0,2,0.208,12,,13,12,5,,16,12,0.50,0.83,25.00,0.58,1.83,8.33
+Liga AUF Uruguaya,2025-10-25,Cerro Largo,Racing (Montevideo),Cerro Largo wins,2.55,2.55,2.7,3.1,0.66,true,LOST,2,2,0.22,18,,8,12,13,,11,12,1.08,1.00,41.67,0.75,1.50,25.00
+MLS,2025-11-01,Chicago Fire FC,Philadelphia Union,Philadelphia Union wins,3.05,2.15,3.05,3.7,0.6,false,WON,0,3,-0.196,53,,8,34,66,,1,34,2.00,1.76,44.12,1.68,1.03,58.82
+MLS,2025-11-02,Portland Timbers,San Diego FC,San Diego FC wins,2.5,2.5,2.5,3.8,0.72,true,LOST,2,2,-0.331,44,,8,34,63,,1,34,1.21,1.41,32.35,1.88,1.21,55.88
+MLS,2025-11-02,Columbus Crew,FC Cincinnati,Draw,3.9,1.87,3.7,3.9,0.55,false,LOST,4,0,-0.098,54,,7,34,65,,2,34,1.62,1.50,41.18,1.53,1.18,58.82
+MLS,2025-11-02,FC Dallas,Vancouver Whitecaps,Vancouver Whitecaps wins,1.95,3.4,1.95,3.9,0.69,true,LOST,1,1,-0.279,44,,7,34,63,,2,34,1.53,1.62,32.35,1.94,1.12,52.94
+MLS,2025-10-25,Inter Miami CF,Nashville SC,Inter Miami CF wins,1.57,1.57,4.8,4.6,0.58,false,WON,3,1,0.155,65,,3,34,54,,6,34,2.38,1.62,55.88,1.71,1.32,47.06
+MLS,2025-11-01,Nashville SC,Inter Miami CF,Inter Miami CF wins,2.5,2.5,2.5,3.8,0.58,false,LOST,2,1,-0.155,54,,6,34,65,,3,34,1.71,1.32,47.06,2.38,1.62,55.88
+MLS,2025-11-03,Austin FC,LAFC,LAFC wins,1.91,3.7,1.91,3.7,0.59,false,WON,1,4,-0.19,47,,6,34,60,,3,34,1.09,1.32,38.24,1.91,1.18,50.00
+Liga AUF Uruguaya,2025-10-31,Wanderers,Boston River,Boston River wins,2.3,3.1,2.3,3.1,0.88,true,LOST,2,2,-0.658,6,,16,13,24,,4,13,0.38,1.46,7.69,1.85,0.62,46.15
+Liga AUF Uruguaya,2025-11-01,Liverpool,Juventud,Liverpool wins,2.1,2.1,3.4,3.2,0.76,true,LOST,0,1,0.415,25,,3,13,12,,12,13,1.46,1.00,53.85,0.46,0.92,23.08
+Bolivian Liga Profesional,2025-11-02,Real Tomayapo,Jorge Wilstermann,Draw,3.4,1.83,3.9,3.4,0.52,false,LOST,6,1,0.05,26,,11,23,12,,15,23,1.13,1.70,26.09,0.78,2.09,8.70
+Bolivian Liga Profesional,2025-11-03,Oriente Petrolero,Guabirá,Draw,4,1.67,4.25,4,0.55,false,LOST,4,0,,27,10,10,23,34,6,5,23,1.48,1.87,30.43,2.04,1.91,43.48
+Bolivian Liga Profesional,2025-11-04,San Antonio Bulo Bulo,Always Ready,Always Ready wins,2.35,2.65,2.35,3.4,0.82,true,WON,0,1,,31,6,6,23,55,12,1,23,1.87,1.70,34.78,2.87,1.00,73.91
+Peruvian Liga 1,2025-11-10,ADT,Los Chankas,ADT wins,1.43,1.43,5.75,4,0.55,false,WON,1,0,,21,5,10,15,24,9,8,15,1.20,1.33,40.00,1.20,1.73,53.33

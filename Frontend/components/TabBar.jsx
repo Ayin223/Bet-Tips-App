@@ -2,14 +2,13 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { colors } from '../constants/colors';
 
-
 const TabBar = ({ state, descriptors, navigation }) => {
-
+  
   const icons= {
     index:  (props) => <Ionicons name="football-outline"      {...props} />,
     info:   (props) => <Ionicons name="information-circle-outline"      {...props} />,
     premium:(props) => <Ionicons name="star"      {...props} />,
-    results:(props) => <Ionicons name="timer-outline"      {...props} />,
+    statistics:(props) => <Ionicons name="timer-outline"      {...props} />,
   }
 
   return (
@@ -35,6 +34,8 @@ const TabBar = ({ state, descriptors, navigation }) => {
           if (!isFocused && !event.defaultPrevented) {
             navigation.navigate(route.name, route.params);
           }
+
+          // analytics().logEvent('screen_view', { screen_name: route.name });
         };
 
         const onLongPress = () => {
@@ -43,8 +44,6 @@ const TabBar = ({ state, descriptors, navigation }) => {
             target: route.key,
           });
         };
-
-        
 
         return (
           <TouchableOpacity
@@ -72,7 +71,7 @@ const TabBar = ({ state, descriptors, navigation }) => {
          <Text style={
               {
                 color: isFocused ? colors.text : colors.background,
-                fontSize: 11,
+                fontSize: 13,
                 fontWeight: "bold"
               } 
             }>
@@ -92,17 +91,18 @@ export default TabBar
 
 const styles = StyleSheet.create({
     container:{
-        position: "absolute",
-        bottom: 50,
-        right: 0,
-        left: 0,
+        // position: "absolute",
+        // bottom: 50,
+        // right: 0,
+        // left: 0,
         backgroundColor: "rgba(59, 73, 65, 1)",
         flexDirection: "row",
         justifyContent: "space-between",
         itemsAlign: "center",
-        paddingVertical: 10,
-        marginHorizontal: 20,
-        borderRadius: 25,
+        paddingBottom: 20,
+        paddingTop: 10,
+        // marginHorizontal: 20,
+        // borderRadius: 25,
         borderCurved: "continuous",
         shadowColor: "#000",
         shadowOffset: {

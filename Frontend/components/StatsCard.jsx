@@ -7,7 +7,7 @@ const StatsCard = ({stat}) => {
       <Text style = {{textAlign: "center" , color: colors.text, fontWeight: "bold", fontSize: 20}}>STATISTICS</Text>
       <View style = {styles.statCardContainer}>
         <View style = {styles.statCard}>
-          <Text style = {styles.statText}> {Math.round(stat.winRate * 100)}%</Text>
+          <Text style = {styles.statText}> {stat.winRate}</Text>
           <Text style = {styles.statDesc}> WIN RATE</Text>
         </ View>
 

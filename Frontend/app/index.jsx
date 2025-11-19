@@ -1,58 +1,52 @@
-import { collection, onSnapshot, orderBy, query, where } from "firebase/firestore";
-import { useEffect, useState } from 'react';
 import { ActivityIndicator, FlatList, StyleSheet } from 'react-native';
 import TipsCard from "../components/TipsCard";
 import { colors } from "../constants/colors.jsx";
-import { db } from "../firebase";
+import { useDateContext } from '../context/DateContext.jsx';
 
 const FreeTips = () => {
 
-  const today = new Date().toISOString().slice(0,10)
+    const { 
+        allTips, 
+        selectedDate, 
+        isRefreshing, 
+        loadTips
+    } = useDateContext();
 
-  const [loading, setLoading] = useState(true);
-  const [tips, setTips] = useState([]);
+    const filteredTips = allTips.filter(tip => 
+        tip.matchDate === selectedDate && tip.isPremium === false
+    );
 
-  useEffect(() => {
-      // 🔹 Create a query to fetch only non-premium tips
-    const tipsRef = collection(db, "tips");
-    const freeTipsQuery = query(
-      tipsRef, where("isPremium", "==", false), 
-               where("outcome", "==", "PENDING"),
-               where("matchDate", "==", today),
-              orderBy("matchDate", "asc"),
-              orderBy("matchTime", "asc"));
+    if (allTips.length === 0 && !isRefreshing) {
+        return <ActivityIndicator size="large" color={colors.primary} style={styles.loading} />;
+    }
 
-
-    const unsubscribe = onSnapshot(freeTipsQuery, (querySnapshot) => {
-      const tipsData = querySnapshot.docs.map(doc => ({
-        ...doc.data(),
-        key: doc.id,
-      }));
-      setTips(tipsData);
-      setLoading(false);
-    });
-
-    return () => unsubscribe();
-  }, []);
-
-
-  if (loading) return <ActivityIndicator />;
-
-  return (
-    
-       
+    return (
         <FlatList
-          data={tips}
-          keyExtractor={(item) => item.key}
-          renderItem={({ item }) => <TipsCard tip={item} />}
-          contentContainerStyle={{ paddingBottom: 120 , paddingTop: 20}}
-          style={{backgroundColor: colors.background}}
+            data={filteredTips}
+            keyExtractor={(item) => item.id || item.key}
+            renderItem={({ item }) => <TipsCard tip={item} />}
+            onRefresh={loadTips}
+            refreshing={isRefreshing}
+            contentContainerStyle={styles.listContent}
+            style={styles.container}
         />
- 
-  );
-
+    );
 }
 
 export default FreeTips
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container: {
+        backgroundColor: colors.background,
+        flex: 1,
+    },
+    listContent: { 
+        // paddingBottom: 50, 
+        paddingTop: 20
+    },
+    loading: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    }
+})

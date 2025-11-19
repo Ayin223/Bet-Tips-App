@@ -7,7 +7,7 @@ export const mergerData = (fixturesData, standingData) => {
 
   const mergedResults = fixturesData.map(match => {
     
-    const fixtureLeagueCode = match.code; 
+    const fixtureLeagueCode = match.code.trim(); 
     
     const currentLeagueTeams = standingData[fixtureLeagueCode];
     
@@ -34,6 +34,7 @@ export const mergerData = (fixturesData, standingData) => {
         name: match.home.name,
         score: match.home.score,
         homeOdds: match.home.homeOdds,
+        homeTeamisFavorite: match.home.favorite,
         standing: homeStanding?.standing || null, 
         points: homeStanding?.points || null,
         gamesPlayed: homeStanding?.gamesPlayed || null,
@@ -55,6 +56,7 @@ export const mergerData = (fixturesData, standingData) => {
         name: match.away.name,
         score: match.away.score,
         awayOdds: match.away.awayOdds,
+        awayTeamisFavorite: match.away.favorite,
         // Properties are guaranteed to be from the correct league
         standing: awayStanding?.standing || null, 
         points: awayStanding?.points || null,
