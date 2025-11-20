@@ -24,7 +24,10 @@ class AnalyseData{
   async getData() {
       try {
         const docRef = collection(db, "tips");
-        const q = query(docRef, where("status", "==", true));
+        const q = query(docRef, 
+          where("status", "==", true),
+          where("version" , ">=", 0.1)
+        );
         const snapshot = await getDocs(q);
 
          this.tips = snapshot.docs.map((doc) => {
@@ -101,12 +104,12 @@ class AnalyseData{
     this.ROI = Number(((profit/this.totalTips)*100).toFixed(2))
     return{
       totalTips: this.totalTips,
-      winRate: `${this.winRate}%`,
+      winRate: Number(this.winRate),
       wins: this.wins,
       losses: this.losses,
       wonOdds: this.wonOdds,
-      ROI: `${this.ROI}%`,
-      profit: profit.toFixed(2),
+      ROI: this.ROI,
+      profit: Number(profit.toFixed(2)),
     }
   }
 

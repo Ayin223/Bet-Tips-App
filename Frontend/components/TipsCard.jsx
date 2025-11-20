@@ -1,5 +1,7 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { PixelRatio, StyleSheet, Text, View } from 'react-native';
 import { colors } from '../constants/colors.jsx';
+
+const scaleFont = (size) => (size+2) * PixelRatio.getFontScale();
 
 const TipsCard = ({tip}) => {
 
@@ -11,32 +13,32 @@ const TipsCard = ({tip}) => {
             
             {tip.isPremium? (
                 <View style={styles.premiumContainer}>
-                    <Text style={{ fontSize: 18, }}>💎</Text>
+                    <Text style={{ fontSize: scaleFont(18), }}>💎</Text>
                 </View>
                 ) : null}
 
             <View style = {[styles.statusContainer, {backgroundColor: tip.outcome === "WON" ? "green" : tip.outcome ==="LOST" ? "red": colors.accent }]}>
-                <Text style= {{fontSize: 12, color: colors.text, fontWeight: "bold"}}>{tip.outcome}</Text>
+                <Text style= {{fontSize: scaleFont(12), color: colors.text, fontWeight: "bold"}}>{tip.outcome}</Text>
             </View>            
         </View>
 
         <View style = {styles.leagueContainer}>
-         <Text style= {{fontWeight: "bold", fontSize: 16, color: colors.accent,}}>{tip.league}</Text>
-         <Text style= {{fontWeight: "bold", fontSize: 14, color: colors.textMuted,}}>Time: {tip.matchTime}</Text>
+         <Text style= {{fontWeight: "bold", fontSize: scaleFont(16), color: colors.accent, flexWrap: "wrap"}}>{tip.league}</Text>
+         <Text style= {{fontWeight: "bold", fontSize: scaleFont(14), color: colors.textMuted,}}>Time: {tip.matchTime}</Text>
         </View>
         
         <View style = {styles.teamsContainer}>
-            <Text style= {[styles.teams, {textAlign: "right", fontSize: 16,fontWeight: "bold", color: colors.text,}]}>{tip.homeTeam}</Text>
+            <Text style= {[styles.teams, {textAlign: "right", fontSize: scaleFont(16),fontWeight: "bold", color: colors.text, flexWrap: "wrap"}]}>{tip.homeTeam}</Text>
              {tip.status? 
-                (<Text style= {{fontSize: 18,fontWeight: "bold", color: colors.text, }}>{tip.homeScore} - {tip.awayScore}</Text>): 
-                (<Text style= {{fontSize: 18,fontWeight: "bold", color: colors.text, }}>vs</Text>)
+                (<Text style= {{fontSize: scaleFont(18),fontWeight: "bold", color: colors.text, }}>{tip.homeScore} - {tip.awayScore}</Text>): 
+                (<Text style= {{fontSize: scaleFont(18),fontWeight: "bold", color: colors.text, }}>vs</Text>)
             }
-            <Text style= {[styles.teams, {textAlign:"left",fontSize: 16,fontWeight: "bold", color: colors.text,}]}>{tip.awayTeam}</Text>
+            <Text style= {[styles.teams, {textAlign:"left",fontSize: scaleFont(16),fontWeight: "bold", color: colors.text, flexWrap: "wrap"}]}>{tip.awayTeam}</Text>
         </View>
 
         <View style = {styles.tipsContainer}>
             <Text style = {[styles.tips,{textAlign: "right",}]}>Prediction:</Text>
-            <Text style= {[styles.tips,{textAlign: "left", fontWeight: "bold", fontSize: 16, color: colors.text}]}>{tip.prediction}</Text>        
+            <Text style= {[styles.tips,{textAlign: "left", fontWeight: "bold", fontSize: scaleFont(16), color: colors.text}]}>{tip.prediction}</Text>        
         </View>
 
         <View style = {styles.tipsContainer}>
@@ -158,7 +160,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     tips:{
-        fontSize: 14,
+        fontSize: scaleFont(14),
         color: colors.textMuted,
     },  
         

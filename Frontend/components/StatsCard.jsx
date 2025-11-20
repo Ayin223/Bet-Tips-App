@@ -1,22 +1,34 @@
 import { StyleSheet, Text, View } from 'react-native'
 import { colors } from "../constants/colors"
+import Charts from './charts'
 
 const StatsCard = ({stat}) => {
   return (
-    <View style = {styles.container}>
-      <Text style = {{textAlign: "center" , color: colors.text, fontWeight: "bold", fontSize: 20}}>STATISTICS</Text>
-      <View style = {styles.statCardContainer}>
-        <View style = {styles.statCard}>
-          <Text style = {styles.statText}> {stat.winRate}</Text>
-          <Text style = {styles.statDesc}> WIN RATE</Text>
-        </ View>
+    <View>
+      <View style = {styles.container}>
+        <Text style = {{textAlign: "center" , color: colors.text, fontWeight: "bold", fontSize: 20}}>STATISTICS</Text>
+        <View style = {styles.statCardContainer}>
+          <View style = {styles.statCard}>
+            <Text style = {styles.statText}> {stat.winRate}</Text>
+            <Text style = {styles.statDesc}> WIN RATE</Text>
+          </ View>
 
-        <View style = {styles.statCard}>
-          <Text style = {styles.statText}> {stat.totalTips}</Text>
-          <Text style = {styles.statDesc}> TOTAL TIPS</Text>
+          <View style = {styles.statCard}>
+            <Text style = {styles.statText}> {stat.totalTips}</Text>
+            <Text style = {styles.statDesc}> TOTAL TIPS</Text>
+          </View>
         </View>
+      
       </View>
+
+      <Charts 
+        data = {stat}
+        keysToShow = {["wins", "losses"]}
+      />
     </View>
+    
+
+    
   )
 }
 
@@ -27,7 +39,7 @@ const styles = StyleSheet.create({
       //flex: 1,
               flexDirection: "column",
               width: "90%",
-              height: 150,
+              // height: 150,
               marginBottom: 20,
               backgroundColor: colors.card,
               justifyContent: "space-between",
@@ -45,7 +57,8 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: "flex-end",
         flexDirection: "row",
-        paddingHorizontal: 60
+        paddingHorizontal: 60,
+        marginBottom: 50,
     },
 
     statCard :{
