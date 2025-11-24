@@ -1,30 +1,33 @@
 import { StyleSheet, Text, View } from 'react-native'
 import { colors } from "../constants/colors"
-import Charts from './charts'
+import MyBarChart from "./myBarChart"
+import MyPieChart from "./myPieChart"
+import MySpeedometer from './mySpeedometer'
+import Quote from './Quote'
 
 const StatsCard = ({stat}) => {
   return (
     <View>
       <View style = {styles.container}>
-        <Text style = {{textAlign: "center" , color: colors.text, fontWeight: "bold", fontSize: 20}}>STATISTICS</Text>
-        <View style = {styles.statCardContainer}>
-          <View style = {styles.statCard}>
-            <Text style = {styles.statText}> {stat.winRate}</Text>
-            <Text style = {styles.statDesc}> WIN RATE</Text>
-          </ View>
-
-          <View style = {styles.statCard}>
-            <Text style = {styles.statText}> {stat.totalTips}</Text>
-            <Text style = {styles.statDesc}> TOTAL TIPS</Text>
-          </View>
-        </View>
+        <Text style = {{color: "white", marginBottom: 20, fontWeight: "bold", fontSize: 18}}>OVERALL WINRATE</Text>
+        <MySpeedometer data = {stat} speedometerKeys={['winRate']}/>
       
       </View>
+      
+      <View style = {styles.chartContainer}>
+        <Text style = {{color: "white", marginBottom: 20, fontWeight: "bold", fontSize: 18}}>PREMIUM  VS  FREE TIPS</Text>
 
-      <Charts 
-        data = {stat}
-        keysToShow = {["wins", "losses"]}
-      />
+        <View style = {{flexDirection: "row", alignItems: "center"}}>
+          <MyBarChart data = {stat} barKeys={["premium", "free"]}/>
+          <MyPieChart data = {stat} pieKeys={["wins" , "losses"]}/>
+        </View>
+        
+      </View>
+      
+      <View style = {styles.chartContainer}>
+        <Quote/>
+      </View>
+      
     </View>
     
 
@@ -37,13 +40,13 @@ export default StatsCard
 const styles = StyleSheet.create({
     container: {
       //flex: 1,
-              flexDirection: "column",
+              // flexDirection: "column",
               width: "90%",
-              // height: 150,
+              height: 200,
               marginBottom: 20,
               backgroundColor: colors.card,
-              justifyContent: "space-between",
-              alignItems: "left",
+              // justifyContent: "center",
+              alignItems: "center",
               alignSelf: "center",
               borderRadius: 10,
               borderWidth: 1,
@@ -85,5 +88,20 @@ const styles = StyleSheet.create({
       color: colors.text,
       fontSize: 14,
       fontWeight: "bold"
+    },
+
+    chartContainer: {
+      // flexDirection: "row",
+      width: "90%",
+      // height: 150,
+      marginBottom: 20,
+      backgroundColor: colors.card,
+      justifyContent: "center",
+      alignItems: "center",
+      alignSelf: "center",
+      borderRadius: 10,
+      borderWidth: 1,
+      borderColor: colors.borderColor,
+      paddingTop: 10,
     }
 })

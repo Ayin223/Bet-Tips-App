@@ -30,6 +30,7 @@ const PremiumTips = () => {
             contentContainerStyle={styles.listContent}
             style={styles.container}
         />
+        
     );
 }
 

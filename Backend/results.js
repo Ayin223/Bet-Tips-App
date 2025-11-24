@@ -65,7 +65,7 @@ async function getFirestoreFixtures(day) {
                 matchWinner === `${storedMatch.awayTeam} wins`
               ? "WON"
               :prediction === `Home or Away` &&  matchWinner != "Draw"
-              ?"WON"
+              ? "WON"
               : "LOST";
 
       const resultsData = {

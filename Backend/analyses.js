@@ -13,6 +13,10 @@ class AnalyseData{
     this.tips = []
     this.winRate = 0;
     this.totalTips = 0;
+    this.premiumWins = 0;
+    this.premiumWinsLosses = 0;
+    this.freeWins = 0;
+    this.freeLosses = 0;
     this.wins = 0;
     this.losses = 0;
     this.totalOdds =0;
@@ -89,12 +93,23 @@ class AnalyseData{
         
         this.totalOdds  += cOdds 
         if(t.outcome === "WON"){
-        this.wins ++
-        this.wonOdds += cOdds
+          this.wins ++
+          this.wonOdds += cOdds
+          
+          t.isPremium && t.outcome == "WON" 
+            ? this.premiumWins ++ 
+            : this.freeWins ++
+            
+
         }else{
-        this.losses++
-        this.lostOdds += cOdds
+          this.losses++
+          this.lostOdds += cOdds
+
+          t.isPremium && t.outcome == "LOST"
+            ? this.premiumWinsLosses ++
+            :this.freeLosses ++
         }
+
       }
 
     )
@@ -106,8 +121,12 @@ class AnalyseData{
       totalTips: this.totalTips,
       winRate: Number(this.winRate),
       wins: this.wins,
+      premium: this.premiumWins,
+      premiumLost : this.premiumWinsLosses,
+      free: this.freeWins,
+      freeLost : this.freeLosses, 
       losses: this.losses,
-      wonOdds: this.wonOdds,
+      wonOdds: Number(this.wonOdds.toFixed(2)),
       ROI: this.ROI,
       profit: Number(profit.toFixed(2)),
     }
