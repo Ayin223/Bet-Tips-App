@@ -58,7 +58,7 @@ const TipsCard = ({tip}) => {
             </View>
 
         </View>
-
+        
     </View>
   )
 }

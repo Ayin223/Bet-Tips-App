@@ -6,7 +6,7 @@ import { useDateContext } from '../context/DateContext';
 const DateFilterHeader = () => {
     const { selectedDate, setSelectedDate, allAvailableDates } = useDateContext();
 
-    const datesToShow = allAvailableDates.slice(0, 8);
+    const datesToShow = allAvailableDates.slice(2, 9);
 
     if (datesToShow.length === 0) {
         return (

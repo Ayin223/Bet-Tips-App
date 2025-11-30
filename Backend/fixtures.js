@@ -40,18 +40,25 @@ export async function fetchFixtures(date) {
         const home = teams.find(t => t.homeAway === "home");
         const away = teams.find(t => t.homeAway === "away");
 
-      const odds =
-        competition?.odds?.find(o => o.homeTeamOdds?.moneyLine !== undefined && o.awayTeamOdds?.moneyLine !== undefined) ||
-        competition?.odds?.[0] ||
-        {};
+        // console.log(home.team.displayName)
 
-        //console.log(`${JSON.stringify(competition,null,2)}`)
-        //console.log(`${competition.odds} `)
+      const odds = competition?.odds || {};
+
+      // const odds =
+      //   competition?.odds?.find(o => 
+      //     o.homeTeamOdds?.moneyLine !== undefined && 
+      //     o.awayTeamOdds?.moneyLine !== undefined &&
+      //     o.drawOdds?.moneyLine !== undefined) ||
+      //     competition?.odds?.[0] ||
+      //   {};
+
+        // console.log(`${JSON.stringify(odds.homeTeamOdds.value,null,2)}`)
+        // console.log(`${competition.odds.homeTeamOdds.moneyLine} `)
 
 
-          //Debugging 
-        // const homeMoneyLine = odds?.homeTeamOdds?.moneyLine;
-        // const awayMoneyLine = odds?.awayTeamOdds?.moneyLine;
+          // Debugging 
+        // const homeMoneyLine = odds?.homeTeamOdds?.value;
+        // const awayMoneyLine = odds?.awayTeamOdds?.value;
         // const provider = odds?.provider?.name ?? "Unknown";
 
         // if (homeMoneyLine !== undefined && awayMoneyLine !== undefined) {
@@ -70,6 +77,52 @@ export async function fetchFixtures(date) {
             : Number(((100 / Math.abs(val)) + 1).toFixed(2));
         };
 
+        let homeOdds =  null
+        let awayOdds =  null
+        let drawOdds =  null
+
+        let homeTeamMoneyLineOdds = odds?.homeTeamOdds?.moneyLine || 
+                                    odds.moneyline?.home?.open?.odds ||
+                                    odds[0]?.moneyline?.home?.open?.odds
+        let awayTeamMoneyLineOdds = odds?.awayTeamOdds?.moneyLine || 
+                                    odds.moneyline?.away?.open?.odds ||
+                                    odds[0]?.moneyline?.away?.open?.odds
+        let drawMoneyLineOdds = odds?.drawOdds?.moneyLine || 
+                                odds.moneyline?.draw?.open?.odds ||
+                                odds[0]?.moneyline?.draw?.open?.odds
+
+        let homeValueOdds = odds?.homeTeamOdds?.value
+        let awayValueOdds = odds?.awayTeamOdds?.value
+        let drawValueOdds = odds?.drawOdds?.value
+
+
+        if(homeValueOdds !== undefined){
+          homeOdds = homeValueOdds
+        } else if(homeTeamMoneyLineOdds !== undefined){
+          if(homeTeamMoneyLineOdds == "EVEN") {
+            homeTeamMoneyLineOdds = +100
+          }
+          homeOdds = convertToDecimal(homeTeamMoneyLineOdds)
+        } 
+        
+        if(awayValueOdds !== undefined){
+          awayOdds = awayValueOdds
+        } else if(awayTeamMoneyLineOdds !== undefined){
+          if(awayTeamMoneyLineOdds == "EVEN") {
+            awayTeamMoneyLineOdds = +100
+          }
+          awayOdds = convertToDecimal(awayTeamMoneyLineOdds)
+        }
+        
+        if(drawValueOdds !== undefined){
+          drawOdds = drawValueOdds
+        } else if(drawMoneyLineOdds !== undefined){
+          drawOdds = convertToDecimal(drawMoneyLineOdds)
+        }
+
+
+        // console.log(home?.team?.shortDisplayName, homeOdds)
+
         fixtures.push({
           league: leagueName,
           code: league.code,
@@ -78,22 +131,22 @@ export async function fetchFixtures(date) {
           startTime: competition?.startDate.slice(11, 16),
           matchID: competition?.id,
           //provider: odds?.provider?.name ?? "Unknown",
-          drawOdds: convertToDecimal(odds.drawOdds?.moneyLine),
+          drawOdds,
           home: {
-            name: home?.team?.displayName,
+            name: home?.team?.shortDisplayName,
             score: home?.score,
             homeID: home?.id,
             form: home?.form,
             favorite: odds.homeTeamOdds?.favorite,
-            homeOdds: convertToDecimal(odds.homeTeamOdds?.moneyLine)
+            homeOdds
           },
           away: {
-            name: away?.team?.displayName,
+            name: away?.team?.shortDisplayName,
             score: away?.score,
             awayID: away?.id,
             form: away?.form,
             favorite: odds.awayTeamOdds?.favorite,
-            awayOdds: convertToDecimal(odds.awayTeamOdds?.moneyLine)
+            awayOdds
           }
         });
       });
@@ -109,7 +162,7 @@ export async function fetchFixtures(date) {
   
 }
 
-// fetchFixtures(20251106)
+// fetchFixtures(20251128)
 // .then(s => 
 //   console.log(s)
 // );

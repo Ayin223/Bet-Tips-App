@@ -1,4 +1,5 @@
 import { ActivityIndicator, FlatList, StyleSheet } from 'react-native';
+import Disclaimer from '../components/disclaimer.jsx';
 import TipsCard from "../components/TipsCard";
 import { colors } from "../constants/colors.jsx";
 import { useDateContext } from '../context/DateContext.jsx';
@@ -29,6 +30,8 @@ const PremiumTips = () => {
             refreshing={isRefreshing}
             contentContainerStyle={styles.listContent}
             style={styles.container}
+            ListFooterComponent={()=> <Disclaimer/>}
+            ListFooterComponentStyle = {{alignItems: "center", marginBottom: 20}}
         />
         
     );

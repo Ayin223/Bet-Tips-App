@@ -3,7 +3,6 @@ import { colors } from "../constants/colors"
 import MyBarChart from "./myBarChart"
 import MyPieChart from "./myPieChart"
 import MySpeedometer from './mySpeedometer'
-import Quote from './Quote'
 
 const StatsCard = ({stat}) => {
   return (
@@ -19,13 +18,33 @@ const StatsCard = ({stat}) => {
 
         <View style = {{flexDirection: "row", alignItems: "center"}}>
           <MyBarChart data = {stat} barKeys={["premium", "free"]}/>
-          <MyPieChart data = {stat} pieKeys={["wins" , "losses"]}/>
+          <MyPieChart data = {stat} pieKeys={["wins"]}/>
         </View>
         
       </View>
       
-      <View style = {styles.chartContainer}>
-        <Quote/>
+      <View style = {styles.statCard}>
+        <View style={[styles.statCardText, {backgroundColor: "#41d4f53d"}]}>
+          <Text style = {styles.statText}>
+            {stat.totalTips}
+          </Text>
+          <Text style = {{color: "black", fontWeight: "bold"}}>TOTAL</Text>
+        </View>
+        
+        <View style={[styles.statCardText, {backgroundColor: "#78f97175"}]}>
+          <Text style = {styles.statText}>
+            {stat.wins}
+          </Text>
+          <Text style = {{color: "black", fontWeight: "bold"}}>WINS</Text>
+        </View>
+        
+        <View style={[styles.statCardText, {backgroundColor: "#fe5500ff"}]}>
+          <Text style = {styles.statText}>
+            {stat.losses}
+          </Text>
+          <Text style = {{color: "black", fontWeight: "bold"}}>LOSSES</Text>
+        </View>
+        
       </View>
       
     </View>
@@ -54,18 +73,8 @@ const styles = StyleSheet.create({
               paddingTop: 10,
     },
 
-    statCardContainer :{
-        height: 100,
-        //backgroundColor: "red",
-        justifyContent: 'space-between',
-        alignItems: "flex-end",
-        flexDirection: "row",
-        paddingHorizontal: 60,
-        marginBottom: 50,
-    },
-
-    statCard :{
-      //flex: 1,
+    statCardText :{
+        //flex: 1,
 
       height: 90,
       width: 90,
@@ -78,8 +87,23 @@ const styles = StyleSheet.create({
       paddingBottom: 10,
     },
 
+    statCard :{
+       flexDirection: "row",
+      width: "90%",
+      // height: 80,
+      marginBottom: 20,
+      backgroundColor: colors.card,
+      justifyContent: "space-evenly",
+      // alignItems: "center",
+      alignSelf: "center",
+      borderRadius: 10,
+      borderWidth: 1,
+      borderColor: colors.borderColor,
+      paddingTop: 10,
+    },
+
     statText: {
-      color: colors.accent,
+      color: colors.text,
       fontSize: 26,
       fontWeight: "bold"
     },

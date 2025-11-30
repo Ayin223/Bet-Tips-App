@@ -17,11 +17,11 @@ export const analysis = () => {
   let totalTips = 0;
   let premiumTips = []
   let freeTips = []
-  let version  = 0.2
+  let version  = 0.3
   combinedFixtures
     .map(match => {
-      const defaultOdds = 2.00
-      const {
+      
+      let {
         completed: matchStatus,
         matchDate,
         matchTime,
@@ -37,7 +37,7 @@ export const analysis = () => {
           winRate: homeWinRate,
           points: homePoints,
           homeForm,
-          homeTeamisFavorite = false
+          homeTeamisFavorite
         },
         away: {
           name: awayTeam,
@@ -49,7 +49,7 @@ export const analysis = () => {
           winRate: awayWinRate,
           points: awayPoints,
           awayForm,
-          awayTeamisFavorite = false
+          awayTeamisFavorite
         },
         drawOdds,
       } = match;
@@ -71,35 +71,39 @@ export const analysis = () => {
       const pointDiff = Math.abs(safeNum(homePoints) - safeNum(awayPoints))
 
       const exclusionFactors =
-        safeNum(homeOdds) < 1.30 ||
-        safeNum(awayOdds) < 1.30 ||
-        safeNum(homeGamesPlayed) < 5 ||
-        safeNum(awayGamesPlayed) < 5 ||
+        safeNum(homeOdds) < 1.0 ||
+        safeNum(awayOdds) < 1.0 
+        // safeNum(homeGamesPlayed) < 5 ||
+        // safeNum(awayGamesPlayed) < 5 ||
         //Math.abs(safeNum(homePoints) - safeNum(awayPoints)) < 9 ||
-        Math.abs(safeNum(numHomeForm) - safeNum(numAwayForm)) < 3;
+        // Math.abs(safeNum(numHomeForm) - safeNum(numAwayForm)) < 3;
 
       if (!matchStatus) {
-        // if (exclusionFactors) {
-        //   //console.log(`⛔ Skipped: ${homeTeam} vs ${awayTeam} | homeOdds=${homeOdds}, awayOdds=${awayOdds}, pdiff= ${Math.abs(numAwayForm - numHomeForm)}`);
-        //   return null;
-        // }
+        if (exclusionFactors) {
+          console.log(`⛔ Skipped: ${homeTeam} vs ${awayTeam} | homeOdds=${homeOdds}, awayOdds=${awayOdds}, pdiff= ${Math.abs(numAwayForm - numHomeForm)}`);
+          return null;
+        }
+        const defaultOdds = 2.3
+        const favoriteAdjustment = 0.20; 
+        const drawMultiplier = 1.40
 
         let finalHomeOdds = 0
         let finalAwayOdds = 0
         let finalDrawOdds = 0
 
-        if(homeTeamisFavorite){
-            finalHomeOdds = homeOdds?? (defaultOdds - 0.5)
-            finalAwayOdds = awayOdds?? (defaultOdds)
-            finalDrawOdds = drawOdds ?? (defaultOdds + 1.00)
-        }else if (awayTeamisFavorite){
-            finalAwayOdds = awayOdds ?? (defaultOdds - 0.5)
-            finalHomeOdds = homeOdds?? (defaultOdds)
-            finalDrawOdds = drawOdds ?? (defaultOdds + 1.00)
-        } else{
-            finalAwayOdds = awayOdds ?? (defaultOdds)
-            finalHomeOdds = homeOdds?? (defaultOdds - 0.5)
-            finalDrawOdds = drawOdds ?? (defaultOdds + 1.00)
+        if (homeTeamisFavorite) {
+            finalHomeOdds = homeOdds ?? (defaultOdds - favoriteAdjustment);
+            finalAwayOdds = awayOdds ?? (defaultOdds + favoriteAdjustment);
+            finalDrawOdds = drawOdds ?? (defaultOdds * drawMultiplier);
+        } else if (awayTeamisFavorite) {
+            finalAwayOdds = awayOdds ?? (defaultOdds - favoriteAdjustment); 
+            finalHomeOdds = homeOdds ?? (defaultOdds + favoriteAdjustment);
+            finalDrawOdds = drawOdds ?? (defaultOdds * drawMultiplier); 
+        } else {
+            const homeAdvantageAdjust = 0.05;
+            finalHomeOdds = homeOdds ?? (defaultOdds - homeAdvantageAdjust);
+            finalAwayOdds = awayOdds ?? (defaultOdds + homeAdvantageAdjust);
+            finalDrawOdds = drawOdds ?? (defaultOdds * drawMultiplier);
         }
 
         totalTips++;
@@ -120,20 +124,32 @@ export const analysis = () => {
             return parseFloat((1 / doubleChanceProb).toFixed(2));
         };
 
+        // console.log(calculateDoubleChanceOdds(3, 1.5))
+
+        if(homeTeamisFavorite == undefined || awayTeamisFavorite == undefined){
+            if(homeOdds < awayOdds){
+              homeTeamisFavorite = true
+              awayTeamisFavorite = false
+            }else {
+              awayTeamisFavorite = true
+              homeTeamisFavorite = false
+            }
+        }
+
         if(pointDiff >= 15){
-            if(homeTeamisFavorite && ((numHomeForm - numAwayForm) >= 7)){
+            if( homeTeamisFavorite  && ((numHomeForm - numAwayForm) >= 7)){
                 prediction = `${homeTeam} wins`,
                 predictedOdds = finalHomeOdds
                 confidence = 0.90
-            }else if (homeTeamisFavorite && ((numHomeForm - numAwayForm) >= 0)) {
+            }else if ( homeTeamisFavorite  && ((numHomeForm - numAwayForm) >= 0)) {
                 prediction = `${homeTeam} wins or draw`,
                 predictedOdds = calculateDoubleChanceOdds(finalHomeOdds, finalDrawOdds)
                 confidence = 0.85
-            }else if (awayTeamisFavorite && ((numHomeForm - numAwayForm) >= 7)){
+            }else if ( awayTeamisFavorite && ((numHomeForm - numAwayForm) >= 7)){
                 prediction = `${awayTeam} wins`,
                 predictedOdds = finalAwayOdds
                 confidence = 0.90
-            }else if (awayTeamisFavorite && ((numHomeForm - numAwayForm) >= 0)){
+            }else if ( awayTeamisFavorite && ((numHomeForm - numAwayForm) >= 0)){
                 prediction = `${awayTeam} wins or draw`,
                 predictedOdds = calculateDoubleChanceOdds(finalAwayOdds, finalDrawOdds)
                 confidence = 0.85
@@ -144,19 +160,19 @@ export const analysis = () => {
             }
           
         } else if (pointDiff < 15) {
-            if(homeTeamisFavorite && ((numHomeForm - numAwayForm) >= 7)){
+            if( homeTeamisFavorite  && ((numHomeForm - numAwayForm) >= 7)){
                 prediction = `${homeTeam} wins`,
                 predictedOdds = finalHomeOdds
                 confidence = 0.75
-            }else if (homeTeamisFavorite && ((numHomeForm - numAwayForm) >= 0)) {
+            }else if ( homeTeamisFavorite  && ((numHomeForm - numAwayForm) >= 0)) {
                 prediction = `${homeTeam} wins or draw`,
                 predictedOdds = calculateDoubleChanceOdds(finalHomeOdds, finalDrawOdds)
                 confidence = 0.70
-            }else if (awayTeamisFavorite && ((numHomeForm - numAwayForm) >= 7)){
-                prediction = `${awayTeam} wins`,
+            }else if ( awayTeamisFavorite && ((numHomeForm - numAwayForm) >= 7)){
+                prediction = `${awayTeam} wins`
                 predictedOdds = finalAwayOdds
                 confidence = 0.75
-            }else if (awayTeamisFavorite && ((numHomeForm - numAwayForm) >= 0)){
+            }else if ( awayTeamisFavorite && ((numHomeForm - numAwayForm) >= 0)){
                 prediction = `${awayTeam} wins or draw`,
                 predictedOdds = calculateDoubleChanceOdds(finalAwayOdds,finalDrawOdds)
                 confidence = 0.70
@@ -180,9 +196,9 @@ export const analysis = () => {
           status: matchStatus,
           prediction,
           odds: predictedOdds,
-          homeOdds,
           homeTeamisFavorite,
           awayTeamisFavorite,
+          homeOdds,
           awayOdds,
           drawOdds,
           confidence: parseFloat(confidence.toFixed(2)),
@@ -204,9 +220,7 @@ export const analysis = () => {
           avgAwayGoalsScored, avgAwayGoalsConceded, awayWinRate,
         };
 
-        
         premiumTips.push(tip)
-        
       } else {
           return match;
       }
@@ -230,5 +244,3 @@ export const analysis = () => {
 };
 
 // console.log(analysis());
-
-

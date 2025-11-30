@@ -1,9 +1,10 @@
 import { ActivityIndicator, FlatList, StyleSheet } from 'react-native';
+import Disclaimer from '../components/disclaimer.jsx';
 import StatsCard from "../components/StatsCard.jsx";
 import { colors } from "../constants/colors.jsx";
 import { useDateContext } from '../context/DateContext.jsx';
 
-const results = () => {
+const Results = () => {
   
     const { 
         allStatistics,  
@@ -24,11 +25,13 @@ const results = () => {
             refreshing={isRefreshing}
             contentContainerStyle={styles.listContent}
             style={styles.container}
+            ListFooterComponent={()=> <Disclaimer/>}
+            ListFooterComponentStyle = {{alignItems: "center", marginBottom: 20}}
         />
     );
 }
 
-export default results
+export default Results
 
 const styles = StyleSheet.create({
   container: {

@@ -12,7 +12,7 @@ export const mergerData = (fixturesData, standingData) => {
     const currentLeagueTeams = standingData[fixtureLeagueCode];
     
     if (!currentLeagueTeams) {
-      console.log(`${fixtureLeagueCode} != ${match.code} `)
+      console.log(`${fixtureLeagueCode} != ${match.code}`)
       return null; 
     }
 

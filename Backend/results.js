@@ -3,17 +3,12 @@ import { db } from "./firebaseconfig.js";
 import { fetchFixtures } from "./fixtures.js";
 import { getAuth, signInAnonymously } from "firebase/auth";
 
-
 const auth = getAuth();
 await signInAnonymously(auth);
-
-
 
 async function getFirestoreFixtures(day) {
 
   const fixtures = await fetchFixtures(day)
-  //console.log(today)
-
   try {
     const tipsRef = collection(db, "tips");
     const tipsSnapshot = await getDocs(tipsRef);
@@ -25,18 +20,16 @@ async function getFirestoreFixtures(day) {
       const storedMatch = tipdoc.data();
       const matchID = storedMatch.matchID;
       
-      
       const match = allFixtures.find(
         (s) => s.matchID === matchID
       );
-
 
       if (!match) { 
           return null; 
       }
       
       const status = match.completed;
-      if(!status) return null;
+      if(!status || storedMatch.status) return null;
 
       const homeScore = match.home.score;
       const awayScore = match.away.score;
@@ -93,7 +86,7 @@ async function getFirestoreFixtures(day) {
     }).filter(Boolean); 
 
     await Promise.all(updatePromises);
-    console.log(`All matches results updated successfully`)
+    console.log(`All matches results updated successfully ${day}`)
     
     return matchedTips;
 
@@ -103,23 +96,13 @@ async function getFirestoreFixtures(day) {
   }
 }
 
-
 const day = new Date()
 const today = day.toISOString().slice(0, 10).replace(/-/g, "")
 
 day.setDate(day.getDate() -1)
 const yesterday = day.toISOString().slice(0, 10).replace(/-/g, "")
 
-// console.log(`${yesterday} - ${today}`)
+await getFirestoreFixtures(today)
 
-await getFirestoreFixtures(today).then(()=> 
-  console.log(`
-                ⬆ Todays's Tips
-`)
-)
 
-await getFirestoreFixtures(yesterday).then(()=> 
-  console.log(`
-                ⬆ Yesterday's Tips
-`)
-)
+await getFirestoreFixtures(yesterday)

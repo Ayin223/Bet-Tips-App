@@ -26,7 +26,7 @@ const _layout = () => {
                 />
                 <Tabs.Screen name = "statistics"
                     options ={{
-                        title: 'STATISTICS',
+                        title: 'DASHBOARD',
                         headerTitleAlign: "center",
                         tabBarLabelStyle: styles.tabLabel, 
                         headerStyle: styles.headerContainer, 

@@ -6,9 +6,9 @@ const TabBar = ({ state, descriptors, navigation }) => {
   
   const icons= {
     index:  (props) => <Ionicons name="football-outline"      {...props} />,
-    info:   (props) => <Ionicons name="information-circle-outline"      {...props} />,
-    premium:(props) => <Ionicons name="star"      {...props} />,
-    statistics:(props) => <Ionicons name="timer-outline"      {...props} />,
+    info:   (props) => <Ionicons name="ellipsis-horizontal-circle-outline"      {...props} />,
+    premium:(props) => <Ionicons name="star-outline"      {...props} />,
+    statistics:(props) => <Ionicons name="stats-chart-outline"      {...props} />,
   }
 
   return (
