@@ -1,7 +1,9 @@
 import { useFocusEffect } from "expo-router";
 import { useCallback, useRef } from "react";
-import { Animated, StyleSheet, Text, View } from "react-native";
+import { Animated, PixelRatio, StyleSheet, Text, View } from "react-native";
 import { AnimatedCircularProgress } from "react-native-circular-progress";
+
+const scaleFont = (size) => (size+2) * PixelRatio.getFontScale();
 
 
 const MyPieChart = ({data, pieKeys}) => {

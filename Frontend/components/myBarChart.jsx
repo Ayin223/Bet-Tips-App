@@ -1,6 +1,7 @@
-import { StyleSheet, View } from 'react-native';
+import { PixelRatio, StyleSheet, View } from 'react-native';
 import { BarChart } from 'react-native-gifted-charts';
 
+const scaleFont = (size) => (size+2) * PixelRatio.getFontScale();
 
 const MyBarChart = ({ data, barKeys }) => {
   const barData = Object.entries(data)

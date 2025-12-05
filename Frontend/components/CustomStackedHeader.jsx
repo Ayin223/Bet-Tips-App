@@ -1,6 +1,6 @@
-// app/components/CustomStackedHeader.js
-import { StyleSheet, Text, View } from 'react-native';
-import DateFilterHeader from './DateFilterHeader'; // Your horizontal date filter
+import { PixelRatio, StyleSheet, Text, View } from 'react-native';
+import DateFilterHeader from './DateFilterHeader';
+const scaleFont = (size) => (size+2) * PixelRatio.getFontScale();
 
 const CustomStackedHeader = ({ title }) => {
     return (
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         paddingBottom: 5,
     },
     headerText: {
-        fontSize: 20,
+        fontSize: scaleFont(20),
         fontWeight: 'bold',
         color: 'white',
     },

@@ -28,12 +28,12 @@ const TipsCard = ({tip}) => {
         </View>
         
         <View style = {styles.teamsContainer}>
-            <Text style= {[styles.teams, {textAlign: "right", fontSize: scaleFont(16),fontWeight: "bold", color: colors.text, flexWrap: "wrap"}]}>{tip.homeTeam}</Text>
+            <Text style= {[styles.teams]}>{tip.homeTeam}</Text>
              {tip.status? 
                 (<Text style= {{fontSize: scaleFont(18),fontWeight: "bold", color: colors.text, }}>{tip.homeScore} - {tip.awayScore}</Text>): 
                 (<Text style= {{fontSize: scaleFont(18),fontWeight: "bold", color: colors.text, }}>vs</Text>)
             }
-            <Text style= {[styles.teams, {textAlign:"left",fontSize: scaleFont(16),fontWeight: "bold", color: colors.text, flexWrap: "wrap"}]}>{tip.awayTeam}</Text>
+            <Text style= {[styles.teams,{textAlign: "right"}]}>{tip.awayTeam}</Text>
         </View>
 
         <View style = {styles.tipsContainer}>
@@ -41,23 +41,23 @@ const TipsCard = ({tip}) => {
             <Text style= {[styles.tips,{textAlign: "left", fontWeight: "bold", fontSize: scaleFont(16), color: colors.text}]}>{tip.prediction}</Text>        
         </View>
 
-        <View style = {styles.tipsContainer}>
+        {/* <View style = {styles.tipsContainer}>
             <Text style = {[styles.tips,{textAlign: "right",}]}>Odds:</Text>
 
             <View style= {[styles.tipsButton,{}]}>
                 <Text style= {[styles.tips,{textAlign: "left", color: colors.accent, fontWeight: "bold"}]}>{tip.odds}</Text>        
             </View>
 
-        </View>
+        </View> */}
 
-        <View style = {styles.tipsContainer}>
+        {/* <View style = {styles.tipsContainer}>
             <Text style = {[styles.tips,{textAlign: "right",}]}>Confidence:</Text>
             
             <View style= {[styles.tipsButton,{}]}>
                 <Text style= {[styles.tips,{textAlign: "left", color: colors.accent, fontWeight: "bold"}]}>{Math.round(tip.confidence*100)}%</Text>        
             </View>
 
-        </View>
+        </View> */}
         
     </View>
   )
@@ -141,6 +141,15 @@ const styles = StyleSheet.create({
         marginTop: 10,
         marginBottom: 15,
         flexDirection: "row"
+    },
+    teams: {
+        width: "45%",
+        textAlign: "left", 
+        fontSize: scaleFont(16),
+        fontWeight: "bold", 
+        color: colors.text, 
+        flexWrap: "wrap"
+
     },
 
     tipsContainer:{

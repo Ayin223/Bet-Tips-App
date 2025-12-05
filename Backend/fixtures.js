@@ -30,7 +30,7 @@ export async function fetchFixtures(date) {
 
     const allLeagues = response.filter(r => r && r.data && r.data.events);
 
-    allLeagues.forEach(league => {
+    allLeagues.forEach((league) => {
       const leagueName = leagueCodes[league.code];
 
       league.data.events.forEach(match => {
@@ -40,7 +40,7 @@ export async function fetchFixtures(date) {
         const home = teams.find(t => t.homeAway === "home");
         const away = teams.find(t => t.homeAway === "away");
 
-        // console.log(home.team.displayName)
+        // console.log(league.data.leagues[0].abbreviation)
 
       const odds = competition?.odds || {};
 
@@ -91,9 +91,9 @@ export async function fetchFixtures(date) {
                                 odds.moneyline?.draw?.open?.odds ||
                                 odds[0]?.moneyline?.draw?.open?.odds
 
-        let homeValueOdds = odds?.homeTeamOdds?.value
-        let awayValueOdds = odds?.awayTeamOdds?.value
-        let drawValueOdds = odds?.drawOdds?.value
+        let homeValueOdds = odds?.homeTeamOdds?.value || odds[0]?.homeTeamOdds?.value
+        let awayValueOdds = odds?.awayTeamOdds?.value || odds[0]?.awayTeamOdds?.value
+        let drawValueOdds = odds?.drawOdds?.value || odds[0]?.drawOdds?.value
 
 
         if(homeValueOdds !== undefined){
@@ -124,7 +124,7 @@ export async function fetchFixtures(date) {
         // console.log(home?.team?.shortDisplayName, homeOdds)
 
         fixtures.push({
-          league: leagueName,
+          league: league.data.leagues[0].abbreviation,
           code: league.code,
           completed: competition?.status?.type?.completed,
           startDate: competition?.startDate.slice(0, 10),
@@ -162,7 +162,7 @@ export async function fetchFixtures(date) {
   
 }
 
-// fetchFixtures(20251128)
+// fetchFixtures(20251202)
 // .then(s => 
 //   console.log(s)
 // );

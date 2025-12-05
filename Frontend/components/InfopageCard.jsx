@@ -1,5 +1,7 @@
-import { Linking, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Linking, PixelRatio, Pressable, StyleSheet, Text, View } from 'react-native';
 import { colors } from "../constants/colors";
+
+const scaleFont = (size) => (size+2) * PixelRatio.getFontScale();
 
 const InfopageCard = () => {
 
@@ -26,7 +28,7 @@ const InfopageCard = () => {
           style={styles.button}
         >
           <View style={styles.infoCard}>
-            <Text style={[styles.text, {fontSize: 16}]}>{item.label}</Text>
+            <Text style={[styles.text, {fontSize: scaleFont(16)}]}>{item.label}</Text>
             <Text style={[styles.text, {color: colors.textMuted}]}>⟩</Text>
           </View>
         </Pressable>
@@ -50,7 +52,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   text: {
-    fontSize: 18,
+    fontSize: scaleFont(18),
     fontWeight: "bold",
     color: colors.text
   },

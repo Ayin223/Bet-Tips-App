@@ -1,8 +1,10 @@
 import { Tabs } from 'expo-router';
-import { StyleSheet } from 'react-native';
+import { PixelRatio, StyleSheet } from 'react-native';
 import CustomStackedHeader from "../components/CustomStackedHeader";
 import TabBar from '../components/TabBar';
 import { DateProvider } from '../context/DateContext';
+
+const scaleFont = (size) => (size+2) * PixelRatio.getFontScale();
 
 const _layout = () => {
     return (
@@ -56,7 +58,7 @@ const styles = StyleSheet.create({
         //height: 200,
     },
     headerText: {
-        fontSize: 20,
+        fontSize: scaleFont(20),
         fontWeight: 'bold',
         color: 'white', 
     },
@@ -64,7 +66,7 @@ const styles = StyleSheet.create({
         width: '60%', 
     },
     tabLabel: {
-        fontSize: 16,
+        fontSize: scaleFont(16),
         fontWeight: 'bold',
         color: 'black',
         backgroundColor: 'white', 

@@ -1,20 +1,23 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { PixelRatio, StyleSheet, Text, View } from 'react-native'
 import { colors } from "../constants/colors"
 import MyBarChart from "./myBarChart"
 import MyPieChart from "./myPieChart"
 import MySpeedometer from './mySpeedometer'
 
+
+const scaleFont = (size) => (size+2) * PixelRatio.getFontScale();
+
 const StatsCard = ({stat}) => {
   return (
     <View>
       <View style = {styles.container}>
-        <Text style = {{color: "white", marginBottom: 20, fontWeight: "bold", fontSize: 18}}>OVERALL WINRATE</Text>
+        <Text style = {{color: "white", marginBottom: 20, fontWeight: "bold", fontSize: scaleFont(18)}}>OVERALL WINRATE</Text>
         <MySpeedometer data = {stat} speedometerKeys={['winRate']}/>
       
       </View>
       
       <View style = {styles.chartContainer}>
-        <Text style = {{color: "white", marginBottom: 20, fontWeight: "bold", fontSize: 18}}>PREMIUM  VS  FREE TIPS</Text>
+        <Text style = {{color: "white", marginBottom: 20, fontWeight: "bold", fontSize: scaleFont(18)}}>PREMIUM  VS  FREE TIPS</Text>
 
         <View style = {{flexDirection: "row", alignItems: "center"}}>
           <MyBarChart data = {stat} barKeys={["premium", "free"]}/>
@@ -104,13 +107,13 @@ const styles = StyleSheet.create({
 
     statText: {
       color: colors.text,
-      fontSize: 26,
+      fontSize: scaleFont(26),
       fontWeight: "bold"
     },
 
     statDesc: {
       color: colors.text,
-      fontSize: 14,
+      fontSize: scaleFont(14),
       fontWeight: "bold"
     },
 

@@ -1,3 +1,4 @@
+import { LinearGradient } from 'expo-linear-gradient';
 import { ActivityIndicator, FlatList, StyleSheet } from 'react-native';
 import Disclaimer from '../components/disclaimer.jsx';
 import InfopageCard from '../components/InfopageCard.jsx';
@@ -16,17 +17,25 @@ const InfoPage = () => {
     }
 
     return (
-        <FlatList
-            data={allStatistics}
-            keyExtractor={(item) => item.id || item.key}
-            renderItem={() => <InfopageCard/>}
-            onRefresh={loadTips}
-            refreshing={isRefreshing}
-            contentContainerStyle={styles.listContent}
-            style={styles.container}
-            ListFooterComponent={()=> <Disclaimer/>}
-            ListFooterComponentStyle = {{alignItems: "center", marginBottom: 20}}
-        />
+        <LinearGradient
+            colors={['rgba(56, 64, 75, 1)', 'rgba(0, 44, 102, 0.86)', "rgba(66, 64, 68, 0.94) "]}    // your preferred colors
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 1 }}
+            style={{flex:1}} 
+        >
+            <FlatList
+                data={allStatistics}
+                keyExtractor={(item) => item.id || item.key}
+                renderItem={() => <InfopageCard/>}
+                onRefresh={loadTips}
+                refreshing={isRefreshing}
+                contentContainerStyle={styles.listContent}
+                // style={styles.container}
+                ListFooterComponent={()=> <Disclaimer/>}
+                ListFooterComponentStyle = {{alignItems: "center", marginBottom: 100}}
+            />
+        </LinearGradient>
+        
     );
 }
 

@@ -1,7 +1,9 @@
 import moment from 'moment';
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { PixelRatio, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { colors } from '../constants/colors';
 import { useDateContext } from '../context/DateContext';
+
+const scaleFont = (size) => (size+2) * PixelRatio.getFontScale();
 
 const DateFilterHeader = () => {
     const { selectedDate, setSelectedDate, allAvailableDates } = useDateContext();
@@ -76,12 +78,12 @@ const styles = StyleSheet.create({
         borderColor: 'white',
     },
     dayText: {
-        fontSize: 12,
+        fontSize:scaleFont(12),
         fontWeight: 'bold',
         color: 'rgba(255, 255, 255, 0.8)', 
     },
     dateText: {
-        fontSize: 18,
+        fontSize:scaleFont(18),
         fontWeight: 'bold',
         color: 'white', 
     },
@@ -94,6 +96,6 @@ const styles = StyleSheet.create({
     },
     loadingText: {
         color: 'white',
-        fontSize: 14,
+        fontSize:scaleFont(14),
     }
 });

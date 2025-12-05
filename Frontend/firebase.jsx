@@ -1,9 +1,6 @@
-import { initializeApp as initWebApp } from 'firebase/app';
+import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore';
 
-let analyticsInstance;
-
-// Firebase config
 const firebaseConfig = {
   apiKey: "AIzaSyD16v66q_FkORd_VD6E6faJPRevIzPL328",
   authDomain: "bet-tips-a48b8.firebaseapp.com",
@@ -14,26 +11,6 @@ const firebaseConfig = {
   measurementId: "G-N26KCFBKCG",
 };
 
-// Web Firestore
-const webApp = initWebApp(firebaseConfig);
-export const db = getFirestore(webApp);
+const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app);
 
-// Native Analytics (EAS/custom dev client)
-// if (Platform.OS !== 'web') {
-//   try {
-//     const { default: firebaseAnalytics } = require('@react-native-firebase/analytics');
-//     analyticsInstance = firebaseAnalytics; // **do NOT call it**
-//   } catch (e) {
-//     console.warn('React Native Firebase Analytics not available', e);
-//     analyticsInstance = {
-//       logEvent: async () => {}, // fallback
-//     };
-//   }
-// } else {
-//   // Web or Expo Go fallback
-//   analyticsInstance = {
-//     logEvent: async () => {}, // no-op
-//   };
-// }
-
-// export const analytics = analyticsInstance;

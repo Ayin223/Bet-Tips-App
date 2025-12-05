@@ -1,4 +1,6 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { PixelRatio, StyleSheet, Text, View } from 'react-native';
+
+const scaleFont = (size) => (size+2) * PixelRatio.getFontScale();
 
 const Quote = () => {
   return (
